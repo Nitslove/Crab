@@ -8,17 +8,18 @@ const hre = require("hardhat");
 
 async function main() {
 
-  const lockedAmount = hre.ethers.utils.parseEther("10000");
+  const lockedAmount = hre.ethers.utils.parseEther("200000000");
+  console.log("lockedAmount =========== ", lockedAmount)
 
-  const Crab = await hre.ethers.getContractFactory("CRABMARKET");
-  const crab = await Crab.deploy(lockedAmount);
+  const MemeKong = await hre.ethers.getContractFactory("MEMEKONG");
+  const memeKong = await MemeKong.deploy(lockedAmount);
 
-  await crab.deployed();
+  await memeKong.deployed();
 
   console.log(
-    `Crab with intial value ${ethers.utils.formatEther(
+    `MEMEKONG with intial value ${ethers.utils.formatEther(
       lockedAmount
-    )}ETH deployed to ${crab.address}`
+    )}ETH deployed to ${memeKong.address}`
   );
 }
 

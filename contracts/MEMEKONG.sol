@@ -1,27 +1,3 @@
-//crab-market.sol
-//              ___     ___
-//             .i .-'   `-. i.
-//           .'   `/     \'  _`.
-//           |,-../ o   o \.' `|
-//        (| |   /  _\ /_  \   | |)
-//         \\\  (_.'.'"`.`._)  ///
-//          \\`._(..:   :..)_.'//
-//           \`.__\ .:-:. /__.'/
-//            `-i-->.___.<--i-'
-//            .'.-'/.=^=.\`-.`.
-//           /.'  //     \\  `.\
-//          ||   ||       ||   ||
-//          \)   ||       ||  (/
-//               \)       (/        
-//                             888      
-//                             888      
-//                             888      
-//       .d8888b888d888 8888b. 88888b.  
-//      d88P"   888P"      "88b888 "88b 
-//      888     888    .d888888888  888 
-//      Y88b.   888    888  888888 d88P 
-//       "Y8888P888    "Y88888888888P"  
-
 // SPDX-License-Identifier: UNLICENSED
 
 pragma solidity 0.8.18;
@@ -30,15 +6,6 @@ import "./SafeMath.sol";
 import "./IERC20.sol";
 import "./Address.sol";
 
-/**
- * @title SafeERC20
- * @dev Wrappers around ERC20 operations that throw on failure (when the token
- * contract returns false). Tokens that return no value (and instead revert or
- * throw on failure) are also supported, non-reverting calls are assumed to be
- * successful.
- * To use this library you can add a `using SafeERC20 for ERC20;` statement to your contract,
- * which allows you to call the safe operations as `token.safeTransfer(...)`, etc.
- */
 
 library SafeERC20 {
     using SafeMath for uint256;
@@ -83,7 +50,7 @@ library SafeERC20 {
     }
 }
 
-//Uniswap v2 interface
+
 interface IUniswapV2Router01 {
     function factory() external pure returns (address);
     function WETH() external pure returns (address);
@@ -269,10 +236,6 @@ interface IUniswapV2Pair {
   function sync() external;
 }
 
-////////////////////////////////////////////////
-////////////////////EVENTS/////////////////////
-//////////////////////////////////////////////
-
 contract TokenEvents {
     
     //when a user stakes tokens
@@ -295,10 +258,7 @@ contract TokenEvents {
     
 }
 
-//////////////////////////////////////
-//////////CRABMARKET TOKEN CONTRACT////////
-////////////////////////////////////
-contract CRABMARKET is IERC20, TokenEvents {
+contract MEMEKONG is IERC20, TokenEvents {
 
     using SafeMath for uint256;
     using SafeMath for uint64;
@@ -306,7 +266,7 @@ contract CRABMARKET is IERC20, TokenEvents {
     using SafeMath for uint16;
     using SafeMath for uint8;
 
-    using SafeERC20 for CRABMARKET;
+    using SafeERC20 for MEMEKONG;
     
     
     mapping (address => uint256) private _balances;
@@ -321,19 +281,21 @@ contract CRABMARKET is IERC20, TokenEvents {
     uint256 public poolBurnAdjust = 100;
 
     //stake setup
+    //Nitish - Setting numer of days of stacking
     uint constant internal MINUTESECONDS = 60;
     uint constant internal DAYSECONDS = 86400;
-    uint constant internal MINSTAKEDAYLENGTH = 7;
+    uint constant internal MINSTAKEDAYLENGTH = 9;
     uint256 public totalStaked;
     
     //tokenomics
+    //Nitish - Changing values according to meme kong
     uint256 internal _totalSupply;
-    string public constant name = "Crab Market";
-    string public constant symbol = "CRAB";
-    uint8 public constant decimals = 18;
+    string public constant name = "MEME KONG";
+    string public constant symbol = "MKONG";
+    uint8 public constant decimals = 9;
 
     //admin
-    address constant internal _P1 = 0x670628750F15c42c9924880c69F54F1B168E8923;
+    address constant internal _P1 = 0x4556a3bF9633aAcB73039004364A73a437606dE1;
     bool public isLocked = false;
     bool private sync;
     
@@ -574,7 +536,7 @@ contract CRABMARKET is IERC20, TokenEvents {
      */
     // event Approval(address indexed owner, address indexed spender, uint256 value);
 
-    //mint crab initial tokens (only ever called in constructor)
+    //mint memekong initial tokens (only ever called in constructor)
     function mintInitialTokens(uint amount)
         internal
         synchronized
@@ -583,19 +545,19 @@ contract CRABMARKET is IERC20, TokenEvents {
     }
 
     ////////////////////////////////////////////////////////
-    /////////////////PUBLIC FACING - CRAB CONTROL//////////
+    /////////////////PUBLIC FACING - MEMEKONG CONTROL//////////
     //////////////////////////////////////////////////////
     
     
     ////////STAKING FUNCTIONS/////////
     
-    //stake CRAB tokens to contract and claims any accrued interest
+    //stake MKONG tokens to contract and claims any accrued interest
     function StakeTokens(uint amt, address _referrer)
         external
         synchronized
     {
         require(amt > 0, "zero input");
-        require(crabBalance() >= amt, "Error: insufficient balance");//ensure user has enough funds
+        require(mkongBalance() >= amt, "Error: insufficient balance");//ensure user has enough funds
         if(_referrer != address(0) && _referrer != msg.sender){
             if(staker[_referrer].activeUser && staker[msg.sender].referrer == address(0)){
                staker[msg.sender].referrer = _referrer;
@@ -611,13 +573,14 @@ contract CRABMARKET is IERC20, TokenEvents {
         emit TokenStake(msg.sender, amt);
     }
     
-    //unstake CRAB tokens from contract and claims any accrued interest
+    //Nitish - tokens cannot be unstaked yet. min 9 day stake
+    //unstake MKONG tokens from contract and claims any accrued interest
     function UnstakeTokens()
         external
         synchronized
     {
         require(staker[msg.sender].stakedBalance > 0,"Error: unsufficient frozen balance");//ensure user has enough staked funds
-        require(isStakeFinished(msg.sender), "tokens cannot be unstaked yet. min 7 day stake");
+        require(isStakeFinished(msg.sender), "tokens cannot be unstaked yet. min 9 day stake");
         uint amt = staker[msg.sender].stakedBalance;
         //claim any accrued interest
         claimInterest();
@@ -629,6 +592,7 @@ contract CRABMARKET is IERC20, TokenEvents {
         emit TokenUnstake(msg.sender, amt);
     }
     
+    //Nitish - claim interest
     //claim any accrued interest
     function ClaimStakeInterest()
         external
@@ -647,6 +611,9 @@ contract CRABMARKET is IERC20, TokenEvents {
         rollInterest();
     }
     
+    //Nitish - Calculate Staking interest
+    //Nitish - 5% bonus for referrer
+    //Nitish - 3% dev copy
     function rollInterest()
         internal
     {
@@ -669,6 +636,8 @@ contract CRABMARKET is IERC20, TokenEvents {
         }
     }
     
+    //Nitish - 5% bonus for referrer
+    //Nitish - 3% dev copy
     function claimInterest()
         internal
     {
@@ -688,7 +657,9 @@ contract CRABMARKET is IERC20, TokenEvents {
         }
     }
 
-    function BurnCrab(uint amt)
+    //Nitish - can only burn equivalent of x10 total staking interest
+    //Nitish - minimize vamp bots by keeping max burn pamp slippage low
+    function BurnMkong(uint amt)
         external
         synchronized
     {
@@ -720,24 +691,28 @@ contract CRABMARKET is IERC20, TokenEvents {
     ////////VIEW ONLY//////////////
     ///////////////////////////////
 
-    //returns staking rewards in CRAB
+    //Nitish - totalstaked * minutesPast / 10000 / 1251 @ 4.20% APY
+    //Nitish - 1251 ????
+    //returns staking rewards in MKONG
     function calcStakingRewards(address _user)
         public
         view
         returns(uint)
     {
         // totalstaked * minutesPast / 10000 / 1251 @ 4.20% APY
-        // (adjustments up to a max of 42.0% APY via burning of CRAB)
-        uint crabBurnt = staker[_user].totalBurnt;
+        // (adjustments up to a max of 42.0% APY via burning of MKONG)
+        uint mkongBurnt = staker[_user].totalBurnt;
         uint staked = staker[_user].stakedBalance;
+        //Nitish - 1%
         uint apyAdjust = 10000;
-        if(crabBurnt > 0){
-            if(crabBurnt >= staked.sub(staked.div(10)))
+        if(mkongBurnt > 0){
+            if(mkongBurnt >= staked.sub(staked.div(10)))
             {
+                //Nitish - 10%
                 apyAdjust = 1000;
             }
             else{
-                uint burntPercentage = ((crabBurnt.mul(100) / staked));
+                uint burntPercentage = ((mkongBurnt.mul(100) / staked));
                 uint v = (apyAdjust * burntPercentage) / 100;
                 apyAdjust = apyAdjust.sub(v);
                 if(apyAdjust < 1000)
@@ -767,7 +742,8 @@ contract CRABMARKET is IERC20, TokenEvents {
         }
     }
     
-    //check is stake is finished, min 7 days
+    //Nitish - check stack finished
+    //check is stake is finished, min 9 days
     function isStakeFinished(address _user)
         public
         view
@@ -781,8 +757,8 @@ contract CRABMARKET is IERC20, TokenEvents {
         }
     }
 
-    //CRAB balance of caller
-    function crabBalance()
+    //MKONG balance of caller
+    function mkongBalance()
         public
         view
         returns (uint256)
