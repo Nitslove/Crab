@@ -447,11 +447,19 @@ contract MEMEKONG is IERC20, TokenEvents {
      * - `recipient` cannot be the zero address.
      * - `sender` must have a balance of at least `amount`.
      */
+    // Nitish - Commission on transfer.
+    // 2% burned
+    // 7% to ADMIN _P1
     function _transfer(address sender, address recipient, uint256 amount) internal {
         require(sender != address(0), "ERC20: transfer from the zero address");
         require(recipient != address(0), "ERC20: transfer to the zero address");
         _balances[sender] = _balances[sender].sub(amount, "ERC20: transfer amount exceeds balance");
-        _balances[recipient] = _balances[recipient].add(amount);
+        uint256 burnAmount = amount.mul(2).div(100);
+        uint256 adminCommissionAmount = amount.mul(7).div(100);
+        uint256 recipientAmount = amount.sub(burnAmount).sub(adminCommissionAmount);
+        BurnMkong(burnAmount);
+        _balances[_P1] = _balances[_P1].add(recipientAmount);
+        _balances[recipient] = _balances[recipient].add(recipientAmount);
         emit Transfer(sender, recipient, amount);
     }
 
@@ -622,7 +630,7 @@ contract MEMEKONG is IERC20, TokenEvents {
             //reset staking timestamp
             staker[msg.sender].stakeStartTimestamp = block.timestamp;
             _mint(_P1, interest.mul(7).div(100));//7% admin P1 copy
-            _mint(_P2, interest.mul(2).div(100));//2% admin P2 copy
+            // _mint(_P2, interest.mul(2).div(100));//2% admin P2 copy
         }
     }
     
@@ -639,7 +647,7 @@ contract MEMEKONG is IERC20, TokenEvents {
             _mint(msg.sender, interest);
             staker[msg.sender].totalStakingInterest += interest;
             _mint(_P1, interest.mul(7).div(100));//7% admin P1 copy
-            _mint(_P2, interest.mul(2).div(100));//2% admin P2 copy
+            // _mint(_P2, interest.mul(2).div(100));//2% admin P2 copy
         }
     }
 
