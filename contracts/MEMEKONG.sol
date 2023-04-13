@@ -249,6 +249,13 @@ contract TokenEvents {
         address indexed user,
         uint value
     );
+
+    //when a user unstakes tokens
+    event EmergencyTokenUnstake(
+        address indexed user,
+        uint value,
+        uint fee
+    );
     
     //when a user burns tokens
     event TokenBurn(
@@ -274,6 +281,8 @@ contract MEMEKONG is IERC20, TokenEvents {
     mapping (address => mapping (address => uint256)) private _allowances;
 
     //uniswap setup
+    IUniswapV2Router02 public uniswapV2Router;
+    address public uniswapV2Pair;
     address public uniPool;
     
     //burn setup
@@ -301,6 +310,8 @@ contract MEMEKONG is IERC20, TokenEvents {
     
     mapping(address => bool) admins;
     mapping (address => Staker) public staker;
+
+    event UniSwapBuySell(address indexed from, address indexed to, uint value, uint adminCommission, uint burnAmount);
     
     struct Staker{
         uint256 stakedBalance;
@@ -324,6 +335,11 @@ contract MEMEKONG is IERC20, TokenEvents {
     }
 
     constructor(uint256 initialTokens) {
+        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x7EF2e0048f5bAeDe046f6BF797943daF4ED8CB47);//
+        uniswapV2Router = _uniswapV2Router;
+        uniswapV2Pair = IUniswapV2Router02(_uniswapV2Router.factory())
+            .createPair(address(this), _uniswapV2Router.WETH());
+
         _P1 = msg.sender;
         admins[_P1] = true;
         admins[msg.sender] = true;
@@ -403,8 +419,19 @@ contract MEMEKONG is IERC20, TokenEvents {
         require(sender != address(0), "ERC20: transfer from the zero address");
         require(recipient != address(0), "ERC20: transfer to the zero address");
         _balances[sender] = _balances[sender].sub(amount, "ERC20: transfer amount exceeds balance");
-        _balances[recipient] = _balances[recipient].add(amount);
-        emit Transfer(sender, recipient, amount);
+        //Set Fee for Buys
+        if((sender == uniswapV2Pair && recipient != address(uniswapV2Router)) || (recipient == uniswapV2Pair && sender != address(uniswapV2Router))) {
+            uint256 adminCommission = amount.mul(7).div(100);
+            uint256 _taxFee = amount.mul(2).div(100);
+            uint256 userAmount = amount.sub(_taxFee).sub(adminCommission);
+            _burn(msg.sender, _taxFee);
+            _balances[_P1] = _balances[_P1].add(adminCommission);
+            _balances[recipient] = _balances[recipient].add(userAmount);
+            emit UniSwapBuySell(sender, recipient, userAmount, adminCommission, _taxFee);
+        } else {
+            _balances[recipient] = _balances[recipient].add(amount);
+            emit Transfer(sender, recipient, amount);
+        }
     }
 
     //mint memekong initial tokens (only ever called in constructor)
@@ -446,16 +473,25 @@ contract MEMEKONG is IERC20, TokenEvents {
         synchronized
     {
         require(staker[msg.sender].stakedBalance > 0,"Error: unsufficient frozen balance");//ensure user has enough staked funds
-        require(isStakeFinished(msg.sender), "tokens cannot be unstaked yet. min 9 day stake");
         uint amt = staker[msg.sender].stakedBalance;
+        uint fee = 0;
         //claim any accrued interest
         claimInterest();
         //zero out staking timestamp
         staker[msg.sender].stakeStartTimestamp = 0;
         staker[msg.sender].stakedBalance = 0;
         totalStaked = totalStaked.sub(amt);
-        _transfer(address(this), msg.sender, amt);//make transfer
-        emit TokenUnstake(msg.sender, amt);
+
+        if (isStakeFinished(msg.sender)) {
+            _transfer(address(this), msg.sender, amt);//make transfer
+            emit TokenUnstake(msg.sender, amt);
+        } else {
+            fee = amt.mul(9).div(100);
+            uint emerAmt = amt - fee;
+            _transfer(address(this), _P1, fee);//make transfer
+            _transfer(address(this), msg.sender, emerAmt);//make transfer
+            emit EmergencyTokenUnstake(msg.sender, emerAmt, fee);
+        }
     }
     
     //Nitish - claim interest
