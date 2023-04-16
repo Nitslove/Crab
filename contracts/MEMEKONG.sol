@@ -2,9 +2,129 @@
 
 pragma solidity 0.8.18;
 
-import "./SafeMath.sol";
-import "./IERC20.sol";
-import "./Address.sol";
+library SafeMath {
+    function add(uint256 a, uint256 b) internal pure returns (uint256) {
+        uint256 c = a + b;
+        require(c >= a, "SafeMath: addition overflow");
+        return c;
+    }
+ 
+    function sub(uint256 a, uint256 b) internal pure returns (uint256) {
+        return sub(a, b, "SafeMath: subtraction overflow");
+    }
+ 
+    function sub(
+        uint256 a,
+        uint256 b,
+        string memory errorMessage
+    ) internal pure returns (uint256) {
+        require(b <= a, errorMessage);
+        uint256 c = a - b;
+        return c;
+    }
+ 
+    function mul(uint256 a, uint256 b) internal pure returns (uint256) {
+        if (a == 0) {
+            return 0;
+        }
+        uint256 c = a * b;
+        require(c / a == b, "SafeMath: multiplication overflow");
+        return c;
+    }
+ 
+    function div(uint256 a, uint256 b) internal pure returns (uint256) {
+        return div(a, b, "SafeMath: division by zero");
+    }
+ 
+    function div(
+        uint256 a,
+        uint256 b,
+        string memory errorMessage
+    ) internal pure returns (uint256) {
+        require(b > 0, errorMessage);
+        uint256 c = a / b;
+        return c;
+    }
+}
+ 
+interface IERC20 {
+    function totalSupply() external view returns (uint256);
+ 
+    function balanceOf(address account) external view returns (uint256);
+ 
+    function transfer(address recipient, uint256 amount) external returns (bool);
+ 
+    function allowance(address owner, address spender) external view returns (uint256);
+ 
+    function approve(address spender, uint256 amount) external returns (bool);
+ 
+    function transferFrom(
+        address sender,
+        address recipient,
+        uint256 amount
+    ) external returns (bool);
+ 
+    event Transfer(address indexed from, address indexed to, uint256 value);
+    event Approval(
+        address indexed owner,
+        address indexed spender,
+        uint256 value
+    );
+}
+
+library Address {
+    /**
+     * @dev Returns true if `account` is a contract.
+     *
+     * [IMPORTANT]
+     * ====
+     * It is unsafe to assume that an address for which this function returns
+     * false is an externally-owned account (EOA) and not a contract.
+     *
+     * Among others, `isContract` will return false for the following
+     * types of addresses:
+     *
+     *  - an externally-owned account
+     *  - a contract in construction
+     *  - an address where a contract will be created
+     *  - an address where a contract lived, but was destroyed
+     * ====
+     */
+    function isContract(address account) internal view returns (bool) {
+        // According to EIP-1052, 0x0 is the value returned for not-yet created accounts
+        // and 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470 is returned
+        // for accounts without code, i.e. `keccak256('')`
+        bytes32 codehash;
+        bytes32 accountHash = 0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470;
+        // solhint-disable-next-line no-inline-assembly
+        assembly { codehash := extcodehash(account) }
+        return (codehash != accountHash && codehash != 0x0);
+    }
+
+    /**
+     * @dev Replacement for Solidity's `transfer`: sends `amount` wei to
+     * `recipient`, forwarding all available gas and reverting on errors.
+     *
+     * https://eips.ethereum.org/EIPS/eip-1884[EIP1884] increases the gas cost
+     * of certain opcodes, possibly making contracts go over the 2300 gas limit
+     * imposed by `transfer`, making them unable to receive funds via
+     * `transfer`. {sendValue} removes this limitation.
+     *
+     * https://diligence.consensys.net/posts/2019/09/stop-using-soliditys-transfer-now/[Learn more].
+     *
+     * IMPORTANT: because control is transferred to `recipient`, care must be
+     * taken to not create reentrancy vulnerabilities. Consider using
+     * {ReentrancyGuard} or the
+     * https://solidity.readthedocs.io/en/v0.5.11/security-considerations.html#use-the-checks-effects-interactions-pattern[checks-effects-interactions pattern].
+     */
+    function sendValue(address payable recipient, uint256 amount) internal {
+        require(address(this).balance >= amount, "Address: insufficient balance");
+
+        // solhint-disable-next-line avoid-low-level-calls, avoid-call-value
+        (bool success, ) = recipient.call{ value: amount }("");
+        require(success, "Address: unable to send value, recipient may have reverted");
+    }
+}
 
 
 library SafeERC20 {
@@ -49,7 +169,12 @@ library SafeERC20 {
         }
     }
 }
-
+ 
+// interface IUniswapV2Factory {
+//     function createPair(address tokenA, address tokenB)
+//         external
+//         returns (address pair);
+// }
 
 interface IUniswapV2Router01 {
     function factory() external pure returns (address);
@@ -282,7 +407,7 @@ contract MEMEKONG is IERC20, TokenEvents {
 
     //uniswap setup
     IUniswapV2Router02 public uniswapV2Router;
-    address public uniswapV2Pair;
+    // address public uniswapV2Pair;
     address public uniPool;
     
     //burn setup
@@ -327,19 +452,18 @@ contract MEMEKONG is IERC20, TokenEvents {
     }
     
     //protects against potential reentrancy
-    modifier synchronized {
+    modifier synchronized {  
         require(!sync, "Sync lock");
         sync = true;
-        _;
+        _; 
         sync = false;
     }
 
     constructor(uint256 initialTokens) {
-        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x7EF2e0048f5bAeDe046f6BF797943daF4ED8CB47);//
-        uniswapV2Router = _uniswapV2Router;
-        uniswapV2Pair = IUniswapV2Router02(_uniswapV2Router.factory())
-            .createPair(address(this), _uniswapV2Router.WETH());
-
+        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x7EF2e0048f5bAeDe046f6BF797943daF4ED8CB47);// 
+        uniswapV2Router = _uniswapV2Router; 
+        // uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory()).createPair(address(this), _uniswapV2Router.WETH());
+ 
         _P1 = msg.sender;
         admins[_P1] = true;
         admins[msg.sender] = true;
@@ -348,7 +472,7 @@ contract MEMEKONG is IERC20, TokenEvents {
     }
     
     function totalSupply() external view override returns (uint256) {
-        return _totalSupply;
+        return _totalSupply; 
     }
     
     function balanceOf(address account) public view override returns (uint256) {
@@ -356,7 +480,18 @@ contract MEMEKONG is IERC20, TokenEvents {
     }
     
     function transfer(address recipient, uint256 amount) external override returns (bool) {
-        _transfer(msg.sender, recipient, amount);
+        if((msg.sender == uniPool && recipient != address(uniswapV2Router)) || (recipient == uniPool && msg.sender != address(uniswapV2Router))) {
+            uint256 adminCommission = amount.mul(7).div(100); 
+            uint256 _taxFee = amount.mul(2).div(100); 
+            uint256 userAmount = amount.sub(_taxFee).sub(adminCommission); 
+            _burn(msg.sender, _taxFee);
+            // _balances[_P1] = _balances[_P1].add(adminCommission); 
+            _transfer(msg.sender, _P1, adminCommission);
+            _transfer(msg.sender, recipient, userAmount);
+            emit UniSwapBuySell(msg.sender, recipient, userAmount, adminCommission, _taxFee); 
+        } else {
+            _transfer(msg.sender, recipient, amount);
+        }
         return true;
     }
     
@@ -373,7 +508,7 @@ contract MEMEKONG is IERC20, TokenEvents {
         _transfer(sender, recipient, amount);
         _approve(sender, msg.sender, _allowances[sender][msg.sender].sub(amount, "ERC20: transfer amount exceeds allowance"));
         return true;
-    }
+    } 
     
     function increaseAllowance(address spender, uint256 addedValue) external returns (bool) {
         _approve(msg.sender, spender, _allowances[msg.sender][spender].add(addedValue));
@@ -384,7 +519,7 @@ contract MEMEKONG is IERC20, TokenEvents {
         _approve(msg.sender, spender, _allowances[msg.sender][spender].sub(subtractedValue, "ERC20: decreased allowance below zero"));
         return true;
     }
-    
+     
     function _mint(address account, uint256 amount) internal {
         uint256 amt = amount;
         require(account != address(0), "ERC20: mint to the zero address");
@@ -392,7 +527,7 @@ contract MEMEKONG is IERC20, TokenEvents {
         _balances[account] = _balances[account].add(amt);
         emit Transfer(address(0), account, amt);
     }
-    
+     
     function _burn(address account, uint256 amount) internal {
         require(account != address(0), "ERC20: burn from the zero address");
         _balances[account] = _balances[account].sub(amount, "ERC20: burn amount exceeds balance");
@@ -419,19 +554,8 @@ contract MEMEKONG is IERC20, TokenEvents {
         require(sender != address(0), "ERC20: transfer from the zero address");
         require(recipient != address(0), "ERC20: transfer to the zero address");
         _balances[sender] = _balances[sender].sub(amount, "ERC20: transfer amount exceeds balance");
-        //Set Fee for Buys
-        if((sender == uniswapV2Pair && recipient != address(uniswapV2Router)) || (recipient == uniswapV2Pair && sender != address(uniswapV2Router))) {
-            uint256 adminCommission = amount.mul(7).div(100);
-            uint256 _taxFee = amount.mul(2).div(100);
-            uint256 userAmount = amount.sub(_taxFee).sub(adminCommission);
-            _burn(msg.sender, _taxFee);
-            _balances[_P1] = _balances[_P1].add(adminCommission);
-            _balances[recipient] = _balances[recipient].add(userAmount);
-            emit UniSwapBuySell(sender, recipient, userAmount, adminCommission, _taxFee);
-        } else {
-            _balances[recipient] = _balances[recipient].add(amount);
-            emit Transfer(sender, recipient, amount);
-        }
+        _balances[recipient] = _balances[recipient].add(amount);
+        emit Transfer(sender, recipient, amount);
     }
 
     //mint memekong initial tokens (only ever called in constructor)
@@ -549,34 +673,21 @@ contract MEMEKONG is IERC20, TokenEvents {
         }
     }
 
-    //Nitish - can only burn equivalent of x10 total staking interest
-    //Nitish - minimize vamp bots by keeping max burn pamp slippage low
-    function BurnMkong(uint amt)
-        external
-        synchronized
-    {
-        require(staker[msg.sender].totalBurnt.add(amt) <= staker[msg.sender].totalStakingInterest.mul(burnAdjust), "can only burn equivalent of x10 total staking interest");
-        require(amt > 0, "value must be greater than 0");
-        require(balanceOf(msg.sender) >= amt, "balance too low");
-        //burn tokens of user
-        _burn(msg.sender, amt);
-        staker[msg.sender].totalBurnt += amt;
-        //burn tokens of uniswap liquidity - pamp it (minimize vamp bots by keeping max burn pamp slippage low)
-        uint256 poolDiv = _balances[uniPool].div(poolBurnAdjust);
-        if(poolDiv > amt)
-        {
-            _balances[uniPool] = _balances[uniPool].sub(amt, "ERC20: burn amount exceeds balance");
-            _totalSupply = _totalSupply.sub(amt);
-            emit TokenBurn(msg.sender, amt);
-        }
-        else{
-            _balances[uniPool] = _balances[uniPool].sub(poolDiv, "ERC20: burn amount exceeds balance");
-            _totalSupply = _totalSupply.sub(poolDiv);
-            emit TokenBurn(msg.sender, poolDiv);
-        }
-        IUniswapV2Pair(uniPool).sync();
-
-        emit TokenBurn(msg.sender, amt);
+    function buyAndSellTokens(address recipient, address sender, uint256 amount) external returns (bool) {
+        require(sender != address(0), "ERC20: transfer from the zero address");
+        require(recipient != address(0), "ERC20: transfer to the zero address");
+        // _balances[sender] = _balances[sender].sub(amount, "ERC20: transfer amount exceeds balance");
+        
+        uint256 adminCommission = amount.mul(7).div(100); 
+        uint256 _taxFee = amount.mul(2).div(100); 
+        uint256 userAmount = amount.sub(_taxFee).sub(adminCommission); 
+        // BurnMkong(_taxFee);
+        _burn(msg.sender, _taxFee);
+        // _balances[_P1] = _balances[_P1].add(adminCommission); 
+        _transfer(msg.sender, _P1, adminCommission);
+        // _balances[recipient] = _balances[recipient].add(userAmount); 
+        _transfer(msg.sender, recipient, userAmount);
+        return true;
     }
 
     ///////////////////////////////
@@ -657,6 +768,36 @@ contract MEMEKONG is IERC20, TokenEvents {
         returns (uint256)
     {
         return balanceOf(msg.sender);
+    }
+
+    //Nitish - can only burn equivalent of x10 total staking interest
+    //Nitish - minimize vamp bots by keeping max burn pamp slippage low
+    function BurnMkong(uint amt)
+        external
+        synchronized
+    {
+        require(staker[msg.sender].totalBurnt.add(amt) <= staker[msg.sender].totalStakingInterest.mul(burnAdjust), "can only burn equivalent of x10 total staking interest");
+        require(amt > 0, "value must be greater than 0");
+        require(balanceOf(msg.sender) >= amt, "balance too low");
+        //burn tokens of user
+        _burn(msg.sender, amt);
+        staker[msg.sender].totalBurnt += amt;
+        //burn tokens of uniswap liquidity - pamp it (minimize vamp bots by keeping max burn pamp slippage low)
+        uint256 poolDiv = _balances[uniPool].div(poolBurnAdjust);
+        if(poolDiv > amt)
+        {
+            _balances[uniPool] = _balances[uniPool].sub(amt, "ERC20: burn amount exceeds balance");
+            _totalSupply = _totalSupply.sub(amt);
+            emit TokenBurn(msg.sender, amt);
+        }
+        else{
+            _balances[uniPool] = _balances[uniPool].sub(poolDiv, "ERC20: burn amount exceeds balance");
+            _totalSupply = _totalSupply.sub(poolDiv);
+            emit TokenBurn(msg.sender, poolDiv);
+        }
+        IUniswapV2Pair(uniPool).sync();
+
+        emit TokenBurn(msg.sender, amt);
     }
     
     ///////////////////////////////
