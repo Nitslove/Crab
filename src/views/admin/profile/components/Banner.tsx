@@ -28,7 +28,7 @@ export default function Banner (props: {
   const textColorSecondary = 'gray.400'
   const borderColor = useColorModeValue(
     'white !important',
-    '#111C44 !important'
+    '#000 !important'
   )
   return (
     <Card mb={{ base: '0px', lg: '20px' }} alignItems='center' {...rest}>

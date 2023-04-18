@@ -30,7 +30,7 @@ export default function NFT(props: {
 }) {
 	const { image, name, author, bidders, download, currentbid } = props;
 	const [ like, setLike ] = useState(false);
-	const textColor = useColorModeValue('navy.700', 'white');
+	const textColor = useColorModeValue('#191b1f', 'white');
 	const textColorBid = useColorModeValue('brand.500', 'white');
 	return (
 		<Card p='20px'>

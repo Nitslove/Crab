@@ -28,7 +28,7 @@ abbr[title] {
   color: white;
 }
 .react-calendar__navigation__next-button {
-  background-color: #4318ff !important;
+  background-color: #635d7c !important;
   border-radius: 10px;
   min-width: 34px !important;
   width: 34px !important;
@@ -92,7 +92,7 @@ abbr[title] {
 .react-calendar__tile--rangeEnd,
 .react-calendar__tile--rangeEnd:enabled:hover,
 .react-calendar__tile--rangeEnd:enabled:focus {
-  background: #4318ff;
+  background: #000;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   color: white;
@@ -104,10 +104,10 @@ body.chakra-ui-dark .react-calendar {
   border-radius: 30px;
 }
 body.chakra-ui-dark .react-calendar__navigation__prev-button {
-  background-color: #7551ff !important;
+  background-color: #000 !important;
 }
 body.chakra-ui-dark .react-calendar__navigation__next-button {
-  background-color: #7551ff !important;
+  background-color: #000 !important;
   color: white;
 }
 body.chakra-ui-dark .react-calendar__tile {
@@ -131,24 +131,24 @@ body.chakra-ui-dark .react-calendar__month-view__days__day--neighboringMonth {
 body.chakra-ui-dark .react-calendar__tile--active,
 body.chakra-ui-dark .react-calendar__tile--active:enabled:hover,
 body.chakra-ui-dark .react-calendar__tile--active:enabled:focus {
-  background: #7551ff;
+  background: #000;
   color: white;
 }
 body.chakra-ui-dark .react-calendar__tile--range,
 body.chakra-ui-dark .react-calendar__tile--range:enabled:hover,
 body.chakra-ui-dark .react-calendar__tile--range:enabled:focus {
   background: rgba(255, 255, 255, 0.1);
-  color: #7551ff;
+  color: #000;
 }
 body.chakra-ui-dark .react-calendar__tile--rangeStart,
 body.chakra-ui-dark .react-calendar__tile--rangeStart:enabled:hover,
 body.chakra-ui-dark .react-calendar__tile--rangeStart:enabled:focus {
-  background: #7551ff;
+  background: #000;
   color: white;
 }
 body.chakra-ui-dark .react-calendar__tile--rangeEnd,
 body.chakra-ui-dark .react-calendar__tile--rangeEnd:enabled:hover,
 body.chakra-ui-dark .react-calendar__tile--rangeEnd:enabled:focus {
-  background: #7551ff;
+  background: #000;
   color: white;
 }

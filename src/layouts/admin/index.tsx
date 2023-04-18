@@ -1,6 +1,6 @@
 // Chakra imports
 import { Portal, Box, useDisclosure } from '@chakra-ui/react'
-import Footer from 'components/footer/FooterAdmin'
+// import Footer from 'components/footer/FooterAdmin'
 // Layout components
 import Navbar from 'components/navbar/NavbarAdmin'
 import Sidebar from 'components/sidebar/Sidebar'
@@ -47,8 +47,8 @@ export default function AdminLayout (props: DashboardLayoutProps) {
           overflow='auto'
           position='relative'
           maxHeight='100%'
-          w={{ base: '100%', xl: 'calc( 100% - 290px )' }}
-          maxWidth={{ base: '100%', xl: 'calc( 100% - 290px )' }}
+          w={{ base: '100%', xl: 'calc( 100% - 190px )' }}
+          maxWidth={{ base: '100%', xl: 'calc( 100% - 190px )' }}
           transition='all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1)'
           transitionDuration='.2s, .2s, .35s'
           transitionProperty='top, bottom, width'
@@ -58,7 +58,7 @@ export default function AdminLayout (props: DashboardLayoutProps) {
             <Box>
               <Navbar
                 onOpen={onOpen}
-                logoText={'Horizon UI Dashboard PRO'}
+                logoText={'Meme Kong'}
                 brandText={getActiveRoute(routes)}
                 secondary={getActiveNavbar(routes)}
                 message={getActiveNavbarText(routes)}
@@ -76,9 +76,6 @@ export default function AdminLayout (props: DashboardLayoutProps) {
             pt='50px'
           >
             {children}
-          </Box>
-          <Box>
-            <Footer />
           </Box>
         </Box>
       </SidebarContext.Provider>

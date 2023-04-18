@@ -380,7 +380,7 @@ export const lineChartOptionsTotalSpent: ApexOptions = {
   markers: {
     size: 0,
     colors: "white",
-    strokeColors: "#7551FF",
+    strokeColors: "#000",
     strokeWidth: 3,
     strokeOpacity: 0.9,
     strokeDashArray: 0,
@@ -428,9 +428,9 @@ export const lineChartOptionsTotalSpent: ApexOptions = {
   grid: {
     show: false,
     column: {
-      // color: ["#7551FF", "#39B8FF"],
+      // color: ["#000", "#39B8FF"],
       opacity: 0.5,
     },
   },
-  // color: ["#7551FF", "#39B8FF"],
+  // color: ["#000", "#39B8FF"],
 };

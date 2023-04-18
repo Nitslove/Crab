@@ -20,8 +20,9 @@
 
 */
 
-import React from 'react'
-
+import React, { useState, useEffect } from "react";
+import { useEthers, useEtherBalance } from "@usedapp/core";
+import { ScrollAlphaProvider } from 'web3/ScrollAlphaProvider';
 // Chakra imports
 import {
   Box,
@@ -31,301 +32,234 @@ import {
   Text,
   useColorModeValue,
   SimpleGrid,
-  Link
-} from '@chakra-ui/react'
-
+  Link,
+} from "@chakra-ui/react";
+import Image from "next/image";
+import Images from "../../img/index";
 // Custom components
-import Banner from 'views/admin/marketplace/components/Banner'
-import TableTopCreators from 'views/admin/marketplace/components/TableTopCreators'
-import HistoryItem from 'views/admin/marketplace/components/HistoryItem'
-import NFT from 'components/card/NFT'
-import Card from 'components/card/Card'
+import Banner from "views/admin/marketplace/components/Banner";
+import TableTopCreators from "views/admin/marketplace/components/TableTopCreators";
+import HistoryItem from "views/admin/marketplace/components/HistoryItem";
+import NFT from "components/card/NFT";
+import Card from "components/card/Card";
 
 // Assets
-import Nft1 from 'img/nfts/Nft1.png'
-import Nft2 from 'img/nfts/Nft2.png'
-import Nft3 from 'img/nfts/Nft3.png'
-import Nft4 from 'img/nfts/Nft4.png'
-import Nft5 from 'img/nfts/Nft5.png'
-import Nft6 from 'img/nfts/Nft6.png'
-import Avatar1 from 'img/avatars/avatar1.png'
-import Avatar2 from 'img/avatars/avatar2.png'
-import Avatar3 from 'img/avatars/avatar3.png'
-import Avatar4 from 'img/avatars/avatar4.png'
-import tableDataTopCreators from 'views/admin/marketplace/variables/tableDataTopCreators.json'
-import { tableColumnsTopCreators } from 'views/admin/marketplace/variables/tableColumnsTopCreators'
-import AdminLayout from 'layouts/admin'
-import { TableData } from 'views/admin/default/variables/columnsData'
-import NextLink from 'next/link'
+import Nft1 from "img/nfts/Nft1.png";
+import Nft2 from "img/nfts/Nft2.png";
+import Nft3 from "img/nfts/Nft3.png";
+import Nft4 from "img/nfts/Nft4.png";
+import Nft5 from "img/nfts/Nft5.png";
+import Nft6 from "img/nfts/Nft6.png";
+import Avatar1 from "img/avatars/avatar1.png";
+import Avatar2 from "img/avatars/avatar2.png";
+import Avatar3 from "img/avatars/avatar3.png";
+import Avatar4 from "img/avatars/avatar4.png";
+import tableDataTopCreators from "views/admin/marketplace/variables/tableDataTopCreators.json";
+import { tableColumnsTopCreators } from "views/admin/marketplace/variables/tableColumnsTopCreators";
+import AdminLayout from "layouts/admin";
+import { TableData } from "views/admin/default/variables/columnsData";
+import NextLink from "next/link";
+import { ethers } from "ethers";
+import MemeKongABI from '../../web3/MemeKongV2.json';
 
-export default function NftMarketplace () {
+export default function NftMarketplace() {
   // Chakra Color Mode
-  const textColor = useColorModeValue('secondaryGray.900', 'white')
-  const textColorBrand = useColorModeValue('brand.500', 'white')
+  const textColor = useColorModeValue("secondaryGray.900", "white");
+  const textColorBrand = useColorModeValue("brand.500", "white");
+
+  useEffect(async()=>{
+    await window.ethereum.enable();
+    const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+    const account = accounts[0];
+    // const memeKongContract = new ethers.Contract(daiAddress, MemeKongABI, provider);
+  },[])
+
   return (
     <AdminLayout>
-      <Box pt={{ base: '180px', md: '80px', xl: '80px' }}>
-        {/* Main Fields */}
-        <Grid
-          mb='20px'
-          gridTemplateColumns={{ xl: 'repeat(3, 1fr)', '2xl': '1fr 0.46fr' }}
-          gap={{ base: '20px', xl: '20px' }}
-          display={{ base: 'block', xl: 'grid' }}
-        >
-          <Flex
-            flexDirection='column'
-            gridArea={{ xl: '1 / 1 / 2 / 3', '2xl': '1 / 1 / 2 / 2' }}
-          >
-            <Banner />
-            <Flex direction='column'>
-              <Flex
-                mt='45px'
-                mb='20px'
-                justifyContent='space-between'
-                direction={{ base: 'column', md: 'row' }}
-                align={{ base: 'start', md: 'center' }}
-              >
-                <Text
-                  color={textColor}
-                  fontSize='2xl'
-                  ms='24px'
-                  fontWeight='700'
-                >
-                  Trending NFTs
-                </Text>
-                <Flex
-                  align='center'
-                  me='20px'
-                  ms={{ base: '24px', md: '0px' }}
-                  mt={{ base: '20px', md: '0px' }}
-                >
-                  <NextLink href='#art' passHref>
-                    <Link
-                      color={textColorBrand}
-                      fontWeight='500'
-                      me={{ base: '34px', md: '44px' }}
-                    >
-                      Art
-                    </Link>
-                  </NextLink>
-                  <NextLink href='#music' passHref>
-                    <Link
-                      color={textColorBrand}
-                      fontWeight='500'
-                      me={{ base: '34px', md: '44px' }}
-                    >
-                      Music
-                    </Link>
-                  </NextLink>
-                  <NextLink href='#collectibles' passHref>
-                    <Link
-                      color={textColorBrand}
-                      fontWeight='500'
-                      me={{ base: '34px', md: '44px' }}
-                    >
-                      Collectibles
-                    </Link>
-                  </NextLink>
-                  <NextLink href='#sports' passHref>
-                    <Link color={textColorBrand} fontWeight='500'>
-                      Sports
-                    </Link>
-                  </NextLink>
-                </Flex>
-              </Flex>
-              <SimpleGrid columns={{ base: 1, md: 3 }} gap='20px'>
-                <NFT
-                  name='Abstract Colors'
-                  author='By Esthera Jackson'
-                  bidders={[
-                    Avatar1,
-                    Avatar2,
-                    Avatar3,
-                    Avatar4,
-                    Avatar1,
-                    Avatar1,
-                    Avatar1,
-                    Avatar1
-                  ]}
-                  image={Nft1}
-                  currentbid='0.91 ETH'
-                  download='#'
-                />
-                <NFT
-                  name='ETH AI Brain'
-                  author='By Nick Wilson'
-                  bidders={[
-                    Avatar1,
-                    Avatar2,
-                    Avatar3,
-                    Avatar4,
-                    Avatar1,
-                    Avatar1,
-                    Avatar1,
-                    Avatar1
-                  ]}
-                  image={Nft2}
-                  currentbid='0.91 ETH'
-                  download='#'
-                />
-                <NFT
-                  name='Mesh Gradients '
-                  author='By Will Smith'
-                  bidders={[
-                    Avatar1,
-                    Avatar2,
-                    Avatar3,
-                    Avatar4,
-                    Avatar1,
-                    Avatar1,
-                    Avatar1,
-                    Avatar1
-                  ]}
-                  image={Nft3}
-                  currentbid='0.91 ETH'
-                  download='#'
-                />
-              </SimpleGrid>
-              <Text
-                mt='45px'
-                mb='36px'
-                color={textColor}
-                fontSize='2xl'
-                ms='24px'
-                fontWeight='700'
-              >
-                Recently Added
-              </Text>
-              <SimpleGrid
-                columns={{ base: 1, md: 3 }}
-                gap='20px'
-                mb={{ base: '20px', xl: '0px' }}
-              >
-                <NFT
-                  name='Swipe Circles'
-                  author='By Peter Will'
-                  bidders={[
-                    Avatar1,
-                    Avatar2,
-                    Avatar3,
-                    Avatar4,
-                    Avatar1,
-                    Avatar1,
-                    Avatar1,
-                    Avatar1
-                  ]}
-                  image={Nft4}
-                  currentbid='0.91 ETH'
-                  download='#'
-                />
-                <NFT
-                  name='Colorful Heaven'
-                  author='By Mark Benjamin'
-                  bidders={[
-                    Avatar1,
-                    Avatar2,
-                    Avatar3,
-                    Avatar4,
-                    Avatar1,
-                    Avatar1,
-                    Avatar1,
-                    Avatar1
-                  ]}
-                  image={Nft5}
-                  currentbid='0.91 ETH'
-                  download='#'
-                />
-                <NFT
-                  name='3D Cubes Art'
-                  author='By Manny Gates'
-                  bidders={[
-                    Avatar1,
-                    Avatar2,
-                    Avatar3,
-                    Avatar4,
-                    Avatar1,
-                    Avatar1,
-                    Avatar1,
-                    Avatar1
-                  ]}
-                  image={Nft6}
-                  currentbid='0.91 ETH'
-                  download='#'
-                />
-              </SimpleGrid>
-            </Flex>
-          </Flex>
-          <Flex
-            flexDirection='column'
-            gridArea={{ xl: '1 / 3 / 2 / 4', '2xl': '1 / 2 / 2 / 3' }}
-          >
-            <Card px='0px' mb='20px'>
-              <TableTopCreators
-                tableData={(tableDataTopCreators as unknown) as TableData[]}
-                columnsData={tableColumnsTopCreators}
-              />
-            </Card>
-            <Card p='0px'>
-              <Flex
-                align={{ sm: 'flex-start', lg: 'center' }}
-                justify='space-between'
-                w='100%'
-                px='22px'
-                py='18px'
-              >
-                <Text color={textColor} fontSize='xl' fontWeight='600'>
-                  History
-                </Text>
-                <Button variant='action'>See all</Button>
-              </Flex>
+      <div className="memekong-sec">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 col-12">
+              <div className="myheader-sec">
+                <h2>Meme Kong Staking</h2>
+              </div>
+              <div className="stacking-sec">
+                <ul>
+                  <li>
+                    <div className="stake-content">
+                      <Image src={Images.Staking} alt="staking" />
+                      <h4>Staking</h4>
+                      <p>
+                        Staking Meme earns interest at 4.20% APY and up to 42.0%
+                        APY with 90% of staked amount burnt.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="stake-content">
+                      <Image src={Images.Meme} />
+                      <h4>Unstack</h4>
+                      <p>
+                        Burn Meme to pump the price relative to amount burnt,
+                        increase your individual MEME staking APY.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="stake-content">
+                      <Image src={Images.NFTS} alt="NFTS" />
+                      <h4>Claim</h4>
+                      <p>
+                        Head to the NFT area and stake in Meme NFT Staking pool,
+                        accessible only by owning a Genesis Meme.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                {/* <div className="action-sec">
+                  <a href="#">Connect</a>
+                </div> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="memekong-sec">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 col-12">
+              <div className="contain-img">
+                <div className="stake-content">
+                  <Image src={Images.Staking} alt="Staking" />
+                  <h4>Staking</h4>
+                  <p>
+                    Burning Meme increases your individual staking APY up to a
+                    maximum of 10x.
+                  </p>
+                  <p>
+                    Burning Meme simultaneously pumps the price by burning an
+                    equivalent amount of Meme from the ETH/Meme pair of Uniswap
+                    v2, or 1% of the pool if your burn equivalent is over.
+                  </p>
 
-              <HistoryItem
-                name='Colorful Heaven'
-                author='By Mark Benjamin'
-                date='30s ago'
-                image={Nft5}
-                price='0.91 ETH'
-              />
-              <HistoryItem
-                name='Abstract Colors'
-                author='By Esthera Jackson'
-                date='58s ago'
-                image={Nft1}
-                price='0.91 ETH'
-              />
-              <HistoryItem
-                name='ETH AI Brain'
-                author='By Nick Wilson'
-                date='1m ago'
-                image={Nft2}
-                price='0.91 ETH'
-              />
-              <HistoryItem
-                name='Swipe Circles'
-                author='By Peter Will'
-                date='1m ago'
-                image={Nft4}
-                price='0.91 ETH'
-              />
-              <HistoryItem
-                name='Mesh Gradients '
-                author='By Will Smith'
-                date='2m ago'
-                image={Nft3}
-                price='0.91 ETH'
-              />
-              <HistoryItem
-                name='3D Cubes Art'
-                author='By Manny Gates'
-                date='3m ago'
-                image={Nft6}
-                price='0.91 ETH'
-              />
-            </Card>
-          </Flex>
-        </Grid>
-        {/* Delete Product */}
-      </Box>
+                  <div className="claim-sec">
+                    <p>
+                      Burn 90% of your staked balance to achieve 10x staking
+                      bonus.
+                    </p>
+                    <p>
+                      Burn up to 10x of your total staking interest claimed to
+                      help pump the price!
+                    </p>
+                    <ul>
+                      <li>
+                        {" "}
+                        <Image src={Images.Wallet} alt="wallet" />
+                        Wallet: N/A
+                      </li>
+                      <li>
+                        {" "}
+                        <Image src={Images.Logo} alt="logo" />
+                        Balance: 0
+                      </li>
+                      <li>
+                        {" "}
+                        <Image src={Images.Logo} alt="logo" />
+                        <b>Burnt: 0</b>
+                      </li>
+                    </ul>
+                    <div className="calculation-sec">
+                      <p>
+                        BURN Meme TO ACQUIRE A MAXIMUM OF 10X STAKING APY @
+                        42.0%
+                      </p>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="text"
+                        placeholder="Burn Amount"
+                      />
+                      <p>AVAILABLE TO BURN :</p>
+                      <div className="calcu action-sec">
+                        <a href="#">Burn Meme</a>
+                        <Image src={Images.DownArrow} alt="downarrow" />
+                        <a href="#">Claim Now</a>
+                      </div>
+                      <p>CLAW AVAILABLE TO CLAIM :</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-12">
+              <div className="contain-img">
+                <div className="stake-content">
+                  <Image src={Images.Staking} alt="staking" />
+                  <h4>Meme Kong Staking</h4>
+                  <p>
+                    Stake Meme to increase your position and earn Meme
+                    passively.
+                  </p>
+                  <p>
+                    7 day stake lock period - your most recent stake/claim/roll
+                    resets the period.
+                  </p>
+                  <div className="claim-sec">
+                    <p>
+                      Burn 90% of your staked balance to achieve 10x staking
+                      bonus.
+                    </p>
+                    <p>
+                      Burn up to 10x of your total staking interest claimed to
+                      help pump the price!
+                    </p>
+                    <ul>
+                      <li>
+                        <Image src={Images.Wallet} alt="wallet" />
+                        Wallet: N/A
+                      </li>
+                      <li>
+                        <Image src={Images.Logo} alt="logo" />
+                        Balance: 0
+                      </li>
+                      <li>
+                        <Image src={Images.Logo} alt="logo" />
+                        Staked: 0
+                      </li>
+                    </ul>
+                    <div className="calculation-sec">
+                      <p>STAKE Meme TO EARN A MINIMUM 4.20% APY</p>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="text"
+                        placeholder="Stake Amount"
+                      />
+                      <p>
+                        STAKING / UNSTAKING MEME CLAIMS ANY ACCRUED INTEREST
+                        STAKE MEME UNSTAKE MEME
+                      </p>
+                      <div className="calcu action-sec">
+                        <a href="#">Stake Meme</a>
+                        <Image src={Images.DownArrow} alt="downarrow" />
+                        <a href="#">Unstake Claw</a>
+                      </div>
+                      <p>UNSTAKES ALL STAKED MEME</p>
+                    </div>
+                    <div className="calculation-sec intrest-sec">
+                      
+                      <div className="calcu action-sec">
+                        <a href="#">Claim Meme</a>
+                        <p>CLAIM SENDS INTEREST DIRECT TO WALLET</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </AdminLayout>
-  )
+  );
 }

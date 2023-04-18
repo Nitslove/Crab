@@ -15,11 +15,17 @@ import {
 } from '@chakra-ui/react';
 // Custom Components
 import { ItemContent } from 'components/menu/ItemContent';
-import { SearchBar } from 'components/navbar/searchBar/SearchBar';
+// import { SearchBar } from 'components/navbar/searchBar/SearchBar';
 import { SidebarResponsive } from 'components/sidebar/Sidebar';
 import PropTypes from 'prop-types';
 import React from 'react';
 // Assets
+import { ChakraProvider, useDisclosure } from "@chakra-ui/react";
+import theme from "../../pages/wallet/theme";
+import Layout from "../../pages/wallet/components/Layout";
+import ConnectButton from "../../pages/wallet/components/ConnectButton";
+import AccountModal from "../../pages/wallet/components/AccountModal";
+import "@fontsource/inter";
 import navImage from 'img/layout/Navbar.png';
 import { MdNotificationsNone, MdInfoOutline } from 'react-icons/md';
 import { IoMdMoon, IoMdSunny } from 'react-icons/io';
@@ -30,6 +36,8 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 	const { secondary } = props;
 	const { colorMode, toggleColorMode } = useColorMode();
 	// Chakra Color Mode
+	const { isOpen, onOpen, onClose } = useDisclosure();
+
 	const navbarIcon = useColorModeValue('gray.400', 'white');
 	let menuBg = useColorModeValue('white', 'navy.800');
 	const textColor = useColorModeValue('secondaryGray.900', 'white');
@@ -53,7 +61,7 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 			p='10px'
 			borderRadius='30px'
 			boxShadow={shadow}>
-			<SearchBar
+			{/* <SearchBar
 				mb={() => {
 					if (secondary) {
 						return { base: '10px', md: 'unset' };
@@ -62,7 +70,7 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 				}}
 				me='10px'
 				borderRadius='30px'
-			/>
+			/> */}
 			<Flex
 				bg={ethBg}
 				display={secondary ? 'flex' : 'none'}
@@ -74,13 +82,8 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 				<Flex align='center' justify='center' bg={ethBox} h='29px' w='29px' borderRadius='30px' me='7px'>
 					<Icon color={ethColor} w='9px' h='14px' as={FaEthereum} />
 				</Flex>
-				<Text w='max-content' color={ethColor} fontSize='sm' fontWeight='700' me='6px'>
-					1,924
-					<Text as='span' display={{ base: 'none', md: 'unset' }}>
-						{' '}
-						ETH
-					</Text>
-				</Text>
+				<ConnectButton handleOpenModal={onOpen} />
+        <AccountModal isOpen={isOpen} onClose={onClose} />
 			</Flex>
 			<SidebarResponsive routes={routes} />
 			<Menu>
@@ -107,7 +110,7 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 					</Flex>
 					<Flex flexDirection='column'>
 						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} px='0' borderRadius='8px' mb='10px'>
-							<ItemContent info='Horizon UI Dashboard PRO' />
+							<ItemContent info='Meme Kong' />
 						</MenuItem>
 						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} px='0' borderRadius='8px' mb='10px'>
 							<ItemContent info='Horizon Design System Free' />
@@ -115,48 +118,8 @@ export default function HeaderLinks(props: { secondary: boolean }) {
 					</Flex>
 				</MenuList>
 			</Menu>
-
-			<Menu>
-				<MenuButton p='0px'>
-					<Icon mt='6px' as={MdInfoOutline} color={navbarIcon} w='18px' h='18px' me='10px' />
-				</MenuButton>
-				<MenuList
-					boxShadow={shadow}
-					p='20px'
-					me={{ base: '30px', md: 'unset' }}
-					borderRadius='20px'
-					bg={menuBg}
-					border='none'
-					mt='22px'
-					minW={{ base: 'unset' }}
-					maxW={{ base: '360px', md: 'unset' }}>
-					<Image src={navImage} borderRadius='16px' mb='28px' />
-					<Flex flexDirection='column'>
-						<Link w='100%' href='https://horizon-ui.com/pro'>
-							<Button w='100%' h='44px' mb='10px' variant='brand'>
-								Buy Horizon UI PRO
-							</Button>
-						</Link>
-						<Link w='100%' href='https://horizon-ui.com/documentation/docs/introduction'>
-							<Button
-								w='100%'
-								h='44px'
-								mb='10px'
-								border='1px solid'
-								bg='transparent'
-								borderColor={borderButton}>
-								See Documentation
-							</Button>
-						</Link>
-						<Link w='100%' href='https://github.com/horizon-ui/horizon-ui-chakra-nextjs'>
-							<Button w='100%' h='44px' variant='no-hover' color={textColor} bg='transparent'>
-								Try Horizon Free
-							</Button>
-						</Link>
-					</Flex>
-				</MenuList>
-			</Menu>
-
+			
+        
 			<Button
 				variant='no-hover'
 				bg='transparent'

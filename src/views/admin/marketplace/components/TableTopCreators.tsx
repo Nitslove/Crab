@@ -46,7 +46,7 @@ function TopCreatorTable (props: TableProps) {
     prepareRow
   } = tableInstance
 
-  const textColor = useColorModeValue('navy.700', 'white')
+  const textColor = useColorModeValue('#191b1f', 'white')
   const textColorSecondary = useColorModeValue('secondaryGray.600', 'white')
 
   return (

@@ -8,7 +8,7 @@ export default function Information(props: { title: string; value: number | stri
 	// Chakra Color Mode
 	const textColorPrimary = useColorModeValue('secondaryGray.900', 'white');
 	const textColorSecondary = 'gray.400';
-	const bg = useColorModeValue('white', 'navy.700');
+	const bg = useColorModeValue('white', '#191b1f');
 	return (
 		<Card bg={bg} {...rest}>
 			<Box>

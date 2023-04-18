@@ -37,7 +37,7 @@ export default function AdminNavbar (props: {
   const { secondary, message, brandText, fixed } = props
 
   // Here are all the props that may change depending on navbar's type or state.(secondary, variant, scrolled)
-  let mainText = useColorModeValue('navy.700', 'white')
+  let mainText = useColorModeValue('#191b1f', 'white')
   let secondaryText = useColorModeValue('gray.700', 'white')
 	let navbarPosition = 'fixed' as const;
   let navbarFilter = 'none'
@@ -45,7 +45,7 @@ export default function AdminNavbar (props: {
   let navbarShadow = 'none'
   let navbarBg = useColorModeValue(
     'rgba(244, 247, 254, 0.2)',
-    'rgba(11,20,55,0.5)'
+    'rgba(0,0,0,0.5)'
   )
   let navbarBorder = 'transparent'
   let secondaryMargin = '0px'
@@ -99,8 +99,8 @@ export default function AdminNavbar (props: {
         base: 'calc(100vw - 6%)',
         md: 'calc(100vw - 8%)',
         lg: 'calc(100vw - 6%)',
-        xl: 'calc(100vw - 350px)',
-        '2xl': 'calc(100vw - 365px)'
+        xl: 'calc(100vw - 250px)',
+        '2xl': 'calc(100vw - 265px)'
       }}
     >
       <Flex

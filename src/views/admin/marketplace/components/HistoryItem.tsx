@@ -19,7 +19,7 @@ export default function NFT(props: {
 	const textColor = useColorModeValue('brands.900', 'white');
 	const bgItem = useColorModeValue(
 		{ bg: 'white', boxShadow: '0px 40px 58px -20px rgba(112, 144, 176, 0.12)' },
-		{ bg: 'navy.700', boxShadow: 'unset' }
+		{ bg: '#191b1f', boxShadow: 'unset' }
 	);
 	const textColorDate = useColorModeValue('secondaryGray.600', 'white');
 	return (

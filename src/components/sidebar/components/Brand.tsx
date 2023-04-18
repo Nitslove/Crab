@@ -4,16 +4,17 @@ import { Flex, useColorModeValue } from '@chakra-ui/react';
 // Custom components
 import { HorizonLogo } from 'components/icons/Icons';
 import { HSeparator } from 'components/separator/Separator';
+import Image from 'next/image';
+import MemeCoin from "../../../img/allImg/logo.png";
 
 export function SidebarBrand() {
 	//   Chakra color mode
-	let logoColor = useColorModeValue('navy.700', 'white');
+	let logoColor = useColorModeValue('#191b1f', 'white');
 
 	return (
 		<Flex alignItems='center' flexDirection='column'>
-			<HorizonLogo h='26px' w='175px' my='32px' color={logoColor} />
-			<HSeparator mb='20px' />
-		</Flex>
+			<Image src={MemeCoin}></Image>
+			</Flex>
 	);
 }
 

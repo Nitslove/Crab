@@ -25,7 +25,7 @@ export const inputStyles = {
         auth: (props: StyleFunctionProps) => ({
           field: {
             fontWeight: "500",
-            color: mode("navy.700", "white")(props),
+            color: mode("#191b1f", "white")(props),
             bg: mode("transparent", "transparent")(props),
             border: "1px solid",
             borderColor: mode(
