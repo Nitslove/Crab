@@ -61,18 +61,78 @@ import { TableData } from "views/admin/default/variables/columnsData";
 import NextLink from "next/link";
 import { ethers } from "ethers";
 import MemeKongABI from '../../web3/MemeKongV2.json';
+import { ScrollAlphaContract } from "web3/ContractAddress";
 
 export default function NftMarketplace() {
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");
   const textColorBrand = useColorModeValue("brand.500", "white");
+  const [amount, setAmount] = useState(0);
+  const [calcInterest, setCalcInterest] = useState(0);
+  const [account, setAccount] = useState('');
+  const [userStakes, setUserStakes] = useState({});
+  const [mKongBalance, setMKongBalance] = useState('');
+  const [isFinished, setIsFinished] = useState(false);
 
   useEffect(async()=>{
     await window.ethereum.enable();
     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-    const account = accounts[0];
-    // const memeKongContract = new ethers.Contract(daiAddress, MemeKongABI, provider);
+    const acc = accounts[0];
+    setAccount(acc);
+    const memeKongContract = new ethers.Contract(ScrollAlphaContract, MemeKongABI, ScrollAlphaProvider);
+    const staker = await memeKongContract.staker(acc);
+    const mkonngBalance = await memeKongContract.balanceOf(acc);
+    const isfinished = await memeKongContract.isStakeFinished(acc);
+    const calculatedInterest = await memeKongContract.calcStakingRewards(acc);
+    console.log("qwertyui ------ ===== ", isfinished, (parseFloat(mkonngBalance)/10**9).toFixed(4), staker);
+    setUserStakes(staker)
+    setMKongBalance((parseFloat(mkonngBalance)/10**9).toFixed(4));
+    setIsFinished(isfinished);
+    setCalcInterest((parseFloat(calculatedInterest)/10**9).toFixed(4));
   },[])
+
+  const stake = async() => {
+    try {
+      const provider = new ethers.providers.Web3Provider(window.ethereum)
+      const signer = provider.getSigner();
+      const memeKongContract = new ethers.Contract(ScrollAlphaContract, MemeKongABI, signer);
+      const totalAmount = parseFloat(amount)*10**9;
+      const tx = await memeKongContract.StakeTokens(totalAmount);
+      await tx.wait();
+      window.alert("Staked Successfully.")
+      window.location.reload();
+    } catch (error) {
+      console.log("error ==== ", JSON.stringify(error))
+    }
+  }
+
+  const unStake = async() => {
+    try {
+      const provider = new ethers.providers.Web3Provider(window.ethereum)
+      const signer = provider.getSigner();
+      const memeKongContract = new ethers.Contract(ScrollAlphaContract, MemeKongABI, signer);
+      const tx = await memeKongContract.UnstakeTokens();
+      await tx.wait();
+      window.alert("UnStaked Successfully.")
+      window.location.reload();
+    } catch (error) {
+      console.log("error ==== ", JSON.stringify(error))
+    }
+  }
+
+  const claim = async() => {
+    try {
+      const provider = new ethers.providers.Web3Provider(window.ethereum)
+      const signer = provider.getSigner();
+      const memeKongContract = new ethers.Contract(ScrollAlphaContract, MemeKongABI, signer);
+      const tx = await memeKongContract.ClaimStakeInterest();
+      await tx.wait();
+      window.alert("Claimed Successfully.")
+      window.location.reload();
+    } catch (error) {
+      console.log("error ==== ", JSON.stringify(error))
+    }
+  }
 
   return (
     <AdminLayout>
@@ -127,7 +187,7 @@ export default function NftMarketplace() {
       <div className="memekong-sec">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 col-12">
+            {/* <div className="col-md-6 col-12">
               <div className="contain-img">
                 <div className="stake-content">
                   <Image src={Images.Staking} alt="Staking" />
@@ -190,7 +250,7 @@ export default function NftMarketplace() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="col-md-6 col-12">
               <div className="contain-img">
                 <div className="stake-content">
@@ -216,15 +276,19 @@ export default function NftMarketplace() {
                     <ul>
                       <li>
                         <Image src={Images.Wallet} alt="wallet" />
-                        Wallet: N/A
+                        MKong Balance: {mKongBalance} MKong
                       </li>
                       <li>
                         <Image src={Images.Logo} alt="logo" />
-                        Balance: 0
+                        Staking Balance: {(parseFloat(userStakes.stakedBalance)/10**9).toFixed(4)} MKong
                       </li>
                       <li>
                         <Image src={Images.Logo} alt="logo" />
-                        Staked: 0
+                        Total Staking Interest Earned: {(parseFloat(userStakes.totalStakingInterest)/10**9).toFixed(4)} MKong
+                      </li>
+                      <li>
+                        <Image src={Images.Logo} alt="logo" />
+                        Pending Interest to Claim: {calcInterest} MKong
                       </li>
                     </ul>
                     <div className="calculation-sec">
@@ -234,22 +298,24 @@ export default function NftMarketplace() {
                         className="form-control"
                         id="text"
                         placeholder="Stake Amount"
+                        value = {amount}
+                        onChange = {(e) => {setAmount(e.target.value)}}
                       />
                       <p>
                         STAKING / UNSTAKING MEME CLAIMS ANY ACCRUED INTEREST
                         STAKE MEME UNSTAKE MEME
                       </p>
                       <div className="calcu action-sec">
-                        <a href="#">Stake Meme</a>
+                        <button onClick={()=>{stake()}}>Stake MKong</button>
                         <Image src={Images.DownArrow} alt="downarrow" />
-                        <a href="#">Unstake Claw</a>
+                        <button onClick={()=>{unStake()}}>{!isFinished && 'Emergency'} Unstake MKong</button>
                       </div>
-                      <p>UNSTAKES ALL STAKED MEME</p>
+                      <p>UNSTAKES ALL STAKED MEMEKONG</p>
                     </div>
                     <div className="calculation-sec intrest-sec">
                       
                       <div className="calcu action-sec">
-                        <a href="#">Claim Meme</a>
+                        <button onClick={()=>{claim()}}>Claim MKong</button>
                         <p>CLAIM SENDS INTEREST DIRECT TO WALLET</p>
                       </div>
                     </div>

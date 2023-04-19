@@ -1,0 +1,1 @@
+export const ScrollAlphaContract = "0x8A10b1646a6CE8de5ab043C22F6067AAbe7a730a";
