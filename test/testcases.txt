@@ -17,20 +17,3 @@ Verify Uniswap Pool: Verify that the Uniswap pool address is set correctly.
 Verify Pool Burn Adjustment: Verify that the pool burn adjustment is set correctly.
 Verify Stake Minimum Length: Verify that the stake minimum length is set correctly.
 Verify Sync Lock: Verify that the contract uses a synchronized modifier to protect against potential reentrancy.
-
-
-
-
-The token has the following features:
-
-It uses the SafeMath library to prevent integer overflows/underflows.
-It has a Uniswap pool address, which can be set with the public uniPool variable.
-It has a burnAdjust variable, which is set to 10, and a poolBurnAdjust variable, which is set to 100. These variables are used to calculate the amount of tokens to burn when a transfer occurs.
-It has a stake mechanism, where users can stake their tokens for a certain number of days. The stake length is set to 9 days, and the total amount staked is tracked by the totalStaked variable.
-The token has a name of "MEME KONG", a symbol of "MKONG", and 9 decimal places.
-The contract has two admin addresses: _P1 and _P2.
-The admins mapping tracks which addresses have admin privileges.
-The contract uses a reentrancy guard called synchronized to prevent reentrancy attacks.
-The onlyAdmins modifier restricts certain functions to only be callable by addresses with admin privileges.
-The TokenEvents contract is inherited, which defines the Transfer and Approval events.
-The contract implements the following functions:

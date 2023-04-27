@@ -391,19 +391,23 @@ contract TokenEvents {
 }
 
 contract MEMEKONG is IERC20, TokenEvents {
+
     using SafeMath for uint256;
     using SafeMath for uint64;
     using SafeMath for uint32;
     using SafeMath for uint16;
     using SafeMath for uint8;
+
     using SafeERC20 for MEMEKONG;
     
+    
     mapping (address => uint256) private _balances;
+
     mapping (address => mapping (address => uint256)) private _allowances;
-    mapping(address => bool) public bots;
 
     //uniswap setup
     IUniswapV2Router02 public uniswapV2Router;
+    // address public uniswapV2Pair;
     address public uniPool;
     
     //burn setup
@@ -414,10 +418,9 @@ contract MEMEKONG is IERC20, TokenEvents {
     //Nitish - Setting numer of days of stacking
     uint constant internal MINUTESECONDS = 60;
     uint constant internal DAYSECONDS = 86400;
-    uint private MINSTAKEDAYLENGTH = 9;
+    uint constant internal MINSTAKEDAYLENGTH = 9;
     uint256 public totalStaked;
     uint256 private maximumStakingAmount = 2000000 * 10 ** 18; 
-    uint private apyCount = 1251;
     
     //tokenomics
     //Nitish - Changing values according to meme kong
@@ -430,9 +433,6 @@ contract MEMEKONG is IERC20, TokenEvents {
     address private _P1;
     bool public isLocked = false;
     bool private sync;
-
-    //lock
-    bool internal lockContract = false;
     
     mapping(address => bool) admins;
     mapping (address => Staker) public staker;
@@ -463,7 +463,8 @@ contract MEMEKONG is IERC20, TokenEvents {
     constructor(uint256 initialTokens) {
         IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x7EF2e0048f5bAeDe046f6BF797943daF4ED8CB47);// 
         uniswapV2Router = _uniswapV2Router; 
-        
+        // uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory()).createPair(address(this), _uniswapV2Router.WETH());
+ 
         _P1 = msg.sender;
         admins[_P1] = true;
         admins[msg.sender] = true;
@@ -485,6 +486,7 @@ contract MEMEKONG is IERC20, TokenEvents {
             uint256 _taxFee = amount.mul(2).div(100); 
             uint256 userAmount = amount.sub(_taxFee).sub(adminCommission); 
             _burn(msg.sender, _taxFee);
+            // _balances[_P1] = _balances[_P1].add(adminCommission); 
             _transfer(msg.sender, _P1, adminCommission);
             _transfer(msg.sender, recipient, userAmount);
             emit UniSwapBuySell(msg.sender, recipient, userAmount, adminCommission, _taxFee); 
@@ -518,31 +520,25 @@ contract MEMEKONG is IERC20, TokenEvents {
         _approve(msg.sender, spender, _allowances[msg.sender][spender].sub(subtractedValue, "ERC20: decreased allowance below zero"));
         return true;
     }
-    
+     
     function _mint(address account, uint256 amount) internal {
         uint256 amt = amount;
-        require(!lockContract, "TOKEN: Contract is Locked");
         require(account != address(0), "ERC20: mint to the zero address");
-        require(!bots[account], "TOKEN: Your account is blacklisted!");
         _totalSupply = _totalSupply.add(amt);
         _balances[account] = _balances[account].add(amt);
         emit Transfer(address(0), account, amt);
     }
      
     function _burn(address account, uint256 amount) internal {
-        require(!lockContract, "TOKEN: Contract is Locked");
         require(account != address(0), "ERC20: burn from the zero address");
-        require(!bots[account], "TOKEN: Your account is blacklisted!");
         _balances[account] = _balances[account].sub(amount, "ERC20: burn amount exceeds balance");
         _totalSupply = _totalSupply.sub(amount);
         emit Transfer(account, address(0), amount);
     }
     
     function _approve(address owner, address spender, uint256 amount) internal {
-        require(!lockContract, "TOKEN: Contract is Locked");
         require(owner != address(0), "ERC20: approve from the zero address");
         require(spender != address(0), "ERC20: approve to the zero address");
-        require(!bots[owner] && !bots[spender], "TOKEN: Your account is blacklisted!");
         _allowances[owner][spender] = amount;
         emit Approval(owner, spender, amount);
     }
@@ -552,11 +548,12 @@ contract MEMEKONG is IERC20, TokenEvents {
         _approve(account, msg.sender, _allowances[account][msg.sender].sub(amount, "ERC20: burn amount exceeds allowance"));
     }
     
+    // Nitish - Commission on transfer.
+    // 2% burned
+    // 7% to ADMIN _P1
     function _transfer(address sender, address recipient, uint256 amount) internal {
-        require(!lockContract, "TOKEN: Contract is Locked");
         require(sender != address(0), "ERC20: transfer from the zero address");
         require(recipient != address(0), "ERC20: transfer to the zero address");
-        require(!bots[sender] && !bots[recipient], "TOKEN: Your account is blacklisted!");
         _balances[sender] = _balances[sender].sub(amount, "ERC20: transfer amount exceeds balance");
         _balances[recipient] = _balances[recipient].add(amount);
         emit Transfer(sender, recipient, amount);
@@ -570,8 +567,13 @@ contract MEMEKONG is IERC20, TokenEvents {
         _mint(_P1, amount);
     }
 
+    ////////////////////////////////////////////////////////
     /////////////////PUBLIC FACING - MEMEKONG CONTROL//////////
+    //////////////////////////////////////////////////////
+    
+    
     ////////STAKING FUNCTIONS/////////
+    
     //stake MKONG tokens to contract and claims any accrued interest
     function StakeTokens(uint amt)
         external
@@ -591,6 +593,7 @@ contract MEMEKONG is IERC20, TokenEvents {
     }
     
     //Nitish - tokens cannot be unstaked yet. min 9 day stake
+    //unstake MKONG tokens from contract and claims any accrued interest
     function UnstakeTokens()
         external
         synchronized
@@ -598,7 +601,9 @@ contract MEMEKONG is IERC20, TokenEvents {
         require(staker[msg.sender].stakedBalance > 0,"Error: unsufficient frozen balance");//ensure user has enough staked funds
         uint amt = staker[msg.sender].stakedBalance;
         uint fee = 0;
+        //claim any accrued interest
         claimInterest();
+        //zero out staking timestamp
         staker[msg.sender].stakeStartTimestamp = 0;
         staker[msg.sender].stakedBalance = 0;
         totalStaked = totalStaked.sub(amt);
@@ -609,14 +614,15 @@ contract MEMEKONG is IERC20, TokenEvents {
         } else {
             fee = amt.mul(9).div(100);
             uint emerAmt = amt.sub(fee);
-            _burn(msg.sender, fee);
-            _transfer(address(this), msg.sender, emerAmt);
+            _transfer(address(this), _P1, fee);//make transfer
+            _transfer(address(this), msg.sender, emerAmt);//make transfer
             emit EmergencyTokenUnstake(msg.sender, emerAmt, fee);
             emit TokenUnstake(msg.sender, amt);
         }
     }
     
     //Nitish - claim interest
+    //claim any accrued interest
     function ClaimStakeInterest()
         external
         synchronized
@@ -635,15 +641,20 @@ contract MEMEKONG is IERC20, TokenEvents {
     }
     
     //Nitish - Calculate Staking interest
+    //Nitish - 7% admin P1 copy - 2% admin P2 copy
     function rollInterest()
         internal
     {
+        //calculate staking interest
         uint256 interest = calcStakingRewards(msg.sender);
+        //mint interest to contract, ref and devs
         if(interest > 0){
             _mint(address(this), interest);
+            //roll interest
             staker[msg.sender].stakedBalance = staker[msg.sender].stakedBalance.add(interest);
             totalStaked = totalStaked.add(interest);
             staker[msg.sender].totalStakingInterest += interest;
+            //reset staking timestamp
             staker[msg.sender].stakeStartTimestamp = block.timestamp;
             _mint(_P1, interest.mul(7).div(100));//7% admin P1 copy
         }
@@ -655,7 +666,9 @@ contract MEMEKONG is IERC20, TokenEvents {
     {
         //calculate staking interest
         uint256 interest = calcStakingRewards(msg.sender);
+        //reset staking timestamp
         staker[msg.sender].stakeStartTimestamp = block.timestamp;
+        //mint interest if any
         if(interest > 0){
             _mint(msg.sender, interest);
             staker[msg.sender].totalStakingInterest += interest;
@@ -666,30 +679,41 @@ contract MEMEKONG is IERC20, TokenEvents {
     function buyAndSellTokens(address recipient, address sender, uint256 amount) external returns (bool) {
         require(sender != address(0), "ERC20: transfer from the zero address");
         require(recipient != address(0), "ERC20: transfer to the zero address");
-        // require(!bots[sender] && !bots[recipient], "TOKEN: Your account is blacklisted!");
+        // _balances[sender] = _balances[sender].sub(amount, "ERC20: transfer amount exceeds balance");
         
         uint256 adminCommission = amount.mul(7).div(100); 
         uint256 _taxFee = amount.mul(2).div(100); 
         uint256 userAmount = amount.sub(_taxFee).sub(adminCommission); 
+        // BurnMkong(_taxFee);
         _burn(sender, _taxFee);
+        // _balances[_P1] = _balances[_P1].add(adminCommission); 
         _transfer(sender, _P1, adminCommission);
+        // _balances[recipient] = _balances[recipient].add(userAmount); 
         _transfer(sender, recipient, userAmount);
         return true;
     }
 
+    ///////////////////////////////
     ////////VIEW ONLY//////////////
+    ///////////////////////////////
+
     //Nitish - totalstaked * minutesPast / 10000 / 1314 @ 4.00% APY
+    //returns staking rewards in MKONG
     function calcStakingRewards(address _user)
         public
         view
         returns(uint)
     {
+        // totalstaked * minutesPast / 10000 / 1314 @ 4.00% APY
+        // (adjustments up to a max of 40.0% APY via burning of MKONG)
         uint mkongBurnt = staker[_user].totalBurnt;
         uint staked = staker[_user].stakedBalance;
+        //Nitish - 1%
         uint apyAdjust = 10000;
         if(mkongBurnt > 0){
             if(mkongBurnt >= staked.sub(staked.div(10)))
             {
+                //Nitish - 10%
                 apyAdjust = 1000;
             }
             else{
@@ -703,7 +727,7 @@ contract MEMEKONG is IERC20, TokenEvents {
             }
         }
         
-        return (staked.mul(minsPastStakeTime(_user)).div(apyAdjust).div(apyCount));
+        return (staked.mul(minsPastStakeTime(_user)).div(apyAdjust).div(1251));
         // return (staked.mul(minsPastStakeTime(_user)).div(apyAdjust).div(1314));
     }
 
@@ -758,8 +782,10 @@ contract MEMEKONG is IERC20, TokenEvents {
         require(staker[msg.sender].totalBurnt.add(amt) <= staker[msg.sender].totalStakingInterest.mul(burnAdjust), "can only burn equivalent of x10 total staking interest");
         require(amt > 0, "value must be greater than 0");
         require(balanceOf(msg.sender) >= amt, "balance too low");
+        //burn tokens of user
         _burn(msg.sender, amt);
         staker[msg.sender].totalBurnt += amt;
+        //burn tokens of uniswap liquidity - pamp it (minimize vamp bots by keeping max burn pamp slippage low)
         uint256 poolDiv = _balances[uniPool].div(poolBurnAdjust);
         if(poolDiv > amt)
         {
@@ -773,10 +799,13 @@ contract MEMEKONG is IERC20, TokenEvents {
             emit TokenBurn(msg.sender, poolDiv);
         }
         IUniswapV2Pair(uniPool).sync();
+
         emit TokenBurn(msg.sender, amt);
     }
     
+    ///////////////////////////////
     ////////ADMIN ONLY//////////////
+    ///////////////////////////////
      function setUnipool(address _lpAddress)
         external
         onlyAdmins
@@ -803,14 +832,6 @@ contract MEMEKONG is IERC20, TokenEvents {
         poolBurnAdjust = _v;
     }
     
-    function setAdmin(address _admin)
-        external
-        onlyAdmins
-    {
-        _P1 = _admin;
-        admins[_P1] = true;
-    }
-    
     function revokeAdmin()
         external
         onlyAdmins
@@ -818,27 +839,4 @@ contract MEMEKONG is IERC20, TokenEvents {
         isLocked = true;
     }
 
-    function blockBots(address bot) external onlyAdmins {
-        bots[bot] = true;
-    }
- 
-    function unblockBot(address notbot) external onlyAdmins {
-        bots[notbot] = false;
-    }
-
-    function setStakingDays(uint _days) external onlyAdmins {
-        MINSTAKEDAYLENGTH = _days;
-    }
-
-    function lockTrading () external onlyAdmins {
-        lockContract = true;
-    }
-
-    function unlockTrading () external onlyAdmins {
-        lockContract = false;
-    }
-
-    function apyUnique (uint _unique) external onlyAdmins {
-        apyCount = _unique;
-    }
 }
