@@ -434,7 +434,7 @@ contract MEMEKONG is IERC20, TokenEvents {
     //lock
     bool internal lockContract = false;
     
-    mapping(address => bool) admins;
+    // mapping(address => bool) admins;
     mapping (address => Staker) public staker;
 
     event UniSwapBuySell(address indexed from, address indexed to, uint value, uint adminCommission, uint burnAmount);
@@ -448,7 +448,7 @@ contract MEMEKONG is IERC20, TokenEvents {
     }
     
     modifier onlyAdmins(){
-        require(admins[msg.sender], "not an admin");
+        require(_P1 == msg.sender, "not an admin");
         _;
     }
     
@@ -465,8 +465,8 @@ contract MEMEKONG is IERC20, TokenEvents {
         uniswapV2Router = _uniswapV2Router; 
         
         _P1 = msg.sender;
-        admins[_P1] = true;
-        admins[msg.sender] = true;
+        // admins[_P1] = true;
+        // admins[msg.sender] = true;
         //mint initial tokens
         mintInitialTokens(initialTokens);
     }
@@ -808,7 +808,7 @@ contract MEMEKONG is IERC20, TokenEvents {
         onlyAdmins
     {
         _P1 = _admin;
-        admins[_P1] = true;
+        // admins[_P1] = true;
     }
     
     function revokeAdmin()
