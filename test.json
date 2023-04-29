@@ -1,0 +1,3498 @@
+[
+    {
+        "Address": "0xe2fe530c047f2d85298b07d9333c05737f1435fb",
+        "Quantity": "70000000"
+    },
+    {
+        "Address": "0xd4b9dcc2753ef81d3d110327f0a7d696d66512ce",
+        "Quantity": "12295131.659990855"
+    },
+    {
+        "Address": "0x08540bea06c3173af34d6a2298a0dfc314e565ae",
+        "Quantity": "8383759.8148511"
+    },
+    {
+        "Address": "0x15381a0e1f616aebc9cdf49c67a8471a433dd073",
+        "Quantity": "2515742.169468984"
+    },
+    {
+        "Address": "0xe4e50f1adabea5b4b8774ed2a3b1b6fbdc94774d",
+        "Quantity": "2100355.336925387"
+    },
+    {
+        "Address": "0xa365d6a70d22efc0f9dcba11438a0b9dfd3bc560",
+        "Quantity": "1996382.731668048"
+    },
+    {
+        "Address": "0xb5a87e79888c82de95a6e04de546837cba28545a",
+        "Quantity": "1895833.929783759"
+    },
+    {
+        "Address": "0x62ebe739c7cf3ece9de1131dda942be1fedadc48",
+        "Quantity": "1755000.293914497"
+    },
+    {
+        "Address": "0xcd5f7fc6bc6bc99541cf955b863cf63a8163473c",
+        "Quantity": "1743426.848657802"
+    },
+    {
+        "Address": "0xeaa312700602acff5d895a797dfb6c9c10572b08",
+        "Quantity": "1621369.104828616"
+    },
+    {
+        "Address": "0x2821c849d684ebeca6f6174deaed665fd89fb0c8",
+        "Quantity": "1611769.65302264"
+    },
+    {
+        "Address": "0xba986e0e7e9cc849c4e0b9ea23e386ea6913771c",
+        "Quantity": "1533683.477610039"
+    },
+    {
+        "Address": "0x7521a27a11501c44df99cac6c7e9df59803341f8",
+        "Quantity": "1514690.673505354"
+    },
+    {
+        "Address": "0x092698243801e0acd43eb0daf79851f86a28dc88",
+        "Quantity": "1500000"
+    },
+    {
+        "Address": "0x03c846ae3586cae9054667b20525e6880b76a6fc",
+        "Quantity": "1369591.808452249"
+    },
+    {
+        "Address": "0x5422e291f0609a4cc67f599062181a8f94e4f02d",
+        "Quantity": "1334384.37169057"
+    },
+    {
+        "Address": "0xf81a5928f73e3e3b197015fa58ac5309f95f8696",
+        "Quantity": "1311245.407552856"
+    },
+    {
+        "Address": "0xb43fe34b6a91706252ca816ebe56343f07aecab7",
+        "Quantity": "1279897.978562935"
+    },
+    {
+        "Address": "0x96a921702e78a713213b012495eddefd4e3e0534",
+        "Quantity": "1258143.034912667"
+    },
+    {
+        "Address": "0xe8dcc233be6953e13eb5a6ab0a3320a607aacf85",
+        "Quantity": "1229614.343516005"
+    },
+    {
+        "Address": "0xd27adcabbd8157f94acccf237157793f535cdcce",
+        "Quantity": "1212867.085782419"
+    },
+    {
+        "Address": "0xa801affff8f2cfb743a261165fd9f43c771fa33a",
+        "Quantity": "1200597.929325317"
+    },
+    {
+        "Address": "0x1cf117f063b41f268caf5e71b0e252e4c7544801",
+        "Quantity": "1195694.332035824"
+    },
+    {
+        "Address": "0xdb29881875ec5d9bb9b140d7bb9f5b1620b5a606",
+        "Quantity": "1167986.65101067"
+    },
+    {
+        "Address": "0x0926cfa54562280e930dc7336fd9ebc74ea48a20",
+        "Quantity": "1150861.499194647"
+    },
+    {
+        "Address": "0x56b60b78899d36d5ad14e4fc2c842c76e51b9782",
+        "Quantity": "1138606.33036693"
+    },
+    {
+        "Address": "0x1b33594263f5c4c56de80fa6d7e73c584500390d",
+        "Quantity": "1116989.500195932"
+    },
+    {
+        "Address": "0xfed341a342acbd3e7509ef683a3c3671e319e8b8",
+        "Quantity": "1110862.925612218"
+    },
+    {
+        "Address": "0x250c92bfb44583d498628054e59bdc8cadf346f4",
+        "Quantity": "1095263.664635449"
+    },
+    {
+        "Address": "0x99a851461c150c826b38f1a3b39b366311cf6b4b",
+        "Quantity": "1082791.182085705"
+    },
+    {
+        "Address": "0xaf967a0edffdb414f208dd10a35d82167124293e",
+        "Quantity": "1069675.389465264"
+    },
+    {
+        "Address": "0xfa185139d5daa4aefba159a319480cd2ff286994",
+        "Quantity": "1064230.95834059"
+    },
+    {
+        "Address": "0x35129c4d51ba691c16ff6550fec2ff3072b9f9d2",
+        "Quantity": "1063049.212295327"
+    },
+    {
+        "Address": "0x1b344bfe5085448f41e4feddeec4bf490dea7da1",
+        "Quantity": "1053809.209930646"
+    },
+    {
+        "Address": "0x57b0e2f10040715f35cff614bc8c50f96a42a7ae",
+        "Quantity": "1053473.541213792"
+    },
+    {
+        "Address": "0xc1d2713045243e7b4d34309bafbf30e9216898c9",
+        "Quantity": "1020293.409952959"
+    },
+    {
+        "Address": "0xa33b31afc7afc1231b7edc42a3354346e0a1a5db",
+        "Quantity": "1020279.876981863"
+    },
+    {
+        "Address": "0xafa2fc628e34cfd5bfecc66bb27d82b5178f3444",
+        "Quantity": "1016631.205938156"
+    },
+    {
+        "Address": "0x45e48b178d031a216aca83c5a1f1790816254bf0",
+        "Quantity": "1016630.121714108"
+    },
+    {
+        "Address": "0xa8f9a33074cc477635d211f2817079006a337ea1",
+        "Quantity": "1016627.198351026"
+    },
+    {
+        "Address": "0x9d2b7881f85d6c4c5b19237beace087b47e84d1a",
+        "Quantity": "1016558.527053794"
+    },
+    {
+        "Address": "0x8f753a5e6aa1931eb697c5b51beee593e59cac03",
+        "Quantity": "1001905.394557112"
+    },
+    {
+        "Address": "0xb118f3dff544caa46cb3965280ad710db7b52b09",
+        "Quantity": "981994.716974436"
+    },
+    {
+        "Address": "0x7453248255eea2b411469ffdf7537016d22289ec",
+        "Quantity": "981501.746304254"
+    },
+    {
+        "Address": "0xa0607f203d7f7cf6c5b613d5bdf5e633c870d2fb",
+        "Quantity": "972747.930448155"
+    },
+    {
+        "Address": "0xf61f12cfbac238f02f09e6ce1634c801029b92e5",
+        "Quantity": "966015.661401795"
+    },
+    {
+        "Address": "0xcbe8437d846edc1ad53e81f9cc01bdbd0c29af63",
+        "Quantity": "963585.628757663"
+    },
+    {
+        "Address": "0xf6060516392e1097e4ec5a77d5c5b73641ddc696",
+        "Quantity": "962329.508733763"
+    },
+    {
+        "Address": "0x5977044d9f4488cfb6849082ff010e9ab25b5d3f",
+        "Quantity": "935746.010527906"
+    },
+    {
+        "Address": "0x515d3992a476c2f95f8cf8b5d23439d057d60a0a",
+        "Quantity": "903064.980609706"
+    },
+    {
+        "Address": "0x640493d57205a0346098313a80955f57d6a5bba2",
+        "Quantity": "891575.9539493"
+    },
+    {
+        "Address": "0xc788b21b1db578a6ea2d446d2e9f45de86a71df2",
+        "Quantity": "887643.771607805"
+    },
+    {
+        "Address": "0x482e45c8869326295920c88749ee64ba0154f7ac",
+        "Quantity": "833528.760329663"
+    },
+    {
+        "Address": "0xf395cb6d34ef5a2fe7c796eacc918bf81c0f744c",
+        "Quantity": "752438.426781257"
+    },
+    {
+        "Address": "0x920ff7c8a283ad51d45badd09de6b5fb581337cc",
+        "Quantity": "739375.714978146"
+    },
+    {
+        "Address": "0xcb747fc3ac6b93c95177af5e6d1fbc90d12b1141",
+        "Quantity": "723773.578082779"
+    },
+    {
+        "Address": "0xadd1c7a218c07eee171a263a23121831adc1a77d",
+        "Quantity": "722258.691547185"
+    },
+    {
+        "Address": "0xd18b711d3976f46ff6bceec360458e8ad95c8a24",
+        "Quantity": "707052.701348001"
+    },
+    {
+        "Address": "0x7a7a9ecaf71c5daf225080e02c0f1c9ba8395ac6",
+        "Quantity": "686098.798842547"
+    },
+    {
+        "Address": "0xb4fe077745411ea7a696080fba911537fcdd6a2a",
+        "Quantity": "641240.113751029"
+    },
+    {
+        "Address": "0x6b322d870bd2742c9a10b358c6730309eb84e605",
+        "Quantity": "633591.000386419"
+    },
+    {
+        "Address": "0x9711400a6ee0c43a344e2e4e344c17ab7de8682a",
+        "Quantity": "620533.565570823"
+    },
+    {
+        "Address": "0x7ade9bdefaeb5bb2e686e7d310524efade19a99b",
+        "Quantity": "585082.990867579"
+    },
+    {
+        "Address": "0x8290d2f0c25ad107f61bfab8d161bbab20e34c37",
+        "Quantity": "583528.823222686"
+    },
+    {
+        "Address": "0x8d650e768767d376e2ebc841373ee0aa140aaca2",
+        "Quantity": "570817.449220037"
+    },
+    {
+        "Address": "0xa18fac5fdeef45f37f1dc722cdf15924162e6b71",
+        "Quantity": "554361.918364726"
+    },
+    {
+        "Address": "0x117121f64c8b5acaf9b3da82fa38fc4928d49186",
+        "Quantity": "552053.462604968"
+    },
+    {
+        "Address": "0x0b7cd1dc0708e3b54617b646802d7bf80200260f",
+        "Quantity": "542750.09492235"
+    },
+    {
+        "Address": "0xe799226b085fed58868900b7c6c54cf07207dd56",
+        "Quantity": "540084.063605366"
+    },
+    {
+        "Address": "0x21a8b4dffe7f98e75def5d44e4b55b6aeed01595",
+        "Quantity": "537227.679941431"
+    },
+    {
+        "Address": "0x05a7ca786b43a7846e4e677042a20be45ac0dd3c",
+        "Quantity": "528634.987530719"
+    },
+    {
+        "Address": "0xeec6efcde7d4e2538d7f5584f26c36a7a35cf35a",
+        "Quantity": "510263.109648441"
+    },
+    {
+        "Address": "0xafe2db0063c1a9b11724476bbf204bc8e513cfe9",
+        "Quantity": "500323.888822073"
+    },
+    {
+        "Address": "0x80c6cd78bb6bddd53da7b9f36193f1bb97f6cbf3",
+        "Quantity": "500000"
+    },
+    {
+        "Address": "0x4d0c7a0c1d4a0cdd8824d1dc2c76863b417947ce",
+        "Quantity": "500000"
+    },
+    {
+        "Address": "0xb7065ebb9b9bf325aac55fc88db158ef2ae80c57",
+        "Quantity": "500000"
+    },
+    {
+        "Address": "0x151689d2c5f9e927e74e12c4135aaadd83400e10",
+        "Quantity": "496432.4994994"
+    },
+    {
+        "Address": "0x5748070af0a38f4b7cd8505600bc40b4bb94d223",
+        "Quantity": "457372.049234421"
+    },
+    {
+        "Address": "0xdfb81a8663df23bc59ba75b60b99015f3f7ae725",
+        "Quantity": "455000"
+    },
+    {
+        "Address": "0x0e8c536eb8437cb2bf1b2afaf6246d65b2105d62",
+        "Quantity": "450450"
+    },
+    {
+        "Address": "0x0801a00077d199bd247d8b7b82d48260870c2a5a",
+        "Quantity": "448146.242807255"
+    },
+    {
+        "Address": "0xf4dc6cfd1a33de4a122e4a9429731e98506b8125",
+        "Quantity": "427317.899913988"
+    },
+    {
+        "Address": "0xc83bec122e2a3935353233c55a0803594ef1031e",
+        "Quantity": "426034.381960481"
+    },
+    {
+        "Address": "0x20ea0b218b968da544d5b5d7b8c306644524bd1d",
+        "Quantity": "425223.483877453"
+    },
+    {
+        "Address": "0x64596b8ebcbba1f88cf32a6519da417aa22982f5",
+        "Quantity": "394440.737115731"
+    },
+    {
+        "Address": "0xfc3c798018506c601afc5916058533149ff9249e",
+        "Quantity": "392641.540291464"
+    },
+    {
+        "Address": "0xda18f79f3ba600e0115a23e3ae6d3d1778b11813",
+        "Quantity": "391575.865215915"
+    },
+    {
+        "Address": "0x5d67cac055dee665c1c2c08f5af618fe8d9eb9bb",
+        "Quantity": "388015.413630659"
+    },
+    {
+        "Address": "0xe9ede7b008582dde16a2df6a8320078c374f26dd",
+        "Quantity": "370000"
+    },
+    {
+        "Address": "0xc2bf86e46749230b64e64fac06a41024c470ca78",
+        "Quantity": "367483.811228408"
+    },
+    {
+        "Address": "0xc6f3bd28b91eb20852faaeaada4974e08a2e064d",
+        "Quantity": "360395.333341845"
+    },
+    {
+        "Address": "0x05fec2a367c984a179c12a76d4df4ba30b2f6403",
+        "Quantity": "356257.733485546"
+    },
+    {
+        "Address": "0x8862fb15ebb918278bc8a88da5f2de2369ed2499",
+        "Quantity": "352604.325734143"
+    },
+    {
+        "Address": "0x6f667e350aa6cd5209af6969d7f37ea772804630",
+        "Quantity": "350080.985215558"
+    },
+    {
+        "Address": "0x3aab1359efc17c8c93ad07ee5b950fd9635398f4",
+        "Quantity": "341898.411228297"
+    },
+    {
+        "Address": "0x9be93ed79bc8c4194cde92218a99788ffe7111c7",
+        "Quantity": "331670.535730639"
+    },
+    {
+        "Address": "0xf52d42fe8d520e6d18fcdc80a9e0de4f9c33d8c4",
+        "Quantity": "328141"
+    },
+    {
+        "Address": "0xfd205eaf047fbcbe6c930b9fa5c947ccb0166a42",
+        "Quantity": "317687.636912414"
+    },
+    {
+        "Address": "0x70fd4aa4623d4bc24c18e7f5448002a53ee98293",
+        "Quantity": "315618.373883466"
+    },
+    {
+        "Address": "0xc073ba274918654b007ac915879808239ed9e8cc",
+        "Quantity": "300000.993901333"
+    },
+    {
+        "Address": "0xd47f1cf88e16f349178e581f252476404555ad8a",
+        "Quantity": "285889.923162176"
+    },
+    {
+        "Address": "0x337514b7165397960be891d5b217bd12461f9296",
+        "Quantity": "284515.619954084"
+    },
+    {
+        "Address": "0x38e4d750df6bc03c402a08272038ed1aa2c582f2",
+        "Quantity": "280786.81413568"
+    },
+    {
+        "Address": "0x5996ce4348c92415b673cc55195b83d93a45b5bc",
+        "Quantity": "278950.820189949"
+    },
+    {
+        "Address": "0xad494ea5a6b819142281b723d709416e3656baf9",
+        "Quantity": "276115.284735006"
+    },
+    {
+        "Address": "0x1e3d8a7a103ed79704f3f71d9884977db1e34cfb",
+        "Quantity": "275553.516593219"
+    },
+    {
+        "Address": "0xc47ee9496cbee422d4ed19a554740ac78026296c",
+        "Quantity": "271004.072500269"
+    },
+    {
+        "Address": "0xc63249f03518cfe3cf5073a0913b6765fd44d26e",
+        "Quantity": "266434.272660589"
+    },
+    {
+        "Address": "0x8454ed7f8b316b271d87e53d96e12fcf072f2a51",
+        "Quantity": "260321.478481682"
+    },
+    {
+        "Address": "0xcb360c2c073aa0dc6670f91dc025f3e74cf64dc7",
+        "Quantity": "255091.930635892"
+    },
+    {
+        "Address": "0xa2198b72ca77868a7d7ad87f42040065511b2899",
+        "Quantity": "252376.451203875"
+    },
+    {
+        "Address": "0x9c5418d938abf391e77b00f0afd20a01bdfb5cb8",
+        "Quantity": "245234.310215905"
+    },
+    {
+        "Address": "0x5c9b5dafc88f3535ced33e1de89c0e035d3fa70d",
+        "Quantity": "241734.812124129"
+    },
+    {
+        "Address": "0xf3e80c5fc660a02249fa13f148741f1079506211",
+        "Quantity": "234894.689284288"
+    },
+    {
+        "Address": "0x909f35438b00a0593eda12f4380b302792070f49",
+        "Quantity": "234292.187976963"
+    },
+    {
+        "Address": "0x60d0dd65201485ebfad9d7e20be1a265512d8f90",
+        "Quantity": "233686.499912274"
+    },
+    {
+        "Address": "0xd3749a3c9e0dcc9ea9ccf07d89b2b621db8312f9",
+        "Quantity": "227500"
+    },
+    {
+        "Address": "0x85fcad86347ed6f6fcf043e1f856097710924ef8",
+        "Quantity": "227500"
+    },
+    {
+        "Address": "0x75f24534aec07201a52a2ca1e6a597e3097f6521",
+        "Quantity": "227500"
+    },
+    {
+        "Address": "0xa45ee2a6c3ef087251f560f6a4b9120d8b24eae1",
+        "Quantity": "227500"
+    },
+    {
+        "Address": "0x54db753b0bf268a6209882f74aa8f090399fcd9f",
+        "Quantity": "227500"
+    },
+    {
+        "Address": "0x3993c616e6a02270f87a07f943112880a85de05a",
+        "Quantity": "227500"
+    },
+    {
+        "Address": "0x183e82d7d601273b26dd016b7d916d63bfb95714",
+        "Quantity": "227500"
+    },
+    {
+        "Address": "0xe793f4fb9ef15dc0752af506ab2f633b07dbc388",
+        "Quantity": "227500"
+    },
+    {
+        "Address": "0x95b0075db02862ad731c671c2e27965cde3fb0ce",
+        "Quantity": "227500"
+    },
+    {
+        "Address": "0x2ad4dc274b0965b24c6136b19dec569aa628d8ab",
+        "Quantity": "227500"
+    },
+    {
+        "Address": "0x41fd6cd3fb693e3325e6ba7815c9eaa8202c9e46",
+        "Quantity": "227500"
+    },
+    {
+        "Address": "0xb85df62957da8cfe41dc6b7d6e73cf889e577af1",
+        "Quantity": "227500"
+    },
+    {
+        "Address": "0x114b3c2b00ea4ced4affd922224daacc51db7182",
+        "Quantity": "227500"
+    },
+    {
+        "Address": "0xe2ad7e27633bb417b5de986f4a84e9b10fce1b51",
+        "Quantity": "227318"
+    },
+    {
+        "Address": "0xa9486e4ded2b03d0eaa42529f2032a767928c3ec",
+        "Quantity": "226550"
+    },
+    {
+        "Address": "0x3f280776fe44893721788c1cf82af3d4fe5968b6",
+        "Quantity": "222950"
+    },
+    {
+        "Address": "0xd6091eeee94aae790cc16bccf9d89fd5da6415af",
+        "Quantity": "222950"
+    },
+    {
+        "Address": "0xecd6e1c6561575e3081c6d0d9a745e5193d93115",
+        "Quantity": "222950"
+    },
+    {
+        "Address": "0xab2bfb37fabfb010d576032d9603e8aa2ec81eb3",
+        "Quantity": "222950"
+    },
+    {
+        "Address": "0xec178b3dfe72b95e85425882126c279043dbe00e",
+        "Quantity": "222950"
+    },
+    {
+        "Address": "0xc2c43629c19f1838253826b927e26d1ace0dd998",
+        "Quantity": "207406.649227368"
+    },
+    {
+        "Address": "0xceebccec45b936abeb995819e477220e9f9ff4a9",
+        "Quantity": "200000"
+    },
+    {
+        "Address": "0xd98275886e7ff17ff5a37dcc257c3ccc4a3146a4",
+        "Quantity": "192552.96133054"
+    },
+    {
+        "Address": "0x63edafc2a3b159c321fee62ee144303a89bb1585",
+        "Quantity": "186233"
+    },
+    {
+        "Address": "0xdb71dd685272d2854c4357afbd3fa87858f8a2d5",
+        "Quantity": "177400"
+    },
+    {
+        "Address": "0x77deb7f90205859e3bb3408f8ea92b69f5742312",
+        "Quantity": "170614.625731174"
+    },
+    {
+        "Address": "0x000000000000000000000000000000000000dead",
+        "Quantity": "170013.591834557"
+    },
+    {
+        "Address": "0x80267e05315987b8bf73eef50fc46ff080d8cf1b",
+        "Quantity": "167757.041310422"
+    },
+    {
+        "Address": "0xf84b0f09baeb3762ded3a5a5365b8d6a7a92c0bf",
+        "Quantity": "162500"
+    },
+    {
+        "Address": "0xbfc6a810346333f228f88afd9ed76e612ae187e5",
+        "Quantity": "162341.855475637"
+    },
+    {
+        "Address": "0x066d34f8092942ced4d178ba9178aa4285ee8f66",
+        "Quantity": "161200.662150265"
+    },
+    {
+        "Address": "0x6a3a6cfc74ce702dafdb959eee8c8e4185217207",
+        "Quantity": "160127.361645999"
+    },
+    {
+        "Address": "0xc7741b177095a8807bcf4b427291c76307b3db7a",
+        "Quantity": "158281.579456273"
+    },
+    {
+        "Address": "0x03e438937522232ad6ceb4432918d063730496f4",
+        "Quantity": "146741.971439071"
+    },
+    {
+        "Address": "0x646f17e5581238b9bec5f797991d3ae88aa6c98b",
+        "Quantity": "146389.618928062"
+    },
+    {
+        "Address": "0x3fcc7e623cda74f50354857900507bfff4b69a55",
+        "Quantity": "142735.992420993"
+    },
+    {
+        "Address": "0xf039b194c6967f4f8788e2a447021ec3b7950fe0",
+        "Quantity": "138479.711794461"
+    },
+    {
+        "Address": "0xd477e313b5508f350f2988a62481505298620e44",
+        "Quantity": "137807.460138894"
+    },
+    {
+        "Address": "0x7568a4709da94b74a80b9d109880b158981c5308",
+        "Quantity": "137636.094644346"
+    },
+    {
+        "Address": "0xb9be2eaa08f3c9228391ec6582dd9472d2274433",
+        "Quantity": "132286.313308485"
+    },
+    {
+        "Address": "0x45c3139dd20bfa20418d38179a11c8c1140d034b",
+        "Quantity": "132057.22987706"
+    },
+    {
+        "Address": "0x760202bbf408ade214fc3d43c4ec58238c4ebcf2",
+        "Quantity": "129513.708459623"
+    },
+    {
+        "Address": "0x0043940f707a912dd29c87f7dcd8121efc8dd2d4",
+        "Quantity": "128398.0015919"
+    },
+    {
+        "Address": "0x37e0668d999b1fb6c68b3efe208e5595925c9537",
+        "Quantity": "127895.989574845"
+    },
+    {
+        "Address": "0xa3601d17fe66957901a6cf78618a1ed676e52d68",
+        "Quantity": "127861.574872491"
+    },
+    {
+        "Address": "0x60e6f372aa55ac8215db769e59a94bae17046c2d",
+        "Quantity": "125822"
+    },
+    {
+        "Address": "0xd6b601dd7a92f70a30ecec9b8fc889c4f88d24d3",
+        "Quantity": "124590.163586924"
+    },
+    {
+        "Address": "0xd2fef9e90091461d7e68ce4b2fd8edae44743413",
+        "Quantity": "123727.479075303"
+    },
+    {
+        "Address": "0xeeebc06637b8b04c39fb29030191897e4df449db",
+        "Quantity": "123336.32921696"
+    },
+    {
+        "Address": "0x1c306ece8acbe21180cc068336a204be1e51b360",
+        "Quantity": "122555.668105043"
+    },
+    {
+        "Address": "0xf506835937f5fab0ffff1782c99c376111b31203",
+        "Quantity": "122522.159001779"
+    },
+    {
+        "Address": "0xb5f57e9a20ebae313bd5ff22c531250c976e6563",
+        "Quantity": "118416.216905602"
+    },
+    {
+        "Address": "0xf8570cab7022cb099572e7680e93bf02c4437b27",
+        "Quantity": "112593.257180851"
+    },
+    {
+        "Address": "0xe4de3aeaa3e569fc07f6e136e128f87b5118ff2f",
+        "Quantity": "112079.473644498"
+    },
+    {
+        "Address": "0x55407124d2425c06c5124508d7c4d151878fc421",
+        "Quantity": "110290.469597245"
+    },
+    {
+        "Address": "0x24dd8977b88dc19d402bc4f3d7514ac48c13fba2",
+        "Quantity": "109200"
+    },
+    {
+        "Address": "0x1d92c1f351044e1e6341e6bd2911fddde944641f",
+        "Quantity": "109036.246575342"
+    },
+    {
+        "Address": "0x3e220b6baa6b4af1277d02ea6413fc2766c2e661",
+        "Quantity": "106866.379793953"
+    },
+    {
+        "Address": "0x72eed04e50b86e0f8e199d971fd02932119c2935",
+        "Quantity": "103510.53765168"
+    },
+    {
+        "Address": "0xed44adf11d6d971c50a3d2b2037ebe7c791225a3",
+        "Quantity": "102972.743447231"
+    },
+    {
+        "Address": "0x13e81cfcc407dc1fadd8a1d4b651bff250ec2a93",
+        "Quantity": "99176.853205772"
+    },
+    {
+        "Address": "0xf952b39b27af7c5e2e3a5e3d50a7be481069a659",
+        "Quantity": "96456.808672203"
+    },
+    {
+        "Address": "0x80d2926b9700774e74a3275e9da2a0febc98502f",
+        "Quantity": "95239.305960303"
+    },
+    {
+        "Address": "0x7a1528adbfd27332634e98ab598b5f38a8fcec13",
+        "Quantity": "93673.566750687"
+    },
+    {
+        "Address": "0x81b68a1e6a5ecd3b64e7bf7a78f3967fecbedcda",
+        "Quantity": "92798.752444354"
+    },
+    {
+        "Address": "0x7806989261f9654741174b6d52a62b6dc3abb791",
+        "Quantity": "91000"
+    },
+    {
+        "Address": "0xb5125b8ddf5bfc13b08e686dc63c26aabbd11ceb",
+        "Quantity": "90866.109427018"
+    },
+    {
+        "Address": "0x8a4be7ab29f3a00b880942252671136982253292",
+        "Quantity": "90822.179009972"
+    },
+    {
+        "Address": "0xae9481252ba93540217651f3fe1e2e30dac82afc",
+        "Quantity": "89300.178733653"
+    },
+    {
+        "Address": "0x6c3062427b6a2fc4ea0eb6ddcc9ef95b1a226a5c",
+        "Quantity": "88039.849421222"
+    },
+    {
+        "Address": "0x356962c6a20ad0c49b6b233644c47391b432275f",
+        "Quantity": "88000"
+    },
+    {
+        "Address": "0x6f970c3c880fd60d311dfa234ee9e133f2073693",
+        "Quantity": "87774.050692988"
+    },
+    {
+        "Address": "0xfca2b5ca2aab71141e2e0374a6c9f95742145cf4",
+        "Quantity": "87499.9"
+    },
+    {
+        "Address": "0xbdb579197cb35f0756e9a477326fb83d05b7eee9",
+        "Quantity": "86832.232769524"
+    },
+    {
+        "Address": "0x315d6d8a2ee368185dabe5c73060f57c91a0e075",
+        "Quantity": "86408.463103982"
+    },
+    {
+        "Address": "0x3b115cb2050191521dee3103978837483525bd05",
+        "Quantity": "85542.387411517"
+    },
+    {
+        "Address": "0xbc88163f4662c4db2cbe9a2df1d26f34420ec92f",
+        "Quantity": "84835.668952187"
+    },
+    {
+        "Address": "0x67f53bea23a8a89e684c6696e51f16dbf7d96ad5",
+        "Quantity": "84141.159297384"
+    },
+    {
+        "Address": "0x869c17020e2b19b25b9f1f4cecc9750c4eb014a7",
+        "Quantity": "82910.997481539"
+    },
+    {
+        "Address": "0x4e4ae7ea883532c06d3bf1fda4a3a27af73c9664",
+        "Quantity": "82460.052076791"
+    },
+    {
+        "Address": "0x1430b9c24d1badcdf4784f4856d35a1d31c95f37",
+        "Quantity": "79365.704120548"
+    },
+    {
+        "Address": "0xdc6011ae359df4c0a4f7194ae02261b296ab2eb8",
+        "Quantity": "79312.842857655"
+    },
+    {
+        "Address": "0xfabdcc0c669314d09b3cae1b17ddd8a0aaee879c",
+        "Quantity": "78770.740531018"
+    },
+    {
+        "Address": "0x14267a5147577e9edc3be4cbb599114615d89d61",
+        "Quantity": "78318.097859205"
+    },
+    {
+        "Address": "0xa4492ba037a5c87638fbf6d0924a824645821e0a",
+        "Quantity": "77862.488964582"
+    },
+    {
+        "Address": "0x582fbed5655512974afff0d836a8aa285a128532",
+        "Quantity": "76990.629059944"
+    },
+    {
+        "Address": "0x9a8be34e68e32c9a64b0056fe4e473d315ee42fb",
+        "Quantity": "76607.254481599"
+    },
+    {
+        "Address": "0x815b3fa4493f827df6d712d2e7cebdad744ef767",
+        "Quantity": "75203.383582958"
+    },
+    {
+        "Address": "0x8acc77b0920bddb4d9c7216ee5011565b8d3ed91",
+        "Quantity": "75000.812565641"
+    },
+    {
+        "Address": "0x4fa1abf17f927ebb3fffd2d225bd913aba358168",
+        "Quantity": "74639"
+    },
+    {
+        "Address": "0x820f1c049c050673bd589c28ebb0d1e094a36503",
+        "Quantity": "74093.699812533"
+    },
+    {
+        "Address": "0x8a74cf868e96eac3ff9d2f56af23836470a9ffcb",
+        "Quantity": "73831.826328534"
+    },
+    {
+        "Address": "0xd6016580e6b946d668c984bceb5ff5384b82d559",
+        "Quantity": "70493.889008185"
+    },
+    {
+        "Address": "0xa139d085f2de47ba10950b610749710b2ee31c28",
+        "Quantity": "69711.396564406"
+    },
+    {
+        "Address": "0x0cbcc053755def0cb9ce3dabbcf6a246cc244529",
+        "Quantity": "68123.758556719"
+    },
+    {
+        "Address": "0x3efbd5727056766f2023a132d3de638b8e9bcf00",
+        "Quantity": "66527.276470498"
+    },
+    {
+        "Address": "0xe791f3bc6642a346eda3e2345f17a87a665b800e",
+        "Quantity": "66010.863034599"
+    },
+    {
+        "Address": "0xbfaf2cfcf38f71407d3b3b4f3657beebbaa9de8b",
+        "Quantity": "64500"
+    },
+    {
+        "Address": "0xd7c9f8ac246eeb56332c37a88c1f925b00ac27ae",
+        "Quantity": "63213.863043929"
+    },
+    {
+        "Address": "0xbda1514b4d3261367593a18070f5adcbb9b9e230",
+        "Quantity": "62743.001674217"
+    },
+    {
+        "Address": "0xb3ebd73401d76fb84bd8abc58c8a740db63fa5ac",
+        "Quantity": "62018.072707289"
+    },
+    {
+        "Address": "0x3d37e1e7e1479310fa78a4658a300aaa45f4ae9e",
+        "Quantity": "61561.502567441"
+    },
+    {
+        "Address": "0x32861654ff78a063df1c1700861be601e23f0cbf",
+        "Quantity": "61461.125773668"
+    },
+    {
+        "Address": "0xb155c5c1af7b0535bcfc83176d7ca28a57668117",
+        "Quantity": "61209.102222326"
+    },
+    {
+        "Address": "0x5676d1a6ec95081ac32f134b836c66f7d6a87117",
+        "Quantity": "60774.544609485"
+    },
+    {
+        "Address": "0x5e69d78bcc28db9b45fc363c6c1b9d60eeabf6e0",
+        "Quantity": "60677.118254452"
+    },
+    {
+        "Address": "0xf6c6925e5b0fc5324593171fc5ca5d2b9914d4c8",
+        "Quantity": "60601.479686298"
+    },
+    {
+        "Address": "0x08befc2aabda107cf430ebf4d10ff6aa589183ec",
+        "Quantity": "60074.528205789"
+    },
+    {
+        "Address": "0x542d1fb9881212b718cad255b0766791f351053a",
+        "Quantity": "60018.05350488"
+    },
+    {
+        "Address": "0xd4638233760341d61788d140f7daae2935c3b61f",
+        "Quantity": "59946.988775343"
+    },
+    {
+        "Address": "0x9a335dce20e261e973b107b5d9d484e9e2ea4068",
+        "Quantity": "56507.928059721"
+    },
+    {
+        "Address": "0x4ae859891d63587cd582f1a841ca9c8ce3ea3473",
+        "Quantity": "55696.954"
+    },
+    {
+        "Address": "0x5371c85a4b89c0daf6ceec71f96d05fdb30b4fa7",
+        "Quantity": "55634.948938689"
+    },
+    {
+        "Address": "0x39696f6a6bdf06fcb0e1606e6a8955d812ab18c8",
+        "Quantity": "55008.589351697"
+    },
+    {
+        "Address": "0xd275d6347f9c620ebad0bfe9ce3ca2da30552208",
+        "Quantity": "54656.42"
+    },
+    {
+        "Address": "0xc22517935960824964b61df93f7b319acd8bda5a",
+        "Quantity": "54203.699728931"
+    },
+    {
+        "Address": "0xa491eaa34744e20385d418fbf91318ef8d832cb8",
+        "Quantity": "52500.780017889"
+    },
+    {
+        "Address": "0x434fcd0788ccb4dba610c31b15c0b504c23c812d",
+        "Quantity": "51373.191171887"
+    },
+    {
+        "Address": "0xd94f4013fef4592775cea91ba011e6b9fa7aceec",
+        "Quantity": "50869.334783557"
+    },
+    {
+        "Address": "0x9b4625a0e2f856bcd142fb3c72342f30ed8a665f",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x645830689e11948f0f3526f5dc866ea6de51a0ec",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x5806ff73a57c43592088f1ace9acd493a6d5e2ec",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x472b2552dcb2b453dd2df397f487d1ca8d371fc4",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x773ea4ce92d378a569c78cb30ac775eaed5d8374",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x0bea7e5efa298b998473f0377a74b95f8e5a08bc",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x0ed13077d180c4c7d0a226e189711857c8333073",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x673920b7a607785a41ebcfa4a58545b3fae46503",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0xf657985c7f28b7e7ac39cbd39a17e8a4ca9d5cc3",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0xc9ef67ca0814444fe22cb3f6769b394606b88da1",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x2d8c17de7e673207e63c33c8de1b3c45a3078fe2",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x926058c9cfd85d21f339f68955719e88ac694861",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x6d87f21f5b372fd820279f8abc9b4b3974ad83f3",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x0d957fd77cf2a3c7da5682b85e5b7b80c48f2390",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x916f5df5c8468f319a1b49caf17a0c6baf30f4fd",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x7bc14edf750818f30611daa8fa47148cdd677266",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x364f32d1ec0d2886e3496f981c9e2dfcc6b9ded2",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0xace16e36f8d8c70a6345de902c3f4171e99eafe0",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x448a6e3e4c02df62fc8d9817f9817add26d706d0",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x5524ac936c016a3aab5eaf590a6f2457eafb2d28",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x69334873c9f7a37c5c88708688e5e9f1bbe828bd",
+        "Quantity": "50000"
+    },
+    {
+        "Address": "0x3023f47460e5b56ef5fc379f1910a7de60db0a61",
+        "Quantity": "49886.111859029"
+    },
+    {
+        "Address": "0x597b5c889bcb96088493c71d1f19212deb209b2d",
+        "Quantity": "49433.694870075"
+    },
+    {
+        "Address": "0xf3c2610482b8a3ba3a2135446b0f698b2b432443",
+        "Quantity": "49382.243510623"
+    },
+    {
+        "Address": "0x1e63a90e12f798bb4e57e4d3a79bd41c1a5edcc8",
+        "Quantity": "49015"
+    },
+    {
+        "Address": "0x2a279a326041af77c1f3df3507e397773abdc92c",
+        "Quantity": "48582.487651896"
+    },
+    {
+        "Address": "0x4435a1bd794b57c950ffd854d19ea408d93ba11e",
+        "Quantity": "47662.267807726"
+    },
+    {
+        "Address": "0x608b6906832dd530d6451bc90163207f1ff92310",
+        "Quantity": "47648.968920942"
+    },
+    {
+        "Address": "0x102f99689ddef6f6a338a166e44abcd9cc2514d7",
+        "Quantity": "47169.491735372"
+    },
+    {
+        "Address": "0xa4887013696e3c2aa9801e145a72649814888bfb",
+        "Quantity": "46223.595935865"
+    },
+    {
+        "Address": "0x10e9761a3c6ad18636770e14143e85b7b908ee7b",
+        "Quantity": "45217.515801322"
+    },
+    {
+        "Address": "0x52c9783fe3e385df76362303e421158238c8b529",
+        "Quantity": "45075.009687535"
+    },
+    {
+        "Address": "0x30b31e257b5f88919793b593278aafa22b6f6d1c",
+        "Quantity": "45000"
+    },
+    {
+        "Address": "0x675b098f516969c873652091d2832ec2d1c2627d",
+        "Quantity": "44331.854468147"
+    },
+    {
+        "Address": "0xc15910efd5cf77901d4dbfddd02779438ba6e4e5",
+        "Quantity": "41806.453133696"
+    },
+    {
+        "Address": "0x16b556905b5783b4b7937a3e78f2c1136ed9b002",
+        "Quantity": "41056.963851597"
+    },
+    {
+        "Address": "0xd8a1a292c6ac666bdfc879b25689b9da44be449e",
+        "Quantity": "40752.975951016"
+    },
+    {
+        "Address": "0x273505126792201266e471eeaefdf37be68cfee3",
+        "Quantity": "40555.009740132"
+    },
+    {
+        "Address": "0x76e878bfaa16a2cdbdfcac893117ea85aef3e7e6",
+        "Quantity": "40478.119274181"
+    },
+    {
+        "Address": "0x921dee61377c0f361a0aaba5e29414db721dbf17",
+        "Quantity": "40000"
+    },
+    {
+        "Address": "0xa3e8c6bd30d43cf967e5cbaa4df1d1f55558b3a0",
+        "Quantity": "38826.603999274"
+    },
+    {
+        "Address": "0x23cf5493ed2a613035fbf6fe801f8ca7b0d71afb",
+        "Quantity": "38524.213767635"
+    },
+    {
+        "Address": "0x81c0a54fb3351081adb38db0158b476497a748a6",
+        "Quantity": "38412.356671839"
+    },
+    {
+        "Address": "0x3ce10276fede97a8cbc584d3429e23e6a69179a7",
+        "Quantity": "37292.069053191"
+    },
+    {
+        "Address": "0xf54d30ce3f85c6fa3bf2ed7b42456e955ad80ca4",
+        "Quantity": "36827.58"
+    },
+    {
+        "Address": "0xa89cb228237d3dceda1ceacf98479df9e02107c6",
+        "Quantity": "36492.583630028"
+    },
+    {
+        "Address": "0xd644422330920ef8e31b7a3dbe8172e750a99c22",
+        "Quantity": "36470.212520448"
+    },
+    {
+        "Address": "0xa2011b4f92ea862a9caea101297d85adae22f839",
+        "Quantity": "35145.730558305"
+    },
+    {
+        "Address": "0x3075248f884ce7d90af9b5233ff2f0de39014243",
+        "Quantity": "35000"
+    },
+    {
+        "Address": "0x33bb596707556d12e5a5fd4bded168d232c09a40",
+        "Quantity": "33835.396307743"
+    },
+    {
+        "Address": "0x95326077bca117ee68fea5c76ea2c2a1e9727e6c",
+        "Quantity": "33644.920547945"
+    },
+    {
+        "Address": "0x256f9e6b5b1648dc23efa724f7a0481da7d3f12a",
+        "Quantity": "33484.55423354"
+    },
+    {
+        "Address": "0x78adf8951cb526867f720eaa523d5b0546154b11",
+        "Quantity": "32971.25864788"
+    },
+    {
+        "Address": "0x459bf34479124937e84e1c462a5556f1de033bc9",
+        "Quantity": "32476.083353032"
+    },
+    {
+        "Address": "0x1a1ab0db795b6cbf730476749ac75413da84a671",
+        "Quantity": "32059.020762327"
+    },
+    {
+        "Address": "0x4e9db00b73bd403e3cfe43c30672c1f76e714119",
+        "Quantity": "32000.307924366"
+    },
+    {
+        "Address": "0x2c609da0455d8084f11f10d83cc5d6660ce199a9",
+        "Quantity": "31736.73645776"
+    },
+    {
+        "Address": "0x1aa76629603a47b63ddd3d5f4ca578621814fb79",
+        "Quantity": "31706.609784091"
+    },
+    {
+        "Address": "0xbb14801d0ff28073aad3ab7eda0841ae7d1b7391",
+        "Quantity": "31548.278988199"
+    },
+    {
+        "Address": "0xa0011eedfbfe76bf5563ee093a1d6722ed2b396b",
+        "Quantity": "31377.528366587"
+    },
+    {
+        "Address": "0x4456db7708ee34cfba7575b840541c68bc3ee6f5",
+        "Quantity": "31118.320065521"
+    },
+    {
+        "Address": "0xf323c7f244cc885fa572a67798e0cdf12da983df",
+        "Quantity": "30850.960005378"
+    },
+    {
+        "Address": "0x9966b56ebec5b2c3cd323c46ea14a3408787714f",
+        "Quantity": "30455.486569717"
+    },
+    {
+        "Address": "0x11383562fdd51b584ebb671db757cee61a4ca1b0",
+        "Quantity": "30052.246185639"
+    },
+    {
+        "Address": "0x9623fc3f982cccd18695aa8af70c51afe9f6d895",
+        "Quantity": "29731.524544865"
+    },
+    {
+        "Address": "0x056e3c3c8fd5318adf6710124256ba6bbe3ceacd",
+        "Quantity": "29537.0859147"
+    },
+    {
+        "Address": "0x5fed97bbe88f5ba24f61ff0308c46c4a56ec900b",
+        "Quantity": "29340.49852718"
+    },
+    {
+        "Address": "0x5f783426eed8cad48d7a293e9f8a0dfdc6e54718",
+        "Quantity": "28919.597057417"
+    },
+    {
+        "Address": "0xeffd14396304833fccd36e3fa816257fc7d15d15",
+        "Quantity": "28685.436043411"
+    },
+    {
+        "Address": "0x4e31cf9090d78d8c649b4bd3fa9c97309c3af40c",
+        "Quantity": "28471"
+    },
+    {
+        "Address": "0xa37b9d5857426411423413be72044a83eaf6f41e",
+        "Quantity": "28413.59390073"
+    },
+    {
+        "Address": "0x8b7aa5df3f1562fc22f86b823b1053ed1a9c591a",
+        "Quantity": "28282.234274448"
+    },
+    {
+        "Address": "0x9527b72d55423e2ff1430df25a5d399bc9c3ba46",
+        "Quantity": "28145"
+    },
+    {
+        "Address": "0xf31db83f2cd80eec300bd8bd3811db67309047b7",
+        "Quantity": "28126.439627295"
+    },
+    {
+        "Address": "0x907405e5486229cbf91c7fd5b9fb6b6a9c463ad3",
+        "Quantity": "27861.861891935"
+    },
+    {
+        "Address": "0x0f63f96642bea679df631125e4e2c7f96ee04f01",
+        "Quantity": "27567.975096117"
+    },
+    {
+        "Address": "0x52b5e324626ba95bab6aa9342ae7b9623cc446e5",
+        "Quantity": "26664.224652446"
+    },
+    {
+        "Address": "0x2a4cdc9bbd937023a95e50185c0c027647f5a7b5",
+        "Quantity": "26435.268954161"
+    },
+    {
+        "Address": "0x5e88209d620db0f9e2fbbe17b41689c4b8a4348d",
+        "Quantity": "26169.699528181"
+    },
+    {
+        "Address": "0xe3c60ad869d02f8c5328316c6161962007e8b3c0",
+        "Quantity": "25677.070303582"
+    },
+    {
+        "Address": "0x04ba7302d2c55cc2d9ab5f9b1439171b120b0fdb",
+        "Quantity": "25295.006312354"
+    },
+    {
+        "Address": "0xea954b26f35510e90521a65506fb4cf78e7881de",
+        "Quantity": "25057.7691"
+    },
+    {
+        "Address": "0xb11e4e8933af2fa9de4974b1a146ddde7d510a49",
+        "Quantity": "25000.326668128"
+    },
+    {
+        "Address": "0xb28a3af9bc31a47c8bff2620c97383c715d5f185",
+        "Quantity": "25000"
+    },
+    {
+        "Address": "0x9f2c0363f4c95e98f598497cf162112cb2aaf804",
+        "Quantity": "25000"
+    },
+    {
+        "Address": "0x666932a275ea2e340f5cc41d1e120fd37b079fd6",
+        "Quantity": "25000"
+    },
+    {
+        "Address": "0x9d36b1a3f1942da4d1c589dc39720cf025d64b74",
+        "Quantity": "25000"
+    },
+    {
+        "Address": "0x9fe75761eb370f50b6e0e72028106f51513d32f3",
+        "Quantity": "25000"
+    },
+    {
+        "Address": "0xa4648b6173df8301ffd6b04ccf37a781aef415f0",
+        "Quantity": "24713.481286774"
+    },
+    {
+        "Address": "0x562ed81e568d860d2b7ce395a6ae364398e2a100",
+        "Quantity": "24576.761380405"
+    },
+    {
+        "Address": "0xf8685c763239363a5b88d98d83d678a180162f14",
+        "Quantity": "24569.740862696"
+    },
+    {
+        "Address": "0xf1e892e0859293f389576ecf32f088641e64b3c8",
+        "Quantity": "24373.528895626"
+    },
+    {
+        "Address": "0x6ac17f8b5cc3b359476453b486549360cf932b45",
+        "Quantity": "24115.364"
+    },
+    {
+        "Address": "0x281490f306a288917724ec8a93bc177f648c6b96",
+        "Quantity": "23611.212806019"
+    },
+    {
+        "Address": "0x2992f42eba279e98ef54fb1ee3b62f0a8fb2859e",
+        "Quantity": "22976"
+    },
+    {
+        "Address": "0x05ef730601ae60d709ea2835b9345a738e2fecec",
+        "Quantity": "22754.078622065"
+    },
+    {
+        "Address": "0xca6f3defbc6041299837725f6430f33b0f24e5c0",
+        "Quantity": "22619.309040136"
+    },
+    {
+        "Address": "0xbde28e3da26bea0392025389d62ec66564b676cf",
+        "Quantity": "22347"
+    },
+    {
+        "Address": "0x581754a16fe35c652e907a417c76c95f28a77fb3",
+        "Quantity": "22305.048887827"
+    },
+    {
+        "Address": "0x98ef8ddb70f5ed55fcb15e459450ce79db38545a",
+        "Quantity": "21589"
+    },
+    {
+        "Address": "0x0ad25f8dfd9ac3494ecb65092f1301b2e420ef8a",
+        "Quantity": "21515.034950145"
+    },
+    {
+        "Address": "0x11abc34974314ac885003d7897b16dc6cc7af3a4",
+        "Quantity": "21470.379107477"
+    },
+    {
+        "Address": "0x621bfdcb84a666cdb26a7b09cb5109209bad9c5d",
+        "Quantity": "21221.104196179"
+    },
+    {
+        "Address": "0xf6d23e20fdf810b6c9b3409e946ee5be069e0552",
+        "Quantity": "21042"
+    },
+    {
+        "Address": "0x4f2e357a626c645d4b711bc0867ba2380dce52bd",
+        "Quantity": "21006.783640023"
+    },
+    {
+        "Address": "0x52cf4d5a6cd7c4d72e8d08084d5d12f74cc793a8",
+        "Quantity": "20988.232242361"
+    },
+    {
+        "Address": "0xd79c30cd07c1284b21229d378b9df2978df2a059",
+        "Quantity": "20349.679020654"
+    },
+    {
+        "Address": "0x62b0dd66dc70ea629cb0cefc95a9ea84ab1ba5d1",
+        "Quantity": "20126.216250899"
+    },
+    {
+        "Address": "0xddbcb41bf6d7c97867946bacaafca740d1f93215",
+        "Quantity": "19817.625410236"
+    },
+    {
+        "Address": "0x29e2ad86bc3d610fb4239792e1520e247c2a913e",
+        "Quantity": "19803"
+    },
+    {
+        "Address": "0x119355913b6531cf4d7f27089790dc107147ede8",
+        "Quantity": "19444"
+    },
+    {
+        "Address": "0xf361fa543da0dc00315eb8c63890bbba167a0318",
+        "Quantity": "19202.240554776"
+    },
+    {
+        "Address": "0x4ad2f3cc7cf0e609a24024474e3fe4ac3f7dfa23",
+        "Quantity": "18489.161740454"
+    },
+    {
+        "Address": "0x79972ab742856e24112882427e3ece5a837c1b68",
+        "Quantity": "18115.973940403"
+    },
+    {
+        "Address": "0xf4f85fbb01c92f776e6ec296f82327e619cef6cd",
+        "Quantity": "17998"
+    },
+    {
+        "Address": "0x51a048ccbc1a880e938ffdd8eb5164aa0bf6be73",
+        "Quantity": "17713.348875159"
+    },
+    {
+        "Address": "0xb5204174a893dac2118cfad040336d8797c739d5",
+        "Quantity": "17481.702519909"
+    },
+    {
+        "Address": "0x9549f6ef6df387483e8f1dcbddaf87d86f915b5f",
+        "Quantity": "17472.331820121"
+    },
+    {
+        "Address": "0xbb16e6c34d7e4c94326aa5265364a31eda716c74",
+        "Quantity": "17467.689554073"
+    },
+    {
+        "Address": "0x43d9128629fcdeb7500c06f76125d8e89ac1f789",
+        "Quantity": "17437.631167653"
+    },
+    {
+        "Address": "0x2922b22b82654a207072acaa5cd0aefbe5bbbc0e",
+        "Quantity": "17120"
+    },
+    {
+        "Address": "0x1d2cdadade7f4fd4be7207edfc33fb83b016e5e6",
+        "Quantity": "16704.1030964"
+    },
+    {
+        "Address": "0xd922eea71c78972cadfd8d7911b2f315e88eff80",
+        "Quantity": "16572.764969813"
+    },
+    {
+        "Address": "0xc579ae2ebf21b70ca421ce94060f04abd0045308",
+        "Quantity": "16400"
+    },
+    {
+        "Address": "0x15cea6b5dcb0fdce22d6d625525ef71a4956d980",
+        "Quantity": "16396.612358171"
+    },
+    {
+        "Address": "0xa753b1e8027c1a69aad4be314ce3158789965b8b",
+        "Quantity": "16355.568212872"
+    },
+    {
+        "Address": "0xae92d3712b6ca791663c8d075b4d60ace5acabc1",
+        "Quantity": "16246.610186604"
+    },
+    {
+        "Address": "0x980b86c835dde1dca938683e76e9f319f5b89fa2",
+        "Quantity": "16121.448899973"
+    },
+    {
+        "Address": "0x8cfe0b5e9664b4742a8926d9282b89c07f093706",
+        "Quantity": "16068.815171344"
+    },
+    {
+        "Address": "0xbffba0557deb7f37e8873d014be20e06a70e4f39",
+        "Quantity": "16000"
+    },
+    {
+        "Address": "0x2fe2a21cca39a8b78ce042bbc4ffbb3cc7613ea6",
+        "Quantity": "15892.43013457"
+    },
+    {
+        "Address": "0x0c71589db0dcbd8e1bfcd23cee303af0776f3781",
+        "Quantity": "15654.523124086"
+    },
+    {
+        "Address": "0xe1588cd983a364a49115e405e4824333f95f3098",
+        "Quantity": "15555.128064702"
+    },
+    {
+        "Address": "0x00669df8c991b8eff3285671927e7320a33f7291",
+        "Quantity": "15371.241126835"
+    },
+    {
+        "Address": "0x2a3d4d733ac7c8db5b0599df870f05cedd3c5970",
+        "Quantity": "15026.229134602"
+    },
+    {
+        "Address": "0xc6572becb15cddc68200770817ffca38abacc4de",
+        "Quantity": "14953.722311508"
+    },
+    {
+        "Address": "0x270e184b51330b7a8d00a6b7c04048810c2a504c",
+        "Quantity": "14825.848165027"
+    },
+    {
+        "Address": "0x526c16d229d879203fe0f22a98273b968f684fea",
+        "Quantity": "14603.364108244"
+    },
+    {
+        "Address": "0x1ca4af6f19912a0502f0670f859dfcacc1071346",
+        "Quantity": "14504.86721312"
+    },
+    {
+        "Address": "0x6ea3c4fef7c9151cd2c4e2b483e1ba94aa678f13",
+        "Quantity": "14401.228012645"
+    },
+    {
+        "Address": "0x9aeb9100f9f6891f52bd85adf56b4163dcacd2ef",
+        "Quantity": "14258.438999539"
+    },
+    {
+        "Address": "0x3409f4728128a7f47136bd26b9f9780b5649e12d",
+        "Quantity": "14240.885722174"
+    },
+    {
+        "Address": "0xa141d0f39728332a8c913cf898219045a7f60c5f",
+        "Quantity": "14064.676803387"
+    },
+    {
+        "Address": "0xde60cadff6202c3fee48c9918e6efe0f0cb95502",
+        "Quantity": "13377"
+    },
+    {
+        "Address": "0x89523fa4338ebf90cfa7d54e8e51b79bb7450775",
+        "Quantity": "13270.6"
+    },
+    {
+        "Address": "0x63cf1587025283a42798b5f5fa3408315ac584b7",
+        "Quantity": "13265.329345509"
+    },
+    {
+        "Address": "0xb05abfb8983408d1e3b6a35374ebe837727199c3",
+        "Quantity": "13109.23948991"
+    },
+    {
+        "Address": "0xf6ed81d5e9f61dd1ea21e96ae1d660ecc388ae4f",
+        "Quantity": "13042.553144993"
+    },
+    {
+        "Address": "0x58fadd4ad54bd0a4d02527c433b8539bda39d9f2",
+        "Quantity": "12964.831910839"
+    },
+    {
+        "Address": "0x171effaf921415584d2fb31edecfc6725567d915",
+        "Quantity": "12876.355612966"
+    },
+    {
+        "Address": "0x33930ce96ed933b5f18d87b0703a45c72d90a158",
+        "Quantity": "12799.381944805"
+    },
+    {
+        "Address": "0x229735a9ca75546704b6f4803c78f9527e56180e",
+        "Quantity": "12755.129721005"
+    },
+    {
+        "Address": "0x46da17ad16d5d8e1a519cd9c30a3998dc49008fb",
+        "Quantity": "12563.046833953"
+    },
+    {
+        "Address": "0x415ea6b482feac4e2a50743cdfdec3299f812bf6",
+        "Quantity": "12445.90715893"
+    },
+    {
+        "Address": "0xcd3d259bd616b9d01830c1922188aa89a07fb7b7",
+        "Quantity": "12300.87371733"
+    },
+    {
+        "Address": "0x72ac49905c56aac5d2fd0188691fd7ff58e7d843",
+        "Quantity": "12055.788821423"
+    },
+    {
+        "Address": "0xfb1715c223e92c429cd4f0a10acd59c8d019ddcc",
+        "Quantity": "12047.943918855"
+    },
+    {
+        "Address": "0x298e6a42da27a4c105dc13c926f4c0ee75a33d84",
+        "Quantity": "11924.18388469"
+    },
+    {
+        "Address": "0xe86eca942837c11098b0dc4daba7055fc5ff902a",
+        "Quantity": "11709.291171608"
+    },
+    {
+        "Address": "0xe5fefc6ff3d61541fe7fa26dd2ac5efac0ef7d59",
+        "Quantity": "11351.640235253"
+    },
+    {
+        "Address": "0xfceb62619fd62440a544c629380f73eacfa82518",
+        "Quantity": "11169.751657138"
+    },
+    {
+        "Address": "0xe8c0878e125daab5e88047c900f3af131d3bf84c",
+        "Quantity": "11111.107825641"
+    },
+    {
+        "Address": "0x5ec8d72a76025bd1b7add66743eee0047bb5f609",
+        "Quantity": "10944.13569763"
+    },
+    {
+        "Address": "0x7c30077f4a95e6c752a8c76efffc545f58fd4469",
+        "Quantity": "10829"
+    },
+    {
+        "Address": "0x8c0cde4ba8a7f5fb985a939c1ff88bfd45d6b56d",
+        "Quantity": "10803.89275"
+    },
+    {
+        "Address": "0x0d78c91b29900c5323778bbeb2c8b170a2675fcd",
+        "Quantity": "10764.466483328"
+    },
+    {
+        "Address": "0xf3ebf4535012ed88c881ffd6245290d137190601",
+        "Quantity": "10744.472796456"
+    },
+    {
+        "Address": "0x400d0eb2123b49ab819487f7f5a4f53ac52dc8b5",
+        "Quantity": "10466.077828882"
+    },
+    {
+        "Address": "0xef6341c942742adf097800b5bc42b01031550499",
+        "Quantity": "10330.897170332"
+    },
+    {
+        "Address": "0xbf38205cf1b6ee7e7da2864a77916af5c4c2d392",
+        "Quantity": "10283"
+    },
+    {
+        "Address": "0xae257ee139a222d9a189eaaa4af81f2c1f0fd574",
+        "Quantity": "10229.822145685"
+    },
+    {
+        "Address": "0xf9d298d6ca65e890a6b275675267db3575b8dde4",
+        "Quantity": "10120.970931374"
+    },
+    {
+        "Address": "0x56ca88ca0e7db252da571f6a232b686b89d0602b",
+        "Quantity": "10101.542272791"
+    },
+    {
+        "Address": "0xc347f7d1c59f4e64baa1ecb23ed4a774032d4ef0",
+        "Quantity": "10089.639882438"
+    },
+    {
+        "Address": "0x20db648787d48bf861af24180c3058d5be8ee23f",
+        "Quantity": "10044.194340491"
+    },
+    {
+        "Address": "0x834c8b170367e3b8d2f43e57c89a9729369b22cc",
+        "Quantity": "10010"
+    },
+    {
+        "Address": "0xf7dd78ad0076dc645aae4116efd2361217a54873",
+        "Quantity": "10000"
+    },
+    {
+        "Address": "0x994682096dfd070f322610bf577e0fe66f983570",
+        "Quantity": "10000"
+    },
+    {
+        "Address": "0x838890d25d70c24b5f0b6858f46a9160148d737d",
+        "Quantity": "10000"
+    },
+    {
+        "Address": "0x1c7fb3f71a773c4384f4b7d49e711cb4df82250d",
+        "Quantity": "10000"
+    },
+    {
+        "Address": "0x553f5024b9eb47cad81f67bacaaa4c9524d210b8",
+        "Quantity": "10000"
+    },
+    {
+        "Address": "0x878c55c8aadd2e3e206fa773e45a237eeec37c08",
+        "Quantity": "10000"
+    },
+    {
+        "Address": "0xadfdf30c8a34c4f1cf34cd88383897c9a1458225",
+        "Quantity": "9991.995496895"
+    },
+    {
+        "Address": "0xf6a217f583ee9c6b0337c935c44919b4af5e3590",
+        "Quantity": "9952.337373993"
+    },
+    {
+        "Address": "0xcb4c4d95e37b7749289b839a9c9ff1d7d0d0aacb",
+        "Quantity": "9901.078434846"
+    },
+    {
+        "Address": "0x4ad5295fb4b67d47b5ea272f7f9021f7575431a0",
+        "Quantity": "9574.693692712"
+    },
+    {
+        "Address": "0x8892393a7c32a7bd046142fc52aa56022ef2d8d5",
+        "Quantity": "9484.084327819"
+    },
+    {
+        "Address": "0x8c8374b9d31afdc700e48a6e6cd10a2f1800fb98",
+        "Quantity": "9474.917801743"
+    },
+    {
+        "Address": "0xf332a8552bd0df7b334c54069fba57d0da418e68",
+        "Quantity": "9306.220137858"
+    },
+    {
+        "Address": "0xc6fca8a8f155481e8f0bfcf0d14b93465132f3c8",
+        "Quantity": "9140.008513849"
+    },
+    {
+        "Address": "0xd66bd41d5288cb106a5e5dc22e8c94768e27780f",
+        "Quantity": "9100"
+    },
+    {
+        "Address": "0x8bb906c8792ca6fada45960fd55632964e723ef2",
+        "Quantity": "9091.222720717"
+    },
+    {
+        "Address": "0x041b41e581d625961fda43b2ff2cb4afc2592db7",
+        "Quantity": "9047.017439186"
+    },
+    {
+        "Address": "0x7f4e768f62e55e23ce1658a1e8ca95721520264e",
+        "Quantity": "9010.784956163"
+    },
+    {
+        "Address": "0x254ccf92ea5b0d1a79ae936ab18164ebc124e2ab",
+        "Quantity": "8867.31017928"
+    },
+    {
+        "Address": "0xea43f2ec730a4121274834190d0aff4de3c28e63",
+        "Quantity": "8788.371077679"
+    },
+    {
+        "Address": "0x3c86e2ea5d370a3ecea1fc2fbddcd0bcfe5b6c87",
+        "Quantity": "8642.21755001"
+    },
+    {
+        "Address": "0x82b3167840208ad523bc8ce636d9709274e9256f",
+        "Quantity": "8590.606539606"
+    },
+    {
+        "Address": "0xb99e85f759fe4518d55f275cb0024fa1bf70d330",
+        "Quantity": "8569.439321669"
+    },
+    {
+        "Address": "0xd6b886261a59738014c2b023e4d599413e68f81b",
+        "Quantity": "8553.328804047"
+    },
+    {
+        "Address": "0x665e2e2493300f7cadfd96efd8383866d6f64768",
+        "Quantity": "8529.961179589"
+    },
+    {
+        "Address": "0x52fe98e275f5de9ce0290f6e7bdb416c5e2f09b1",
+        "Quantity": "8458.649034737"
+    },
+    {
+        "Address": "0x8fdde98123400e226653ea87958ae17437c1d121",
+        "Quantity": "8438.689019995"
+    },
+    {
+        "Address": "0x6fa83fc9b14055521928e219184e7de6d32a0054",
+        "Quantity": "8295.324961352"
+    },
+    {
+        "Address": "0x35431b75259a042132e850a62b5e5fcb36730b4f",
+        "Quantity": "8217.174665035"
+    },
+    {
+        "Address": "0x0e83f7b346adee68af3952ab3fe4d35e780feebd",
+        "Quantity": "8200"
+    },
+    {
+        "Address": "0x40e941a624fcdb5a91d98ce33d8f7a02edeb225c",
+        "Quantity": "8200"
+    },
+    {
+        "Address": "0x845e5eb6e6ba1cf40cf151f097c4c229c92d06c7",
+        "Quantity": "8000"
+    },
+    {
+        "Address": "0xaaf9633bfa47e6f4bdf2a89bc50de2b2a5e15246",
+        "Quantity": "7963.877782176"
+    },
+    {
+        "Address": "0xfa8d97cda653beb292601680a9f8fb14ad12b21a",
+        "Quantity": "7847.51571"
+    },
+    {
+        "Address": "0xf2968832dde5d6480bd00d4bad952af871d4f2d6",
+        "Quantity": "7719.065919669"
+    },
+    {
+        "Address": "0x36d1b71ae485404a181ec4735f7ac0e4f08d580e",
+        "Quantity": "7652.536679774"
+    },
+    {
+        "Address": "0x06caf48377176e8935030cd769174719dcc2c27e",
+        "Quantity": "7625.268642784"
+    },
+    {
+        "Address": "0x8e7aec175de398eca44d6ac2a6f3e87e968ad465",
+        "Quantity": "7514.250735436"
+    },
+    {
+        "Address": "0xb8ed26fb4b046bb882e90d0457d0f203e05ad131",
+        "Quantity": "7461.214495066"
+    },
+    {
+        "Address": "0xc61e8fc3e7fcd8ae86c15e7d30bf8d971c19fc9d",
+        "Quantity": "7397.74311516"
+    },
+    {
+        "Address": "0xf6d01c86675d5b41f5ab2fa05b722d51c80c85fa",
+        "Quantity": "7352.167068165"
+    },
+    {
+        "Address": "0xd45f456d34c58d417ccfa274fa5e747af7cf41ff",
+        "Quantity": "7336"
+    },
+    {
+        "Address": "0x7faaea27a79a50a310eea949191bccff16578dc3",
+        "Quantity": "7280"
+    },
+    {
+        "Address": "0x1fa536dab289b50eb65775c1c3492e84f0a486e7",
+        "Quantity": "7127.362461207"
+    },
+    {
+        "Address": "0x35d0c72937a11f3edefa24e46ab6538152d5b229",
+        "Quantity": "6949.430394072"
+    },
+    {
+        "Address": "0xb7f3e7eb21b8c7e9bc2be284924ea23382346c81",
+        "Quantity": "6937.68471772"
+    },
+    {
+        "Address": "0x4b5c191d59343dc417924461256659eeed81be70",
+        "Quantity": "6878.567559513"
+    },
+    {
+        "Address": "0x6eed37d6661bec8dd04c594f4c01397cafd75f74",
+        "Quantity": "6787.177331794"
+    },
+    {
+        "Address": "0xf8454305c212ca27382145c5bae262d58412ff13",
+        "Quantity": "6706.181794326"
+    },
+    {
+        "Address": "0xf8537a154949213090f6d66385734b82e38fa1df",
+        "Quantity": "6597.619060332"
+    },
+    {
+        "Address": "0x784bb350bc1636e88e62236cf093be4abc978947",
+        "Quantity": "6591.037880376"
+    },
+    {
+        "Address": "0x9afc8b4a855230114bac5fc7dceabe2c89643960",
+        "Quantity": "6567.116007324"
+    },
+    {
+        "Address": "0x8c27cff2112450c31e040d47ccad87ea89a88ad1",
+        "Quantity": "6565.780072802"
+    },
+    {
+        "Address": "0x5924d600bfe304960e3e0e15a207e84ff523e944",
+        "Quantity": "6523.79"
+    },
+    {
+        "Address": "0x94d16ab807a6e79f419235bb80874b3a6ddba268",
+        "Quantity": "6461.0091"
+    },
+    {
+        "Address": "0xa86dd869cf2690ce34cd26fe16e60f624f0cd8bd",
+        "Quantity": "6427.323595961"
+    },
+    {
+        "Address": "0xd9b36dcd69402deac55f4918dd9d11b6ba93527d",
+        "Quantity": "6405.714571336"
+    },
+    {
+        "Address": "0xdba01538058192092a20724c6c9af065634a833c",
+        "Quantity": "6394.698060387"
+    },
+    {
+        "Address": "0x5fbd96c5ce685a7f0175868bc04766f7eebc3ef9",
+        "Quantity": "6326.375617548"
+    },
+    {
+        "Address": "0xad00ec37c343c37f92df1fe8d5222b3321b9edc2",
+        "Quantity": "6293.258908706"
+    },
+    {
+        "Address": "0xc8105b0088c0a059909d2c1d65b8ffc74ae7b8d0",
+        "Quantity": "6223.278987134"
+    },
+    {
+        "Address": "0x4d74bfe81590abe12aa743fdf2d1c50ed9568034",
+        "Quantity": "6205.870664516"
+    },
+    {
+        "Address": "0xe219d8245a6ed7e31fe480807ae5a00c0222d966",
+        "Quantity": "6149.532020613"
+    },
+    {
+        "Address": "0x08086c23cdfe10668167ded21a0c35b69308f55e",
+        "Quantity": "6049.926295276"
+    },
+    {
+        "Address": "0x1203ed55399e9dcaf132b5b197918cb0db0a5711",
+        "Quantity": "6010.375799453"
+    },
+    {
+        "Address": "0x935f83a196bd117f40c8e658881089875eb6767e",
+        "Quantity": "6004.289638441"
+    },
+    {
+        "Address": "0x514fd39c897aac979a35c2ee1d533a0411d3b77c",
+        "Quantity": "6000"
+    },
+    {
+        "Address": "0x6993417a4439532489925474691e3e6c8a7afed4",
+        "Quantity": "5949.764265283"
+    },
+    {
+        "Address": "0x5fcc0c74e02c567307c4dda5c3c9d08dfdc4f1f6",
+        "Quantity": "5855.403860258"
+    },
+    {
+        "Address": "0xed21532ddb3f49dcbbdf426469e3253c1d3b1464",
+        "Quantity": "5811.331870205"
+    },
+    {
+        "Address": "0x0f2d2ee3de462b25f8078bdd2c6bd0166e6ff0ce",
+        "Quantity": "5792.584930544"
+    },
+    {
+        "Address": "0x055f4c2cedfe6f08441b9c4b5f7b042166ba567f",
+        "Quantity": "5757"
+    },
+    {
+        "Address": "0xbb21956ef737ef0f072ffb84922011752bd8ecc9",
+        "Quantity": "5681.84902391"
+    },
+    {
+        "Address": "0xbe97da653bac0ea82e25d470cb3d7d1efd30180b",
+        "Quantity": "5662.927341446"
+    },
+    {
+        "Address": "0xa85773ce33d4f201f19cd8578b59c64aecf7b8fa",
+        "Quantity": "5505.5"
+    },
+    {
+        "Address": "0xf6cbafec87c137f96c60ccd1198e67a6936aafca",
+        "Quantity": "5465.421720551"
+    },
+    {
+        "Address": "0x67f7db47525e5a89482760bdcd7aa242cd32811b",
+        "Quantity": "5374.468384402"
+    },
+    {
+        "Address": "0x7532871a4893a8dc644afb6255f42e713192a5bd",
+        "Quantity": "5333.69095258"
+    },
+    {
+        "Address": "0x6f12059e11810afb236e99258164757be599a3b9",
+        "Quantity": "5247.476123445"
+    },
+    {
+        "Address": "0x4962daae29e696f4f053998780c0b260475a2596",
+        "Quantity": "5189.506358815"
+    },
+    {
+        "Address": "0x0d729e434669e05883546bb88d0499311ddde848",
+        "Quantity": "5127.107869702"
+    },
+    {
+        "Address": "0x6cec406445625a1184bdeaf73023bffb88461c8b",
+        "Quantity": "5009.043093455"
+    },
+    {
+        "Address": "0xb1a89b8d6a6c35f80d33ef0d51f1e475ef8ec9c7",
+        "Quantity": "5000"
+    },
+    {
+        "Address": "0xcb9f0749576cff61078ea17841db2a0947047cb2",
+        "Quantity": "5000"
+    },
+    {
+        "Address": "0x50df1177ea926cd5c8f89c0dcea2d96e18694f89",
+        "Quantity": "5000"
+    },
+    {
+        "Address": "0xf5324c6c7dd4eddb68498fc5eb439b5f4ddcff35",
+        "Quantity": "4966.708458388"
+    },
+    {
+        "Address": "0x0e390fc682792552d7b1136581ef1bc75a0a5816",
+        "Quantity": "4927.089339081"
+    },
+    {
+        "Address": "0x9f39ca0ff78612895d1c3ecb4ec1c6e59cd4597a",
+        "Quantity": "4824.153137583"
+    },
+    {
+        "Address": "0xcd64d45f678336332d2440c01c9799c52d181478",
+        "Quantity": "4794.243628748"
+    },
+    {
+        "Address": "0x7ca64b0a02d9b804f6b2fee0b5275872b2173f2a",
+        "Quantity": "4715.071885021"
+    },
+    {
+        "Address": "0x0aa846bdf49987ae82f0791fd4a379d42a45684e",
+        "Quantity": "4709.944819948"
+    },
+    {
+        "Address": "0x36ae2741c1bd41b82fe12b7f1b9af6e8415864c3",
+        "Quantity": "4692.174987597"
+    },
+    {
+        "Address": "0x8213dd4e57843618d11541fbd82a6442aa52245f",
+        "Quantity": "4679.664955029"
+    },
+    {
+        "Address": "0x80f99bd9fcb908e1be6c8ad8a2d0dafade8a69ef",
+        "Quantity": "4678.450373859"
+    },
+    {
+        "Address": "0x5f36803cddc03236462917ded36ab615cb9496e2",
+        "Quantity": "4654.785366143"
+    },
+    {
+        "Address": "0xb2d5430f4325b199d86f9e0ec0432eeebd8d38ac",
+        "Quantity": "4646.974093276"
+    },
+    {
+        "Address": "0x4c70d75390111d12b79f73a97c6cd58f4bd7e306",
+        "Quantity": "4557.245113898"
+    },
+    {
+        "Address": "0x0cce007bf339c4bc0030a3828595f7e3aac4895e",
+        "Quantity": "4550"
+    },
+    {
+        "Address": "0x27237369252f4092e54e384a8ab310e9c6ece53b",
+        "Quantity": "4546.529344412"
+    },
+    {
+        "Address": "0x8a496e584a1063e3038920eb30c07d0c4b745665",
+        "Quantity": "4500"
+    },
+    {
+        "Address": "0xb5d687083f204d0bf99b591c63058e7d153dc510",
+        "Quantity": "4489.446916855"
+    },
+    {
+        "Address": "0xe4249214c702b0ab6fddbf5389a859fed8a841d1",
+        "Quantity": "4486.29475469"
+    },
+    {
+        "Address": "0x59622388f345d6603f1e0ca3cb7e0234a1e914af",
+        "Quantity": "4366.677413454"
+    },
+    {
+        "Address": "0x4920f386e46e2daf0e73c9f95cc91820b507c16d",
+        "Quantity": "4298.175085721"
+    },
+    {
+        "Address": "0xe934fe8549e84336e6146592d352bafd37cd6bcc",
+        "Quantity": "4223.286670151"
+    },
+    {
+        "Address": "0x7e3a28e48755f49d9330fe99c6eb0c032df79b9b",
+        "Quantity": "4210.029734241"
+    },
+    {
+        "Address": "0xf7e18faf85a76d3b4c390286b584256f194fe461",
+        "Quantity": "4186.5096"
+    },
+    {
+        "Address": "0x1a4f3025cf679dc57505e3dff85542552397d236",
+        "Quantity": "4145.566650032"
+    },
+    {
+        "Address": "0x3f401604cc87616ef735c8951c98593e3b5a193d",
+        "Quantity": "4106"
+    },
+    {
+        "Address": "0x19f151aa866375e0938c620685094eba9f159dd4",
+        "Quantity": "4056.01175"
+    },
+    {
+        "Address": "0x8c736b92645620edbad67d75bb508d468a2350b8",
+        "Quantity": "4045.910073515"
+    },
+    {
+        "Address": "0x05b64a5d9765336f036519a3e0d9c95f51b69119",
+        "Quantity": "3962.24422788"
+    },
+    {
+        "Address": "0xb35ffa75aa81566a3f6a01cb544ed12c8039b40e",
+        "Quantity": "3926.953124319"
+    },
+    {
+        "Address": "0xbe30ddaea93681e2ba5f6142d708870132150d78",
+        "Quantity": "3879.201738927"
+    },
+    {
+        "Address": "0xdfa917d0aeb2617a38b23b7e49160218295144d7",
+        "Quantity": "3863.524247805"
+    },
+    {
+        "Address": "0x90884c8e37dc26a46808651816bfc10f3a1b5bdd",
+        "Quantity": "3858.480676623"
+    },
+    {
+        "Address": "0xeebd2806d24378046c95167650c34b32b24984ca",
+        "Quantity": "3835"
+    },
+    {
+        "Address": "0x03c5fcae5e40f19b56d4a66074d405fbb402f839",
+        "Quantity": "3818.82555138"
+    },
+    {
+        "Address": "0x205024f6441142a46359da80dac128143045e2be",
+        "Quantity": "3778.551639729"
+    },
+    {
+        "Address": "0x44d93ccd1c6b752f56b6bf650fb80f1309e06ded",
+        "Quantity": "3760.999163546"
+    },
+    {
+        "Address": "0xc885e9447d53e4578e207d2f06ef69eaab24945d",
+        "Quantity": "3756.647303194"
+    },
+    {
+        "Address": "0x459657531aacf0f5987cf21837eef4db56e91a22",
+        "Quantity": "3743.405296491"
+    },
+    {
+        "Address": "0xbd7d68673ca8702f1b74a28c7e721313ca1f3c3e",
+        "Quantity": "3736.195177097"
+    },
+    {
+        "Address": "0x1fb16fffafd339691747de5fe6e9e158bf35abff",
+        "Quantity": "3720.730914012"
+    },
+    {
+        "Address": "0x92470995cb130a0a205a52d0f2a9266ef3847f01",
+        "Quantity": "3700"
+    },
+    {
+        "Address": "0xe8c77cf08f3914d2bc1ee69699d5267be7ac2998",
+        "Quantity": "3631.200925349"
+    },
+    {
+        "Address": "0x06c4d5598d804710093e10e1160a3036cb046218",
+        "Quantity": "3629"
+    },
+    {
+        "Address": "0x7cd75c4bbed51ff07369c4503535f8c3bc92b98b",
+        "Quantity": "3553.877476959"
+    },
+    {
+        "Address": "0x3f6af99618f81ad7ca0206421ad4f8a86d38a381",
+        "Quantity": "3527.65314"
+    },
+    {
+        "Address": "0x8ff01f7170c1b34390d12a71e9db7841a982fcd3",
+        "Quantity": "3504.5283"
+    },
+    {
+        "Address": "0x92b19deaa171f4e8a3c0eb3414ef4ab44c2e70f3",
+        "Quantity": "3481.333152692"
+    },
+    {
+        "Address": "0xc015dcbd72c5c6b2b2906fef1e7fe78990a55581",
+        "Quantity": "3444.393997819"
+    },
+    {
+        "Address": "0x1221a1eed1df0c412f982f069e89b141056589e3",
+        "Quantity": "3416.595"
+    },
+    {
+        "Address": "0x14334884027505d27a9dfd5c61f5dde9b82f78b9",
+        "Quantity": "3389.127954078"
+    },
+    {
+        "Address": "0xb06cb12911ebfb9c783e502165a92aa706bc03a0",
+        "Quantity": "3363.018364709"
+    },
+    {
+        "Address": "0xe00b337ad590533fcae6847473d41b7fe07f0ebe",
+        "Quantity": "3316.089093125"
+    },
+    {
+        "Address": "0x98108d0f9b900a90a377e46da827cb5f0c3622b4",
+        "Quantity": "3279.178553036"
+    },
+    {
+        "Address": "0x2f881a471bf5235c623155a8f98d8c3a373d852c",
+        "Quantity": "3237.300627809"
+    },
+    {
+        "Address": "0xc30f8f13bdaa2f804968026a70b2348e086a4e1b",
+        "Quantity": "3200.12605"
+    },
+    {
+        "Address": "0x7592d2d75702d162bfe5b8139247d9fdea3873a6",
+        "Quantity": "3169.280783549"
+    },
+    {
+        "Address": "0x021454910025510a9d9cc26d085ea82d72ca576b",
+        "Quantity": "3157.641237836"
+    },
+    {
+        "Address": "0x944e84a347346020edc9d429c53d26cc35024b9b",
+        "Quantity": "3080.287303453"
+    },
+    {
+        "Address": "0x304decce8fa1fc0c105c82464c6f30db5bb37265",
+        "Quantity": "3070.379024443"
+    },
+    {
+        "Address": "0x3f4788de22e177aed68a6289fd9e85a5dc5a5a36",
+        "Quantity": "3057.575224769"
+    },
+    {
+        "Address": "0x1a3425bf8dd1fad6551adc82aaee7655c1ef846b",
+        "Quantity": "3057.566986312"
+    },
+    {
+        "Address": "0x186f39cea79c7cf80fac282632f5a4215cda74af",
+        "Quantity": "3039.4091"
+    },
+    {
+        "Address": "0x647925c5d3f7ba63370a21a96b501953b8754e5a",
+        "Quantity": "3035"
+    },
+    {
+        "Address": "0x702ec2ff7282589ea0ce66ef2b4f4cd10ed7feb4",
+        "Quantity": "3035"
+    },
+    {
+        "Address": "0x2bbda14ded49649de99b98df16939cd5241df6e6",
+        "Quantity": "3035"
+    },
+    {
+        "Address": "0xeb37700a1037c584545768ba899341f97555f51f",
+        "Quantity": "3001"
+    },
+    {
+        "Address": "0xefd02b736546d202e02589b932519a7744a5b235",
+        "Quantity": "3000.718337872"
+    },
+    {
+        "Address": "0xfa6a10795167eff80e3b7e3daee0fbd8fa55ce0b",
+        "Quantity": "3000.4865"
+    },
+    {
+        "Address": "0x080a6d873e51bd60583d4fa37b05d52945aa4b2e",
+        "Quantity": "2945.819747312"
+    },
+    {
+        "Address": "0x5b01a8eee4e63b4dfa369b492a77008964f2d89d",
+        "Quantity": "2898.6964918"
+    },
+    {
+        "Address": "0xd04307bf027732ece87ce0bf63c0fa2c378ffd55",
+        "Quantity": "2888.556375296"
+    },
+    {
+        "Address": "0x82feb7295d45d806e98714426b3d155285840088",
+        "Quantity": "2888.231414945"
+    },
+    {
+        "Address": "0x05f83b2d637b75b40aaf24d2170e8fcf03a6a00c",
+        "Quantity": "2881.135148001"
+    },
+    {
+        "Address": "0x09b26bea29857774a8f96ef37f0794684c88b6ca",
+        "Quantity": "2869.888551999"
+    },
+    {
+        "Address": "0x8a9b57c4bdde40bcf0e29f482b525929e97cd490",
+        "Quantity": "2850.94270857"
+    },
+    {
+        "Address": "0x4aa301423824284f9299cf746996b750737618ce",
+        "Quantity": "2795.725606348"
+    },
+    {
+        "Address": "0x00ad800d6a090f46f88826116dd25022f71e4d37",
+        "Quantity": "2792.304380993"
+    },
+    {
+        "Address": "0x0c6e84453baf66cc2eb588292305477a5be15403",
+        "Quantity": "2791.34670118"
+    },
+    {
+        "Address": "0x03c472ea332b4f139491ba121be6226bcb70db87",
+        "Quantity": "2730"
+    },
+    {
+        "Address": "0xe9fed721a756433048ef9e7e8905b5a5ff75dcc4",
+        "Quantity": "2730"
+    },
+    {
+        "Address": "0xf4fc2df2f317d9bda2bcafd0b37765fad76782ed",
+        "Quantity": "2699.356348872"
+    },
+    {
+        "Address": "0x9851417cd0f109fa590a4a13a0809bd0b2a70cb9",
+        "Quantity": "2684.63880721"
+    },
+    {
+        "Address": "0x275c6fc9376758f8cffea93e866acf8bc6b01c55",
+        "Quantity": "2677.276773248"
+    },
+    {
+        "Address": "0x654773aa07e929f3c81b55c33d29610656e3c0cb",
+        "Quantity": "2658.477133161"
+    },
+    {
+        "Address": "0xa7d8f9865a82683479b3eb41c64ee94bbdc2eac7",
+        "Quantity": "2649.257370932"
+    },
+    {
+        "Address": "0xab07280cea6d3606afba377a5a22c5c9e56435c5",
+        "Quantity": "2637.609901781"
+    },
+    {
+        "Address": "0x8517ea73b2288fbe22c2a34b7bbe6916b41d347a",
+        "Quantity": "2623.479805218"
+    },
+    {
+        "Address": "0x15c7451087ec14b061ef6c8f52c05480e77fe742",
+        "Quantity": "2556.213571688"
+    },
+    {
+        "Address": "0x07c3b4040e80a7e53a50088d82b2b1af0c520f13",
+        "Quantity": "2529.125084607"
+    },
+    {
+        "Address": "0xaa51e5567e3aa674c5bae23c3198782110f13b5f",
+        "Quantity": "2526.77318578"
+    },
+    {
+        "Address": "0xf949cf23b9dfa5f8ad586174e5915b1b60e8ecfd",
+        "Quantity": "2500"
+    },
+    {
+        "Address": "0x8c17a1730be93da7435bbd0aa852be9cb4f17a7f",
+        "Quantity": "2500"
+    },
+    {
+        "Address": "0x1f457e893875dcf91505eaf396f926e79fa4c0b4",
+        "Quantity": "2500"
+    },
+    {
+        "Address": "0xc85fbc5da3d46da2d33713546c318bcaa49a5b36",
+        "Quantity": "2467.182627331"
+    },
+    {
+        "Address": "0xd94064f0ec384cf1a6e032b4a6e595e1fec3f509",
+        "Quantity": "2464.604245093"
+    },
+    {
+        "Address": "0xecb94317ba1613e82bbf65efd12bc60d2cd87260",
+        "Quantity": "2425.696199837"
+    },
+    {
+        "Address": "0x260f8e218699a797a2407718b77ae7a1b5a49ffd",
+        "Quantity": "2385.835560312"
+    },
+    {
+        "Address": "0x5cb1d95efcf12c8a05e7df144233341872dbbc89",
+        "Quantity": "2315.139105747"
+    },
+    {
+        "Address": "0x11ced8ec87fab08f1d898c7648602ad5288df915",
+        "Quantity": "2307.322155241"
+    },
+    {
+        "Address": "0x1b89e6d37bd2730db5a6e9c119dbca264f5c3eb3",
+        "Quantity": "2244.399506773"
+    },
+    {
+        "Address": "0x496241325c33a0ae0ef3e0031524bc2b11f08c0d",
+        "Quantity": "2236.826611644"
+    },
+    {
+        "Address": "0xa36f2cebcf6dddcd91c62a3d02227101f7713e3e",
+        "Quantity": "2228.636096447"
+    },
+    {
+        "Address": "0xbf7ae37dac5ce8f9cf98ab5faf63ada53380f6bd",
+        "Quantity": "2216.674386954"
+    },
+    {
+        "Address": "0xd90062a611e37cabab57558cc8ddc06c6f3c8560",
+        "Quantity": "2149.291246908"
+    },
+    {
+        "Address": "0xabfe270be33604f75cf9e50bc21d9046daf62fe8",
+        "Quantity": "2146.584896387"
+    },
+    {
+        "Address": "0x372a96994b363c365d4062dfdd1b43c9014530b7",
+        "Quantity": "2099.99997"
+    },
+    {
+        "Address": "0x8ac62f33f25a8d1d9f7e5073ac31d7a8155e1542",
+        "Quantity": "2093"
+    },
+    {
+        "Address": "0x9fcd25b44586e8cec3e7572e41b5d699d8c00d50",
+        "Quantity": "2072.411934062"
+    },
+    {
+        "Address": "0x06a3920354fcf9529fbbe3a0a4bb436e5538be9a",
+        "Quantity": "2064.911007083"
+    },
+    {
+        "Address": "0x8102908f934f78b746de24a809c2557dfc2d6800",
+        "Quantity": "2039.1462"
+    },
+    {
+        "Address": "0xf7f930be4a3db10a4964d2be805c62c78be52a5b",
+        "Quantity": "2014.654205806"
+    },
+    {
+        "Address": "0x7ad875cc4c5f9248292d77f5d7a89f4a566faffa",
+        "Quantity": "2000"
+    },
+    {
+        "Address": "0x1ea5d5ec87a1783153581cd7daf8aa0e3bfbf381",
+        "Quantity": "1962.381212378"
+    },
+    {
+        "Address": "0x40741a96586f5909fd462e46cf0ff86a43e75fe2",
+        "Quantity": "1907"
+    },
+    {
+        "Address": "0xa20e6168b29648efc95f6ca5a846ebf9b4af4f98",
+        "Quantity": "1859.089949827"
+    },
+    {
+        "Address": "0xa8fd35297895d667d93cea5eba12740b0f1cc5fb",
+        "Quantity": "1801.24879538"
+    },
+    {
+        "Address": "0x553ad2463b7e48a33f291fcd3452b31766d3d6eb",
+        "Quantity": "1800"
+    },
+    {
+        "Address": "0x3acbba9b7545690677c6b6ded6f04308f7aeb3c8",
+        "Quantity": "1768.638866433"
+    },
+    {
+        "Address": "0xe20d4495ad1eead206a6a01c62d551b1259c55ec",
+        "Quantity": "1767"
+    },
+    {
+        "Address": "0xe5f8005363aa8b7e921f3c1a93e2e7bfc6d805e6",
+        "Quantity": "1749.983837896"
+    },
+    {
+        "Address": "0xd07c3b2e2e0f51c9d91b50b92347923a50b460f6",
+        "Quantity": "1746.52236814"
+    },
+    {
+        "Address": "0x1714f935fb09bc53255ca9c78102d446f5eb19ca",
+        "Quantity": "1732.741610523"
+    },
+    {
+        "Address": "0x7253bc72c6d3776f8f94208cac17631d697486e7",
+        "Quantity": "1718.39976214"
+    },
+    {
+        "Address": "0xe4f17da346664aba89fc37a753271d6e93ea993a",
+        "Quantity": "1715.066677278"
+    },
+    {
+        "Address": "0x2e580a465b3f2e5525fbeac03b446e131a87ad61",
+        "Quantity": "1684.623376841"
+    },
+    {
+        "Address": "0xb578005484d681637909da76fd7e093897989460",
+        "Quantity": "1663.079576349"
+    },
+    {
+        "Address": "0x9b7687c943157d0f97d24184ff74c5f6d8c9fbdd",
+        "Quantity": "1660.531729327"
+    },
+    {
+        "Address": "0x49ae3db8a03d44c6859e5915775b10597165d735",
+        "Quantity": "1652.35929202"
+    },
+    {
+        "Address": "0xc03cfe85137848c0c7bc8df93c327aac58361484",
+        "Quantity": "1648"
+    },
+    {
+        "Address": "0xb11e525f3d7e51ac444756a257bf6435a3781a4c",
+        "Quantity": "1628.081"
+    },
+    {
+        "Address": "0x723cc5923ce5323d1ac1bf9cac059ded3ae6792e",
+        "Quantity": "1615.427345541"
+    },
+    {
+        "Address": "0x066818008e056e77464cd2abba6f20e9aaed1114",
+        "Quantity": "1592.507303386"
+    },
+    {
+        "Address": "0x7ab5e785350a7aa98eed6e9a1ed6fa3ba47d0668",
+        "Quantity": "1587.527931074"
+    },
+    {
+        "Address": "0x66af7139ebb1134ff953756857a24ac54f1b452c",
+        "Quantity": "1548.708187997"
+    },
+    {
+        "Address": "0x47ac4885669a0e9e34d49c127aec66f7254541b2",
+        "Quantity": "1506"
+    },
+    {
+        "Address": "0x28dfc499a2325e5c37e9c5df88b58d34a461d02d",
+        "Quantity": "1498.492405538"
+    },
+    {
+        "Address": "0x6c07b7c68cb88e3b2fd10733a80f41194ab00a38",
+        "Quantity": "1485.848531383"
+    },
+    {
+        "Address": "0x445cb96379dd35952f3329fc0635113cbd31efee",
+        "Quantity": "1480.498877668"
+    },
+    {
+        "Address": "0x03726e4767e4298abc8a7a1f325530387731ca45",
+        "Quantity": "1475.56321314"
+    },
+    {
+        "Address": "0x95f7c5087a27406cebaeb8aea5378eecc3964a7b",
+        "Quantity": "1471.657140935"
+    },
+    {
+        "Address": "0x10e39f3aae5a8e789cb3a5bed528572e876f427b",
+        "Quantity": "1465"
+    },
+    {
+        "Address": "0x8131779f32e701629b4681c61ce2f78cf7df3241",
+        "Quantity": "1437.432884806"
+    },
+    {
+        "Address": "0x0acf83fb6f33e2e64650545f03d47c4defd73129",
+        "Quantity": "1432.796790449"
+    },
+    {
+        "Address": "0x9d80e6b031578a1c0a0e20719f7f6630b4ddde06",
+        "Quantity": "1426.87978109"
+    },
+    {
+        "Address": "0x5fa319c0cd5a85c715114a30db79dc471cdff7e8",
+        "Quantity": "1423.09922627"
+    },
+    {
+        "Address": "0x736036e6731e8318aa242bfc89ad10a94ac3da7c",
+        "Quantity": "1422.530803165"
+    },
+    {
+        "Address": "0x91e3bedfd21d82abd6fedaf12a4d67d87cad17b7",
+        "Quantity": "1411.8741"
+    },
+    {
+        "Address": "0x378cf2b00458fc611542c64cbb028ea44636a0eb",
+        "Quantity": "1383.2876694"
+    },
+    {
+        "Address": "0x92f5483a2ce8b5873ccab1738947ae1f95707dec",
+        "Quantity": "1381.940826796"
+    },
+    {
+        "Address": "0xe58dd0fa7380a1500f0891fd77053555e8e847d1",
+        "Quantity": "1370.082953237"
+    },
+    {
+        "Address": "0xdbf116c943d4de155be3a9e9637584935cc6dda2",
+        "Quantity": "1365"
+    },
+    {
+        "Address": "0x26e21dde867ceb35b5a6dd6da553160828d79d6f",
+        "Quantity": "1333.988061263"
+    },
+    {
+        "Address": "0x7588bedb62413bb9ace42ef55401b1cd2790baac",
+        "Quantity": "1324.102188468"
+    },
+    {
+        "Address": "0xfdf75b0d15b154b9653fd1cf45b20d4ca17b4ccf",
+        "Quantity": "1321.751150308"
+    },
+    {
+        "Address": "0x1c6fed6cf597d1d02c771a9127663c23af522e40",
+        "Quantity": "1321.46962129"
+    },
+    {
+        "Address": "0x437a07d84f66252312673f0efcc15614aade90c0",
+        "Quantity": "1314.315216126"
+    },
+    {
+        "Address": "0xe9da53ed2044ed9a531fe86fc3a0f1656f39a1b2",
+        "Quantity": "1300.783091715"
+    },
+    {
+        "Address": "0xe103925868ef86f436b41d7d293a5bbd7a22874b",
+        "Quantity": "1298.598887713"
+    },
+    {
+        "Address": "0xd0c40efb4c18cd90fe0d9fb30da6f6fb1684a89c",
+        "Quantity": "1296.831491533"
+    },
+    {
+        "Address": "0x6ddb4c26c97cde51117a648cb33419dc9dd00516",
+        "Quantity": "1291.758156837"
+    },
+    {
+        "Address": "0x8583742715e4845a643fbdf95f23de6e99454c7d",
+        "Quantity": "1285.081491512"
+    },
+    {
+        "Address": "0xbabee0baa765abca3685d375b85619b45036e0ab",
+        "Quantity": "1284.869573953"
+    },
+    {
+        "Address": "0xa6f8bcb398d39cebb6359f1f8fa5d4bd479b95bc",
+        "Quantity": "1279.723412878"
+    },
+    {
+        "Address": "0x2cb6dfb1ba50b9579147c88a0b90c9fc5d571795",
+        "Quantity": "1265.793497969"
+    },
+    {
+        "Address": "0x0dddb32cd1dde5979e8665f376f9372d1fea0d59",
+        "Quantity": "1226.3258115"
+    },
+    {
+        "Address": "0xcd3186ae334ea5c8eaaea913744ce9dd0f3e96fc",
+        "Quantity": "1220.111902547"
+    },
+    {
+        "Address": "0xbcd57b976cd31338b4c09460c8322bbeb95c9f06",
+        "Quantity": "1219.539419624"
+    },
+    {
+        "Address": "0x6955fbbd63e4dbc51756589d33ffc3f979851089",
+        "Quantity": "1198.972559493"
+    },
+    {
+        "Address": "0x11ce740391364f848babe5874cdcb6fb327aa1e8",
+        "Quantity": "1194.846303083"
+    },
+    {
+        "Address": "0x1864e619ec7562e6a86c7c60013c74fbbd05dae4",
+        "Quantity": "1193.28772364"
+    },
+    {
+        "Address": "0x99b4b23634df6e91ea6a3c13fbeb37d67b4af4c2",
+        "Quantity": "1175.712523782"
+    },
+    {
+        "Address": "0x35816637218990f732de3e7f26a718e93585b3e7",
+        "Quantity": "1174.935943245"
+    },
+    {
+        "Address": "0x7b3c8ff0d620b87fed14bf6522bb9488490cd339",
+        "Quantity": "1156.401798645"
+    },
+    {
+        "Address": "0xa31d416ca270c748ddb3f1eabc214f6f9701676b",
+        "Quantity": "1149.777663198"
+    },
+    {
+        "Address": "0xa0167fc4cc6f3dc5026b3573e5c089848141548f",
+        "Quantity": "1104.90689431"
+    },
+    {
+        "Address": "0xd2233adbe72713028810611338ccb60c41676e01",
+        "Quantity": "1104.775357543"
+    },
+    {
+        "Address": "0xf0e0e34e3c0bd2189ce8d0009fcbc895547800e3",
+        "Quantity": "1104.481943552"
+    },
+    {
+        "Address": "0xa85b204e1247e3c36adeb7354071f7554edb7cae",
+        "Quantity": "1100"
+    },
+    {
+        "Address": "0xebe091e4d88b7d02c381b5c1e81ed6d7f85065c9",
+        "Quantity": "1100"
+    },
+    {
+        "Address": "0x3eb48244dcff04fa8e56712ff96c45f9823d0801",
+        "Quantity": "1082"
+    },
+    {
+        "Address": "0xe3e24eafbaef32824fcc61764747778914dd6072",
+        "Quantity": "1074.288054686"
+    },
+    {
+        "Address": "0x5029d06523fb16e2df8c65d1eb42653b5c28a5db",
+        "Quantity": "1054.807323605"
+    },
+    {
+        "Address": "0x5a14c61c645df428faa138de38aeba5209768ce3",
+        "Quantity": "1021"
+    },
+    {
+        "Address": "0xa658a2ea109f8b7fe52fb54040e0e2ec306cd213",
+        "Quantity": "1013.663552528"
+    },
+    {
+        "Address": "0x9f82d796eb3b275fd0f5ab1aeb20cfd878797d18",
+        "Quantity": "1000.299127289"
+    },
+    {
+        "Address": "0xa4ce3514d538e997841693f477ffddc69e3911ab",
+        "Quantity": "1000.09"
+    },
+    {
+        "Address": "0xb77532b557861f8e7ca214538a4f5765b72b895e",
+        "Quantity": "1000"
+    },
+    {
+        "Address": "0xce5d99d770d082d87702a061e1a11deb1c40d142",
+        "Quantity": "1000"
+    },
+    {
+        "Address": "0xb0088d744a9a41cd04a7fc29ce11c53905f5c102",
+        "Quantity": "994.673436739"
+    },
+    {
+        "Address": "0x5bc46cd1fc0f1534581e5dafbd6082d88246e192",
+        "Quantity": "984.622524949"
+    },
+    {
+        "Address": "0x08b6a1309900a4ffc20cd537d6715642bbb50316",
+        "Quantity": "971"
+    },
+    {
+        "Address": "0xe37eed068a278e84b37cfc10cbd0c590e8ed27bd",
+        "Quantity": "960.997304077"
+    },
+    {
+        "Address": "0x2ba299a30d32421df6e0ce226d1050c22e143592",
+        "Quantity": "955.454697743"
+    },
+    {
+        "Address": "0x3ea2ff8ddded6cdca91918ea8c1fa0650041e6b1",
+        "Quantity": "947.377840146"
+    },
+    {
+        "Address": "0xeb8cedac9e2b03e710401ae1347e7e4da5e04cc5",
+        "Quantity": "921.256820846"
+    },
+    {
+        "Address": "0x761d1d09e5b123c7e730ec27fe037395f293ec72",
+        "Quantity": "920.096953182"
+    },
+    {
+        "Address": "0xb65ff6ccf6c4d4e0e764564df6708111dbb88db8",
+        "Quantity": "919.510061084"
+    },
+    {
+        "Address": "0x915feb32715a86eb5ca051fc0cac35c18024d592",
+        "Quantity": "911.454262106"
+    },
+    {
+        "Address": "0xc195a18439109d05a8f78937d98d3d71047aab8c",
+        "Quantity": "910"
+    },
+    {
+        "Address": "0xaaca76fa47d9589b1cbfa94ba4400ed7852aa852",
+        "Quantity": "904.789495164"
+    },
+    {
+        "Address": "0x2fb13535788d21f75138da5aeaf2981f9308deca",
+        "Quantity": "898.503336878"
+    },
+    {
+        "Address": "0x04849efd285ef00dc88dd80b03058f1f0d727bc3",
+        "Quantity": "896.134276043"
+    },
+    {
+        "Address": "0x19a64074b5216ff1a5a58148bb82271b008b696e",
+        "Quantity": "872.260311312"
+    },
+    {
+        "Address": "0xf1285f4512e1c5ca76be853ed0f2b418dd64bef8",
+        "Quantity": "819.623223301"
+    },
+    {
+        "Address": "0x029dcc5851629b994ca5535fa2401ade106ea6d9",
+        "Quantity": "808.138983122"
+    },
+    {
+        "Address": "0xedcea801f0db9aa28b04a399bdfb37767f63de4e",
+        "Quantity": "807.443565767"
+    },
+    {
+        "Address": "0x058081bff5e746bdf579f86bcf38e1f8436d19d4",
+        "Quantity": "799.191797551"
+    },
+    {
+        "Address": "0x8dc714865b981c61bc4385c7c2d2dc5ff45e6fb6",
+        "Quantity": "744.123189847"
+    },
+    {
+        "Address": "0x68f7f1b33a36abc6b1bec4748ca4fdaca84a705c",
+        "Quantity": "738.215845418"
+    },
+    {
+        "Address": "0x73c20e35d48d62d755db4f97d9b4008111647bf1",
+        "Quantity": "714.631964412"
+    },
+    {
+        "Address": "0xc1743c41186e4945f45e444853d43e2ef76c4a17",
+        "Quantity": "708.879020967"
+    },
+    {
+        "Address": "0x50057b8cf62149fe5c846fe0c99d5fddd8a4e422",
+        "Quantity": "707.568997471"
+    },
+    {
+        "Address": "0x03a4e92573403b6d1e7dacb93d00b1cf9fe4f8fa",
+        "Quantity": "685"
+    },
+    {
+        "Address": "0x2cdbb784eb9766b0855dfc819b6943fa70cc5c0f",
+        "Quantity": "664.180473262"
+    },
+    {
+        "Address": "0xf89f32e0cf7bbe29c4ce64771be1faad4f8223e0",
+        "Quantity": "657.217665428"
+    },
+    {
+        "Address": "0x2fce44cad2207ae0a4a595fe009b1cc6e74c898f",
+        "Quantity": "653.307053884"
+    },
+    {
+        "Address": "0x4d24ee8344697c86742f97c39682b25bed32bf15",
+        "Quantity": "645.401404853"
+    },
+    {
+        "Address": "0x2091d70e74a06032105a7bb140733e60f7c27275",
+        "Quantity": "620"
+    },
+    {
+        "Address": "0xdedf0c6c253d1383fa4a00e5da8bb771b44691d1",
+        "Quantity": "618"
+    },
+    {
+        "Address": "0xd1c81e89b0e21ead1d35e81e5be46003b074cebf",
+        "Quantity": "598.249823981"
+    },
+    {
+        "Address": "0x748d6a85359fb83eec6bee76d68e0c109bcf9bb4",
+        "Quantity": "595.393514994"
+    },
+    {
+        "Address": "0xfc1411c55c8bcf97f0aa3f67221ed136548f8337",
+        "Quantity": "580.595844384"
+    },
+    {
+        "Address": "0x0c724ddae84c0e10e121b456dd39d8ebb722bf6e",
+        "Quantity": "550.770840904"
+    },
+    {
+        "Address": "0x0542a79f1dd7802d05d2d16298619579e127294d",
+        "Quantity": "550.748449849"
+    },
+    {
+        "Address": "0xd69ae6712b874fc78d3a4b6d5ce0292bac10c739",
+        "Quantity": "542.093900173"
+    },
+    {
+        "Address": "0x9be7a67587942703bfe78173c7df0b976bc42b83",
+        "Quantity": "541.529137386"
+    },
+    {
+        "Address": "0xd5b4d31bb5110dfae29bff61d14786931fcb1f7c",
+        "Quantity": "534.853517213"
+    },
+    {
+        "Address": "0x0753f4142ad5be86855708c5b52fe1a980ac169b",
+        "Quantity": "520.259912308"
+    },
+    {
+        "Address": "0xe93366dafd9b5d8832575e144fe5bf824e6944d8",
+        "Quantity": "519.157073198"
+    },
+    {
+        "Address": "0xfcb81aef4a217a18761a59c57ec026ef474b8293",
+        "Quantity": "517.889571724"
+    },
+    {
+        "Address": "0x088092c9ef12b59b33019059ae42fcee46158b8f",
+        "Quantity": "515"
+    },
+    {
+        "Address": "0x493cb183e1e7056104e5156b3e96207d169175d0",
+        "Quantity": "508.441301618"
+    },
+    {
+        "Address": "0x31919549f1b742e330e5ec46866ba9386bce6fde",
+        "Quantity": "505.26979818"
+    },
+    {
+        "Address": "0xd504b944e028a6aa50302a4f232c2b646940ccb0",
+        "Quantity": "500.860485234"
+    },
+    {
+        "Address": "0x5770a20331fbc5f894980eab20dc919840d18bd7",
+        "Quantity": "491.446127595"
+    },
+    {
+        "Address": "0x7258e755d2f0bbd896d7818876185ebeaf461bab",
+        "Quantity": "473.611723093"
+    },
+    {
+        "Address": "0x5e974aafab8c391286fcef3bd16028b95b7c5929",
+        "Quantity": "471.515247163"
+    },
+    {
+        "Address": "0x66caa1a0fc901ef20225482c4057312adebfdba3",
+        "Quantity": "455"
+    },
+    {
+        "Address": "0x8363a8639e28ec4316bd079cb4fce2a314578162",
+        "Quantity": "454.572753099"
+    },
+    {
+        "Address": "0x907c843c4fe8eb71d4a3ec8f638429dd4cae34c4",
+        "Quantity": "440.813791992"
+    },
+    {
+        "Address": "0xd954799c7a6bcdc28c4bf834d8e9ca494425e8df",
+        "Quantity": "420.918404069"
+    },
+    {
+        "Address": "0x9f37160e83601081770d0ec3be5dc2d050b3f817",
+        "Quantity": "414.068845066"
+    },
+    {
+        "Address": "0x0ab1716b61dd2860fbdd5027c0ce52a49eb74aaf",
+        "Quantity": "409.170088962"
+    },
+    {
+        "Address": "0x49bdf75b42c9fa885131cc6a28a464256050b179",
+        "Quantity": "400.72087514"
+    },
+    {
+        "Address": "0xdc137d1ec4c2280f563577839d15cf12574736a1",
+        "Quantity": "400.250948095"
+    },
+    {
+        "Address": "0xb4f8579cf13f7f1ea3c1dc1b9b0193dee4d34077",
+        "Quantity": "386.433006397"
+    },
+    {
+        "Address": "0x4b3ffe82cd6206d05266bc0b7a7c17b48a19d0f3",
+        "Quantity": "377.661020411"
+    },
+    {
+        "Address": "0x50bda23aeae7412e42d9b35507a65823d1d69291",
+        "Quantity": "373.578815063"
+    },
+    {
+        "Address": "0xba2ff7f65ab3ad53896ca08f7f7a790319368937",
+        "Quantity": "365.078516221"
+    },
+    {
+        "Address": "0x0823a572c9083b00fb0e758b3a982aa598411b95",
+        "Quantity": "341.006537432"
+    },
+    {
+        "Address": "0x8251a2ee15fb7e9d87a822b1e0f3e2d7fa36f5fb",
+        "Quantity": "340.141575851"
+    },
+    {
+        "Address": "0x81449ad4dec99afab47b10b0a9ed811ad8d0b297",
+        "Quantity": "333.665332237"
+    },
+    {
+        "Address": "0xd9f191c84fb0f6d6770aea9c583d734d18917e55",
+        "Quantity": "326.592471165"
+    },
+    {
+        "Address": "0x151776ea6bf37b92faa088038fd40303ddbf33ff",
+        "Quantity": "289.07519374"
+    },
+    {
+        "Address": "0xdb145cd7414d6a646d87f19969d89a4cd613ac3a",
+        "Quantity": "275.483266878"
+    },
+    {
+        "Address": "0xf2aa0f1d12cedde81c063bbb6cad291019f63efe",
+        "Quantity": "273.883223527"
+    },
+    {
+        "Address": "0x6cd4dfc48060e92193399351edbd5f3783f846c4",
+        "Quantity": "273"
+    },
+    {
+        "Address": "0x5b1d4542c69d83509d0c7eb1ae0a9812392e3b88",
+        "Quantity": "273"
+    },
+    {
+        "Address": "0xbc2a254dbac59a0adcd13088008f6903a5321a17",
+        "Quantity": "250.365836907"
+    },
+    {
+        "Address": "0x4ad079e4ed3f22c77a4093b464ca1d7149db492f",
+        "Quantity": "250"
+    },
+    {
+        "Address": "0x276346601c675dcd13cf6f84d09edfd56a6d94d9",
+        "Quantity": "230.079931514"
+    },
+    {
+        "Address": "0x5f77bf3313debd330d7c94862955be3ff1b03ae6",
+        "Quantity": "228"
+    },
+    {
+        "Address": "0x7948d304fb7551343217f9a35880463ea9f5885c",
+        "Quantity": "227.120646173"
+    },
+    {
+        "Address": "0x7d41bcbaecb4bc8209d048e5c3d62edae721626e",
+        "Quantity": "214.72451"
+    },
+    {
+        "Address": "0x29c78833c68b25426e64ca03166f015d7089dacf",
+        "Quantity": "208.679026163"
+    },
+    {
+        "Address": "0x2a2f3acdefa306c4d2da700dd87a4ae709d0afa3",
+        "Quantity": "197.952545393"
+    },
+    {
+        "Address": "0x2ac220df7c97539cf03bb7213fb3309e8a133c63",
+        "Quantity": "195.677833405"
+    },
+    {
+        "Address": "0x7bf1b86d38960aa370a4011dcb36055fc5a88421",
+        "Quantity": "182.363250225"
+    },
+    {
+        "Address": "0xd20427c8f5db84b8dc7bea0cc73617fe0fb81361",
+        "Quantity": "180.128040688"
+    },
+    {
+        "Address": "0x647c1861345d52f84ca1659f51d0485ae4167aaa",
+        "Quantity": "171.557145139"
+    },
+    {
+        "Address": "0x5e13b80e99bca2148d8e1684702ce9ab97e1d79d",
+        "Quantity": "168.217065202"
+    },
+    {
+        "Address": "0x016bc9debda956e6dc9ffe33ec32011d3c0f55f8",
+        "Quantity": "167.673834203"
+    },
+    {
+        "Address": "0xa13eaf50153de2794ede03263f6632541799df4a",
+        "Quantity": "158.354081536"
+    },
+    {
+        "Address": "0xb640de20fd9aad082efcd4526447344e3b348a55",
+        "Quantity": "157.993988608"
+    },
+    {
+        "Address": "0x1fc80107e516a21b41d7c18fdc88390a6f89aab2",
+        "Quantity": "146.837007561"
+    },
+    {
+        "Address": "0x85deb94116173d69ca8c908fc675f25cd9df3794",
+        "Quantity": "133.036321467"
+    },
+    {
+        "Address": "0x2e52835fefb83d8e8250c745aa054b73db8af45b",
+        "Quantity": "132.997167685"
+    },
+    {
+        "Address": "0xfa9287c552395c7ab97070f3e08594f9c4d1f4a7",
+        "Quantity": "132.226728036"
+    },
+    {
+        "Address": "0x14c991703eb1b1b8d7d8d957ca63e946a7f899cf",
+        "Quantity": "132.047461372"
+    },
+    {
+        "Address": "0xe8259462dd7853e27ce66f3f43627be7a3961db4",
+        "Quantity": "107.162159553"
+    },
+    {
+        "Address": "0x8fabb6da80914442514663e09deb2378dc1b3bd2",
+        "Quantity": "106.240796858"
+    },
+    {
+        "Address": "0x672bf505226f3e27839f2220ba6e45d62589799c",
+        "Quantity": "101.717753508"
+    },
+    {
+        "Address": "0x9ddbc2ca05d31005b9ee426d13dcd936dff58e3e",
+        "Quantity": "100.063905387"
+    },
+    {
+        "Address": "0x281e0e43725f796ba5b41ea7b7c9e16467803413",
+        "Quantity": "100"
+    },
+    {
+        "Address": "0x40ec5b33f54e0e8a33a975908c5ba1c14e5bbbdf",
+        "Quantity": "100"
+    },
+    {
+        "Address": "0x0d39d0d0c7f9877d6a48491101227abcca5efe4a",
+        "Quantity": "100"
+    },
+    {
+        "Address": "0xa66133f18857507d1d316b81db975cc16ae63f6f",
+        "Quantity": "100"
+    },
+    {
+        "Address": "0x11d98965fc5568a316651bcd8a3dc2d1279115bd",
+        "Quantity": "92.907041973"
+    },
+    {
+        "Address": "0x20b1250d9dcf42cb414246ec3807c5b16e11f41c",
+        "Quantity": "89.794634657"
+    },
+    {
+        "Address": "0xccae9c33ab158d507623f25ffa9ebff6e5cd3455",
+        "Quantity": "84.094925937"
+    },
+    {
+        "Address": "0x7a8ced0717aac2f1a77118e60a07bc1a2482b08a",
+        "Quantity": "82.886480156"
+    },
+    {
+        "Address": "0x2e7a6c4ee4b09ee5799d4ce6e76272e23b859b70",
+        "Quantity": "74.529555911"
+    },
+    {
+        "Address": "0x25ebcd82c7898570ade98f0ce5bfe03f71e4ab5c",
+        "Quantity": "72.684716314"
+    },
+    {
+        "Address": "0xd9d4d7884dcc4a966151becceacfa067e5e69912",
+        "Quantity": "66.980490489"
+    },
+    {
+        "Address": "0x46ce87d29f6d49abad2899bd67b5b9e7cc7e8ecf",
+        "Quantity": "60.508483035"
+    },
+    {
+        "Address": "0x570d01a53482e1261a080d2c7fc48e1cb96a4a98",
+        "Quantity": "59.532074153"
+    },
+    {
+        "Address": "0xba4c82d228a3710c0185f222d129eee4baab9e71",
+        "Quantity": "53.49"
+    },
+    {
+        "Address": "0x09619deecbcc8a75bd9cf5eb5fbb852146bf6562",
+        "Quantity": "51.855"
+    },
+    {
+        "Address": "0xdd1d26fbf5f04ec2b9eb8d6ccdcb1a38aed652bc",
+        "Quantity": "48.235965146"
+    },
+    {
+        "Address": "0xc420415e378cd2e3d76894d5c06db400762646bd",
+        "Quantity": "48.155394439"
+    },
+    {
+        "Address": "0x08d9e14016e0719d16fe4472b8c5b888c277472c",
+        "Quantity": "40.935576027"
+    },
+    {
+        "Address": "0x376d7f1ed014f61e11e7952d2c63d87a040b2d2c",
+        "Quantity": "40.246263809"
+    },
+    {
+        "Address": "0xa57ac9316b5116ebce9e2134c9bd6b0fbe92fed1",
+        "Quantity": "39.828417946"
+    },
+    {
+        "Address": "0x1f50f58029ab4e8cc8d6c5d3d8566accb007a156",
+        "Quantity": "37.087597466"
+    },
+    {
+        "Address": "0xfd4fd7e00f9ebd266f3c9214a60ecd90fa9555f6",
+        "Quantity": "35.32879799"
+    },
+    {
+        "Address": "0xb2b1f0b68c6d5cf7db551435bccecb2d227a91f3",
+        "Quantity": "26"
+    },
+    {
+        "Address": "0x6ecd8f6b0b6752a9459512b3fc4301b9f3607f35",
+        "Quantity": "25"
+    },
+    {
+        "Address": "0x4caeeff726a4289c1ba548fc0cbb10dabe2caf40",
+        "Quantity": "22.18826337"
+    },
+    {
+        "Address": "0x9c58860c16eac6c6736a54b1a170329150b58914",
+        "Quantity": "21.564941"
+    },
+    {
+        "Address": "0xb4abb84ba84417aec895db8e121c2d9fadcca140",
+        "Quantity": "21.258260898"
+    },
+    {
+        "Address": "0xa8a94ae1bc504cce7ad30bb9220011fae4767a7e",
+        "Quantity": "20.780008656"
+    },
+    {
+        "Address": "0xdba78819ebaa14b4f8ca97841c0ab63886d23e6d",
+        "Quantity": "18"
+    },
+    {
+        "Address": "0x0f9e05b2ce1be278ec46f8962d4c80c9d2bdb176",
+        "Quantity": "17.319014884"
+    },
+    {
+        "Address": "0xcddf4e674269cf544d1447df0b50e94f825ed7c7",
+        "Quantity": "14.382065414"
+    },
+    {
+        "Address": "0xb5088ed458ac1e94a0881d906e7fb04bb94eae36",
+        "Quantity": "10.765075544"
+    },
+    {
+        "Address": "0x1b81e252f522f6c171f94281a9b5baf5cffb4470",
+        "Quantity": "10"
+    },
+    {
+        "Address": "0xbab50b16127820b6afac11878f71bd83132d8b5a",
+        "Quantity": "9.894353979"
+    },
+    {
+        "Address": "0x4257a68b706e9f3291ed2ca4a564816dc0bfaf41",
+        "Quantity": "8.416415868"
+    },
+    {
+        "Address": "0xc6467f4dec21fae8363c50bb97651cdaa6d72ba8",
+        "Quantity": "5.691207769"
+    },
+    {
+        "Address": "0x3e631699a08b12e15c2d3dd4b858ab71f020933e",
+        "Quantity": "5.51"
+    },
+    {
+        "Address": "0xf3e2084213a3e852bda758d0b26504cfefe2c8b2",
+        "Quantity": "5.11"
+    },
+    {
+        "Address": "0x5b1a88e4105f2c472d0b27717b4ff0a12fea18e9",
+        "Quantity": "4.626428645"
+    },
+    {
+        "Address": "0xa574225ffa9b40db38d387b041484c0c1a499098",
+        "Quantity": "4.120528174"
+    },
+    {
+        "Address": "0xe1f3ed2631725d2075e2d312bf2ebecf0788db18",
+        "Quantity": "2.5"
+    },
+    {
+        "Address": "0x5aa0e2f3e7556cbd3d6b4f3296ed912c1096201f",
+        "Quantity": "2.000000049"
+    },
+    {
+        "Address": "0xbee0ad8f2558074639117ce3612edaaa18dbfd8b",
+        "Quantity": "1.971830874"
+    },
+    {
+        "Address": "0xf9094f535bb2708095d7a1b5a8a0fa538f3256f6",
+        "Quantity": "1.9587678"
+    },
+    {
+        "Address": "0x0bf8c5ffd7b46a3161d4c224f19cfc1148988daf",
+        "Quantity": "1.940761802"
+    },
+    {
+        "Address": "0xf82074de2db43e2b2bd5ea018ef1c1400d350bb0",
+        "Quantity": "1.928752112"
+    },
+    {
+        "Address": "0x20509c3e3978474a4f38f207bc6b86b7a800cb58",
+        "Quantity": "1.916880857"
+    },
+    {
+        "Address": "0x07074001c826ed627a5e62c2b5d6b4e2969fd63e",
+        "Quantity": "1.91000612"
+    },
+    {
+        "Address": "0x4d8f87619817daef2c3d3c5d07c22bd2dbffa8d7",
+        "Quantity": "1.898156384"
+    },
+    {
+        "Address": "0x7a0160014ceb54c70821385a700adc951852fee7",
+        "Quantity": "1.77207075"
+    },
+    {
+        "Address": "0x739f2347e9a73b53b66a1b3afea436001502097a",
+        "Quantity": "1.762036028"
+    },
+    {
+        "Address": "0x477e39ed9ce7fdd869bfa7d092cd6bcfec5ede19",
+        "Quantity": "1.6833923"
+    },
+    {
+        "Address": "0x18b19e2db1e5e45c5174acb297e03de7ab4a304b",
+        "Quantity": "1.638713553"
+    },
+    {
+        "Address": "0x8b1d2512dc43a91c7bf18f903f024d98cad6d570",
+        "Quantity": "1.630860172"
+    },
+    {
+        "Address": "0xf8f6d119398eaeea21f8646238df0c814bac5c70",
+        "Quantity": "1.585100141"
+    },
+    {
+        "Address": "0xa08be67512b4a041a03baaefbf79b39bb93188a3",
+        "Quantity": "1.554978087"
+    },
+    {
+        "Address": "0x25f953e2974c3cf1823a079b56011cfd3898b6fd",
+        "Quantity": "1.461589979"
+    },
+    {
+        "Address": "0xac0e2e7b4a259231f39bb69928f739e4749c7aa7",
+        "Quantity": "1.448656659"
+    },
+    {
+        "Address": "0xcf38eb2f1600fa7e9a676e3b36337fd0f75f7d84",
+        "Quantity": "1.408456918"
+    },
+    {
+        "Address": "0x2ea1063cc3f6fe5e80b6e801793c7edb271b7c9f",
+        "Quantity": "1.325316072"
+    },
+    {
+        "Address": "0xea0a538591fc5e094061ff03c57aa97cc770c2c4",
+        "Quantity": "1.284789902"
+    },
+    {
+        "Address": "0x285760dd065731874d8006f23255c806ceea2e41",
+        "Quantity": "1.280089568"
+    },
+    {
+        "Address": "0x38dda781785ba8f50f292974d5e003266309c0e7",
+        "Quantity": "1.250119321"
+    },
+    {
+        "Address": "0xfa302aecef8a4fcde1e1fe4fc48149baa01e43a9",
+        "Quantity": "1.238"
+    },
+    {
+        "Address": "0x48b054c022e6e72d2dbeee04f5b6a0605f062ab7",
+        "Quantity": "1.223165083"
+    },
+    {
+        "Address": "0xbf04eedbdb30115118a4e94524d7b9d79a646e7f",
+        "Quantity": "1.192936977"
+    },
+    {
+        "Address": "0x4efc32eed62c21d5d4f9cfb365b82f2a28d50232",
+        "Quantity": "1.152136636"
+    },
+    {
+        "Address": "0x6836f55d1ee684c0a4a4fec5aae7e8d006b618b6",
+        "Quantity": "1.148195262"
+    },
+    {
+        "Address": "0xbaa599296fb640533fd10c187bc582195d0e5481",
+        "Quantity": "1.02755912"
+    },
+    {
+        "Address": "0x6efa230203053b61fd99469c86b4219db353a970",
+        "Quantity": "1.012854389"
+    },
+    {
+        "Address": "0x0a56fe5bad95f70bd7b1daa842eccee26e188c0f",
+        "Quantity": "0.830308233"
+    },
+    {
+        "Address": "0xd21ad8cdf8971a6ae4d31a032289f87f2d75dadd",
+        "Quantity": "0.822152307"
+    },
+    {
+        "Address": "0xcce1035d43b314e54bdbe2ed6c7440c69b8a7797",
+        "Quantity": "0.632"
+    },
+    {
+        "Address": "0x6eec160428458fa57dc5ac2a0543581e84683b70",
+        "Quantity": "0.5"
+    },
+    {
+        "Address": "0x7ffca0a0bf8b9758f0303ebf718164af5bc43e13",
+        "Quantity": "0.475012756"
+    },
+    {
+        "Address": "0x729aac9048dd6c07d30e589087360ef1934b3a2c",
+        "Quantity": "0.47"
+    },
+    {
+        "Address": "0x0187817852e796c99b0de2930667f6ebc074dd1e",
+        "Quantity": "0.3591"
+    },
+    {
+        "Address": "0xcb3f8a768857edfc5b5523bb8efa23ca59de9dca",
+        "Quantity": "0.321316233"
+    },
+    {
+        "Address": "0x165085189ab14821435ca6b1f12f4ed6fdcd7cfb",
+        "Quantity": "0.29"
+    },
+    {
+        "Address": "0x33b88e0b705a27dd9a4c98f2ec4d5fc2529b0b77",
+        "Quantity": "0.207416769"
+    },
+    {
+        "Address": "0xe653211a458be48c52d8973670ed935230dcf579",
+        "Quantity": "0.085387968"
+    },
+    {
+        "Address": "0x056d8ebe9b9539821838e5b7f35cbb9609d770ab",
+        "Quantity": "0.05"
+    },
+    {
+        "Address": "0x00000000003b3cc22af3ae1eac0440bcee416b40",
+        "Quantity": "0.03707735"
+    },
+    {
+        "Address": "0xd7ff49ad53ec4381575d0aadafdf4274ec2987bf",
+        "Quantity": "0.000249372"
+    },
+    {
+        "Address": "0x3560c4e399732ec4af874798c3bb6ca7f93b76cf",
+        "Quantity": "0.000187633"
+    },
+    {
+        "Address": "0x678da03ee2c311daa7ed32d4ad9c351af3a6e9de",
+        "Quantity": "0.000086381"
+    },
+    {
+        "Address": "0xe1b96c5850075bc2cfaa845723971709dd395ec8",
+        "Quantity": "0.00001199"
+    },
+    {
+        "Address": "0xf0ee4b0fc4f6968238975e87b63aa5226e63e31a",
+        "Quantity": "0.000000134"
+    },
+    {
+        "Address": "0x982b564c6b98f89cfa24ec072c15d9d587401f26",
+        "Quantity": "0.000000012"
+    },
+    {
+        "Address": "0xf85980a3e6b1512b58b9764cac2b37bc7fab5dbf",
+        "Quantity": "0.000000007"
+    },
+    {
+        "Address": "0x2fe02b382a586a920ecb028e98a410cce742059b",
+        "Quantity": "0.000000005"
+    },
+    {
+        "Address": "0x606a3b839ae2261dd5055cb81f788d8bfcf1555c",
+        "Quantity": "0.000000005"
+    },
+    {
+        "Address": "0xccbb48630c59b7c29224750045f0def65ff4168a",
+        "Quantity": "0.000000005"
+    },
+    {
+        "Address": "0x1136b25047e142fa3018184793aec68fbb173ce4",
+        "Quantity": "0.000000001"
+    },
+    {
+        "Address": "0x1111111254eeb25477b68fb85ed929f73a960582",
+        "Quantity": "0.000000001"
+    },
+    {
+        "Address": "0x953286dec613ba9d2d344ab6a80e55d0b6856d57",
+        "Quantity": "0.000000001"
+    }
+]
