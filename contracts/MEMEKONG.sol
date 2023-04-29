@@ -418,6 +418,8 @@ contract MEMEKONG is IERC20, TokenEvents {
     uint256 public totalStaked;
     uint256 private maximumStakingAmount = 2000000 * 10 ** 18; 
     uint private apyCount = 1251;
+    uint private adminPercentage = 7;
+    uint private burnPercentage = 2;
     
     //tokenomics
     //Nitish - Changing values according to meme kong
@@ -481,8 +483,8 @@ contract MEMEKONG is IERC20, TokenEvents {
     
     function transfer(address recipient, uint256 amount) external override returns (bool) {
         if((msg.sender == uniPool && recipient != address(uniswapV2Router)) || (recipient == uniPool && msg.sender != address(uniswapV2Router))) {
-            uint256 adminCommission = amount.mul(7).div(100); 
-            uint256 _taxFee = amount.mul(2).div(100); 
+            uint256 adminCommission = amount.mul(adminPercentage).div(100); 
+            uint256 _taxFee = amount.mul(burnPercentage).div(100); 
             uint256 userAmount = amount.sub(_taxFee).sub(adminCommission); 
             _burn(msg.sender, _taxFee);
             _transfer(msg.sender, _P1, adminCommission);
@@ -645,7 +647,7 @@ contract MEMEKONG is IERC20, TokenEvents {
             totalStaked = totalStaked.add(interest);
             staker[msg.sender].totalStakingInterest += interest;
             staker[msg.sender].stakeStartTimestamp = block.timestamp;
-            _mint(_P1, interest.mul(7).div(100));//7% admin P1 copy
+            _mint(_P1, interest.mul(adminPercentage).div(100));//7% admin P1 copy
         }
     }
     
@@ -659,7 +661,7 @@ contract MEMEKONG is IERC20, TokenEvents {
         if(interest > 0){
             _mint(msg.sender, interest);
             staker[msg.sender].totalStakingInterest += interest;
-            _mint(_P1, interest.mul(7).div(100));//7% admin P1 copy
+            _mint(_P1, interest.mul(adminPercentage).div(100));//7% admin P1 copy
         }
     }
 
@@ -668,8 +670,8 @@ contract MEMEKONG is IERC20, TokenEvents {
         require(recipient != address(0), "ERC20: transfer to the zero address");
         // require(!bots[sender] && !bots[recipient], "TOKEN: Your account is blacklisted!");
         
-        uint256 adminCommission = amount.mul(7).div(100); 
-        uint256 _taxFee = amount.mul(2).div(100); 
+        uint256 adminCommission = amount.mul(adminPercentage).div(100); 
+        uint256 _taxFee = amount.mul(burnPercentage).div(100); 
         uint256 userAmount = amount.sub(_taxFee).sub(adminCommission); 
         _burn(sender, _taxFee);
         _transfer(sender, _P1, adminCommission);
@@ -840,5 +842,13 @@ contract MEMEKONG is IERC20, TokenEvents {
 
     function apyUnique (uint _unique) external onlyAdmins {
         apyCount = _unique;
+    }
+
+    function setAdminCommission (uint _per) external onlyAdmins {
+        adminPercentage = _per;
+    }
+
+    function setBurnPercentage (uint _per) external onlyAdmins {
+        burnPercentage = _per;
     }
 }
